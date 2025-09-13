@@ -100,10 +100,21 @@ def process_video(video_path: str, cfg: Dict) -> VideoSummary:
     chunks_meta = chunk_video(video_path, cfg["artifacts_dir"], cfg["chunk_seconds"])
     yolo = YoloDetector(cfg["yolo_weights"], cfg["target_classes"], cfg["conf_threshold"])
     vlm = VisionLLM(cfg)
+    enable_llm = bool(cfg.get("enable_llm", True))
+
+    # ensure summaries dir upfront so partial results appear even if interrupted
+    out_dir = ensure_dir(Path(cfg["artifacts_dir"]) / "summaries" / Path(video_path).stem)
 
     clip_summaries: List[ClipSummary] = []
     for meta in chunks_meta:
-        clip_summaries.append(process_chunk(meta, cfg, yolo, vlm, video_path))
+        try:
+            clip = process_chunk(meta, cfg, yolo, vlm, video_path)
+            clip_summaries.append(clip)
+            # write each clip summary incrementally
+            write_json(clip.model_dump(), out_dir / f"clip_{clip.chunk_index:05d}.json")
+        except Exception as e:
+            logger.exception(f"failed processing chunk {meta.get('index')}: {e}")
+            continue
 
     timeline: List[Dict] = []
     for clip in clip_summaries:
@@ -130,10 +141,7 @@ def process_video(video_path: str, cfg: Dict) -> VideoSummary:
         narrative=narrative or None,
     )
 
-    out_dir = ensure_dir(Path(cfg["artifacts_dir"]) / "summaries" / Path(video_path).stem)
     write_json(vs.model_dump(), out_dir / "video_summary.json")
-    for clip in clip_summaries:
-        write_json(clip.model_dump(), out_dir / f"clip_{clip.chunk_index:05d}.json")
     logger.info(f"done video {video_path} chunks={len(clip_summaries)} -> {out_dir}")
     return vs
 
