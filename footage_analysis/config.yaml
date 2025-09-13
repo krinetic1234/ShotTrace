@@ -21,3 +21,9 @@ enable_vlm: true
 anthropic_model: "claude-sonnet-4-20250514"
 vlm_interval_seconds: 10
 vlm_images_per_call: 4
+
+# llm
+enable_llm: true
+model: "gpt-oss-120b"
+max_tokens: 512
+temperature: 0.2
