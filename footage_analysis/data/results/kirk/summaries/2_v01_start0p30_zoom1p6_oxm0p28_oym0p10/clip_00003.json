@@ -1,0 +1,725 @@
+{
+  "video_path": "data/videos/kirk/processed/2_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4",
+  "chunk_path": "data/results/kirk/chunks/2_v01_start0p30_zoom1p6_oxm0p28_oym0p10/2_v01_start0p30_zoom1p6_oxm0p28_oym0p10_00003.mp4",
+  "chunk_index": 3,
+  "start_sec": 30.0,
+  "end_sec": 40.0,
+  "frames": [
+    {
+      "frame_index": 0,
+      "ms_from_chunk_start": 0,
+      "detections": [],
+      "vlm_json": {
+        "entities": {
+          "people_count": 0,
+          "vehicles_summary": [
+            {
+              "type": "boat",
+              "color": "white",
+              "approx_count": 3
+            }
+          ]
+        },
+        "actions_summary": [
+          "boats moored at marina",
+          "stationary watercraft"
+        ],
+        "movement": {
+          "dominant_direction": "none",
+          "speed_hint": "slow",
+          "direction_changes": false
+        },
+        "temporal_order": [
+          "boats remain docked at marina",
+          "minimal water movement observed"
+        ],
+        "notable": [
+          "marina setting with multiple boats",
+          "tree coverage over water area",
+          "residential buildings visible"
+        ],
+        "quality": {
+          "lighting": "bright",
+          "occlusion": true,
+          "motion_blur": "low"
+        },
+        "confidence": {
+          "overall": 0.7,
+          "entities": 0.8,
+          "movement": 0.9
+        }
+      }
+    },
+    {
+      "frame_index": 5,
+      "ms_from_chunk_start": 501,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 10,
+      "ms_from_chunk_start": 1002,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 15,
+      "ms_from_chunk_start": 1503,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 20,
+      "ms_from_chunk_start": 2004,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 25,
+      "ms_from_chunk_start": 2505,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 30,
+      "ms_from_chunk_start": 3006,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 35,
+      "ms_from_chunk_start": 3507,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 40,
+      "ms_from_chunk_start": 4008,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.2682912349700928,
+          "bbox_xyxy": [
+            1860.4068603515625,
+            879.7568359375,
+            1907.698974609375,
+            1020.5318603515625
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 45,
+      "ms_from_chunk_start": 4509,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 50,
+      "ms_from_chunk_start": 5011,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 55,
+      "ms_from_chunk_start": 5512,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 60,
+      "ms_from_chunk_start": 6013,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 65,
+      "ms_from_chunk_start": 6514,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 70,
+      "ms_from_chunk_start": 7015,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 75,
+      "ms_from_chunk_start": 7516,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.7748722434043884,
+          "bbox_xyxy": [
+            1814.737548828125,
+            1233.7105712890625,
+            2047.0335693359375,
+            1533.9957275390625
+          ],
+          "track_id": 2
+        },
+        {
+          "cls": "car",
+          "conf": 0.3659009337425232,
+          "bbox_xyxy": [
+            1417.31494140625,
+            1250.3944091796875,
+            1951.510986328125,
+            1535.354736328125
+          ],
+          "track_id": 3
+        },
+        {
+          "cls": "car",
+          "conf": 0.2987452745437622,
+          "bbox_xyxy": [
+            1040.3258056640625,
+            1381.0240478515625,
+            1438.263671875,
+            1535.3228759765625
+          ],
+          "track_id": 4
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 80,
+      "ms_from_chunk_start": 8017,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.5163938403129578,
+          "bbox_xyxy": [
+            1579.338134765625,
+            891.9367065429688,
+            1914.197021484375,
+            1094.081298828125
+          ],
+          "track_id": 5
+        },
+        {
+          "cls": "car",
+          "conf": 0.4802669584751129,
+          "bbox_xyxy": [
+            1629.7421875,
+            1364.5108642578125,
+            2035.7496337890625,
+            1535.2882080078125
+          ],
+          "track_id": 6
+        },
+        {
+          "cls": "car",
+          "conf": 0.42170244455337524,
+          "bbox_xyxy": [
+            1967.670654296875,
+            1231.9486083984375,
+            2047.056640625,
+            1467.7275390625
+          ],
+          "track_id": 7
+        },
+        {
+          "cls": "car",
+          "conf": 0.36516645550727844,
+          "bbox_xyxy": [
+            1070.484375,
+            1032.0367431640625,
+            1385.4671630859375,
+            1248.2913818359375
+          ],
+          "track_id": 8
+        },
+        {
+          "cls": "car",
+          "conf": 0.3228084444999695,
+          "bbox_xyxy": [
+            1262.9000244140625,
+            1412.519775390625,
+            1541.6715087890625,
+            1535.204833984375
+          ],
+          "track_id": 9
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 85,
+      "ms_from_chunk_start": 8518,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8119291663169861,
+          "bbox_xyxy": [
+            1802.164794921875,
+            985.8146362304688,
+            2046.981201171875,
+            1285.458740234375
+          ],
+          "track_id": 10
+        },
+        {
+          "cls": "car",
+          "conf": 0.7881499528884888,
+          "bbox_xyxy": [
+            1901.218505859375,
+            1227.695068359375,
+            2047.4263916015625,
+            1532.4833984375
+          ],
+          "track_id": 2
+        },
+        {
+          "cls": "car",
+          "conf": 0.7375428676605225,
+          "bbox_xyxy": [
+            1015.2400512695312,
+            1233.2193603515625,
+            1224.4404296875,
+            1534.1549072265625
+          ],
+          "track_id": 11
+        },
+        {
+          "cls": "car",
+          "conf": 0.7185202240943909,
+          "bbox_xyxy": [
+            462.2432556152344,
+            1030.175048828125,
+            670.4505004882812,
+            1337.5557861328125
+          ],
+          "track_id": 12
+        },
+        {
+          "cls": "car",
+          "conf": 0.5944398641586304,
+          "bbox_xyxy": [
+            747.5852661132812,
+            1280.788330078125,
+            975.6940307617188,
+            1535.312255859375
+          ],
+          "track_id": 13
+        },
+        {
+          "cls": "car",
+          "conf": 0.5789796113967896,
+          "bbox_xyxy": [
+            1542.960693359375,
+            1080.811279296875,
+            1845.666748046875,
+            1378.897705078125
+          ],
+          "track_id": 14
+        },
+        {
+          "cls": "car",
+          "conf": 0.5781376957893372,
+          "bbox_xyxy": [
+            1272.588623046875,
+            1112.441650390625,
+            1496.6109619140625,
+            1464.446044921875
+          ],
+          "track_id": 15
+        },
+        {
+          "cls": "car",
+          "conf": 0.5653330683708191,
+          "bbox_xyxy": [
+            1660.0084228515625,
+            700.2603759765625,
+            1896.894287109375,
+            866.1695556640625
+          ],
+          "track_id": 16
+        },
+        {
+          "cls": "car",
+          "conf": 0.5605117082595825,
+          "bbox_xyxy": [
+            132.4843292236328,
+            1259.747802734375,
+            350.16259765625,
+            1474.72265625
+          ],
+          "track_id": 17
+        },
+        {
+          "cls": "car",
+          "conf": 0.4795248508453369,
+          "bbox_xyxy": [
+            683.0823974609375,
+            993.4736328125,
+            932.6522216796875,
+            1213.6314697265625
+          ],
+          "track_id": 18
+        },
+        {
+          "cls": "car",
+          "conf": 0.45321062207221985,
+          "bbox_xyxy": [
+            1467.0980224609375,
+            752.2349243164062,
+            1697.1138916015625,
+            937.6095581054688
+          ],
+          "track_id": 19
+        },
+        {
+          "cls": "car",
+          "conf": 0.4004386365413666,
+          "bbox_xyxy": [
+            1590.1072998046875,
+            1341.563720703125,
+            1951.689453125,
+            1535.201904296875
+          ],
+          "track_id": 6
+        },
+        {
+          "cls": "car",
+          "conf": 0.38136163353919983,
+          "bbox_xyxy": [
+            1838.1380615234375,
+            613.5470581054688,
+            2047.486083984375,
+            827.9099731445312
+          ],
+          "track_id": 20
+        },
+        {
+          "cls": "car",
+          "conf": 0.36100485920906067,
+          "bbox_xyxy": [
+            520.0645751953125,
+            1420.8470458984375,
+            728.8822631835938,
+            1535.337646484375
+          ],
+          "track_id": 21
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 90,
+      "ms_from_chunk_start": 9019,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8035426139831543,
+          "bbox_xyxy": [
+            1802.3814697265625,
+            986.7586059570312,
+            2047.099853515625,
+            1285.0667724609375
+          ],
+          "track_id": 10
+        },
+        {
+          "cls": "car",
+          "conf": 0.7869566679000854,
+          "bbox_xyxy": [
+            1901.485107421875,
+            1227.802490234375,
+            2047.428955078125,
+            1532.4798583984375
+          ],
+          "track_id": 2
+        },
+        {
+          "cls": "car",
+          "conf": 0.6339405179023743,
+          "bbox_xyxy": [
+            1013.935546875,
+            1232.9383544921875,
+            1225.4281005859375,
+            1534.15869140625
+          ],
+          "track_id": 11
+        },
+        {
+          "cls": "car",
+          "conf": 0.598480761051178,
+          "bbox_xyxy": [
+            462.64404296875,
+            1029.818603515625,
+            673.4737548828125,
+            1338.3206787109375
+          ],
+          "track_id": 12
+        },
+        {
+          "cls": "car",
+          "conf": 0.582812488079071,
+          "bbox_xyxy": [
+            134.30006408691406,
+            1259.48876953125,
+            349.76373291015625,
+            1474.0701904296875
+          ],
+          "track_id": 17
+        },
+        {
+          "cls": "car",
+          "conf": 0.5636027455329895,
+          "bbox_xyxy": [
+            1544.1334228515625,
+            1081.1546630859375,
+            1846.1224365234375,
+            1381.1605224609375
+          ],
+          "track_id": 14
+        },
+        {
+          "cls": "car",
+          "conf": 0.5522504448890686,
+          "bbox_xyxy": [
+            1663.183837890625,
+            700.44580078125,
+            1895.531494140625,
+            864.7391357421875
+          ],
+          "track_id": 16
+        },
+        {
+          "cls": "car",
+          "conf": 0.5116414427757263,
+          "bbox_xyxy": [
+            747.752685546875,
+            1281.070068359375,
+            974.3585815429688,
+            1535.648193359375
+          ],
+          "track_id": 13
+        },
+        {
+          "cls": "car",
+          "conf": 0.5083456039428711,
+          "bbox_xyxy": [
+            1273.354248046875,
+            1112.466064453125,
+            1495.87109375,
+            1468.1136474609375
+          ],
+          "track_id": 15
+        },
+        {
+          "cls": "car",
+          "conf": 0.4558095633983612,
+          "bbox_xyxy": [
+            1838.3753662109375,
+            614.7633056640625,
+            2047.4886474609375,
+            828.30859375
+          ],
+          "track_id": 20
+        },
+        {
+          "cls": "car",
+          "conf": 0.448295533657074,
+          "bbox_xyxy": [
+            682.908203125,
+            993.7736206054688,
+            932.4840087890625,
+            1214.0042724609375
+          ],
+          "track_id": 18
+        },
+        {
+          "cls": "car",
+          "conf": 0.3910064101219177,
+          "bbox_xyxy": [
+            1593.698974609375,
+            1341.1322021484375,
+            1949.8470458984375,
+            1535.2099609375
+          ],
+          "track_id": 6
+        },
+        {
+          "cls": "car",
+          "conf": 0.33076611161231995,
+          "bbox_xyxy": [
+            1466.659912109375,
+            752.5882568359375,
+            1693.2666015625,
+            933.6285400390625
+          ],
+          "track_id": 19
+        },
+        {
+          "cls": "car",
+          "conf": 0.321321040391922,
+          "bbox_xyxy": [
+            1465.794189453125,
+            754.7451171875,
+            1627.8316650390625,
+            929.8132934570312
+          ],
+          "track_id": 22
+        },
+        {
+          "cls": "car",
+          "conf": 0.28927773237228394,
+          "bbox_xyxy": [
+            520.3997192382812,
+            1419.764892578125,
+            733.9036254882812,
+            1535.3682861328125
+          ],
+          "track_id": 21
+        },
+        {
+          "cls": "car",
+          "conf": 0.2869850993156433,
+          "bbox_xyxy": [
+            1263.790283203125,
+            800.4803466796875,
+            1423.001220703125,
+            1004.1580200195312
+          ],
+          "track_id": 23
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 95,
+      "ms_from_chunk_start": 9520,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 100,
+      "ms_from_chunk_start": 10022,
+      "detections": [],
+      "vlm_json": {
+        "entities": {
+          "people_count": 0,
+          "vehicles_summary": [
+            {
+              "type": "boats",
+              "color": "white",
+              "approx_count": 3
+            }
+          ]
+        },
+        "actions_summary": [
+          "boats moored at dock",
+          "static waterfront scene"
+        ],
+        "movement": {
+          "dominant_direction": "none",
+          "speed_hint": "slow",
+          "direction_changes": false
+        },
+        "temporal_order": [
+          "boats remain stationary at dock",
+          "no significant movement observed"
+        ],
+        "notable": [
+          "marina or dock setting with multiple white boats",
+          "green building structure visible",
+          "well-maintained waterfront area"
+        ],
+        "quality": {
+          "lighting": "bright",
+          "occlusion": true,
+          "motion_blur": "low"
+        },
+        "confidence": {
+          "overall": 0.85,
+          "entities": 0.9,
+          "movement": 0.95
+        }
+      }
+    },
+    {
+      "frame_index": 105,
+      "ms_from_chunk_start": 10523,
+      "detections": [],
+      "vlm_json": null
+    }
+  ],
+  "tracklets": {
+    "1": {
+      "cls": "person"
+    },
+    "2": {
+      "cls": "car"
+    },
+    "3": {
+      "cls": "car"
+    },
+    "4": {
+      "cls": "car"
+    },
+    "5": {
+      "cls": "car"
+    },
+    "6": {
+      "cls": "car"
+    },
+    "7": {
+      "cls": "car"
+    },
+    "8": {
+      "cls": "car"
+    },
+    "9": {
+      "cls": "car"
+    },
+    "10": {
+      "cls": "car"
+    },
+    "11": {
+      "cls": "car"
+    },
+    "12": {
+      "cls": "car"
+    },
+    "13": {
+      "cls": "car"
+    },
+    "14": {
+      "cls": "car"
+    },
+    "15": {
+      "cls": "car"
+    },
+    "16": {
+      "cls": "car"
+    },
+    "17": {
+      "cls": "car"
+    },
+    "18": {
+      "cls": "car"
+    },
+    "19": {
+      "cls": "car"
+    },
+    "20": {
+      "cls": "car"
+    },
+    "21": {
+      "cls": "car"
+    },
+    "22": {
+      "cls": "car"
+    },
+    "23": {
+      "cls": "car"
+    }
+  },
+  "synopsis": "I\u2019m unable to view the clip you\u2019re referencing. Could you provide a brief description of the visual content (people, vehicles, locations, directions of travel, etc.) so I can create an accurate dispatch\u2011style summary?"
+}

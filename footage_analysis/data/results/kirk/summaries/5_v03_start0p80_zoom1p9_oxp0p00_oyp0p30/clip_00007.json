@@ -1,0 +1,251 @@
+{
+  "video_path": "data/videos/kirk/processed/5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4",
+  "chunk_path": "data/results/kirk/chunks/5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30/5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30_00007.mp4",
+  "chunk_index": 7,
+  "start_sec": 70.0,
+  "end_sec": 80.0,
+  "frames": [
+    {
+      "frame_index": 0,
+      "ms_from_chunk_start": 0,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.35083428025245667,
+          "bbox_xyxy": [
+            286.8460693359375,
+            1.73248291015625,
+            416.02001953125,
+            179.91949462890625
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": {
+        "entities": {
+          "people_count": 1,
+          "vehicles_summary": []
+        },
+        "actions_summary": [
+          "person walking on steps/stairs",
+          "traversing elevated walkway or bridge structure"
+        ],
+        "movement": {
+          "dominant_direction": "across frame",
+          "speed_hint": "moderate",
+          "direction_changes": false
+        },
+        "temporal_order": [
+          "person appears on elevated structure",
+          "walks across steps/walkway",
+          "continues movement across frame"
+        ],
+        "notable": [
+          "white railing/barrier structure",
+          "steps or staired walkway",
+          "urban/institutional setting",
+          "elevated pedestrian area"
+        ],
+        "quality": {
+          "lighting": "bright",
+          "occlusion": false,
+          "motion_blur": "med"
+        },
+        "confidence": {
+          "overall": 0.7,
+          "entities": 0.8,
+          "movement": 0.7
+        }
+      }
+    },
+    {
+      "frame_index": 5,
+      "ms_from_chunk_start": 181,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 10,
+      "ms_from_chunk_start": 362,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 15,
+      "ms_from_chunk_start": 544,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 20,
+      "ms_from_chunk_start": 725,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 25,
+      "ms_from_chunk_start": 907,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 30,
+      "ms_from_chunk_start": 1088,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 35,
+      "ms_from_chunk_start": 1269,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 40,
+      "ms_from_chunk_start": 1451,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 45,
+      "ms_from_chunk_start": 1632,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 50,
+      "ms_from_chunk_start": 1814,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 55,
+      "ms_from_chunk_start": 1995,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 60,
+      "ms_from_chunk_start": 2176,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 65,
+      "ms_from_chunk_start": 2358,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 70,
+      "ms_from_chunk_start": 2539,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 75,
+      "ms_from_chunk_start": 2721,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 80,
+      "ms_from_chunk_start": 2902,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.5600998997688293,
+          "bbox_xyxy": [
+            377.98785400390625,
+            3.88299560546875,
+            487.30633544921875,
+            175.738037109375
+          ],
+          "track_id": 2
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 85,
+      "ms_from_chunk_start": 3083,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 90,
+      "ms_from_chunk_start": 3265,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.2669324576854706,
+          "bbox_xyxy": [
+            283.16839599609375,
+            1.4090118408203125,
+            416.04339599609375,
+            179.8253936767578
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 95,
+      "ms_from_chunk_start": 3446,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 100,
+      "ms_from_chunk_start": 3628,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 105,
+      "ms_from_chunk_start": 3809,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 110,
+      "ms_from_chunk_start": 3990,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 115,
+      "ms_from_chunk_start": 4172,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 120,
+      "ms_from_chunk_start": 4353,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 125,
+      "ms_from_chunk_start": 4535,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 130,
+      "ms_from_chunk_start": 4716,
+      "detections": [],
+      "vlm_json": null
+    }
+  ],
+  "tracklets": {
+    "1": {
+      "cls": "person"
+    },
+    "2": {
+      "cls": "person"
+    }
+  },
+  "synopsis": "I\u2019m unable to view the clip you\u2019re referring to. Could you provide a brief description of what is shown (people, vehicles, locations, directions of travel, etc.) so I can craft an accurate dispatch\u2011style summary?"
+}

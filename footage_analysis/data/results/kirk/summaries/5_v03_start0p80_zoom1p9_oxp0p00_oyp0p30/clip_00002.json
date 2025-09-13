@@ -1,0 +1,462 @@
+{
+  "video_path": "data/videos/kirk/processed/5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4",
+  "chunk_path": "data/results/kirk/chunks/5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30/5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30_00002.mp4",
+  "chunk_index": 2,
+  "start_sec": 20.0,
+  "end_sec": 30.0,
+  "frames": [
+    {
+      "frame_index": 0,
+      "ms_from_chunk_start": 0,
+      "detections": [],
+      "vlm_json": {
+        "entities": {
+          "people_count": 0,
+          "vehicles_summary": []
+        },
+        "actions_summary": [
+          "vegetation moving in wind",
+          "outdoor garden/yard scene"
+        ],
+        "movement": {
+          "dominant_direction": "none",
+          "speed_hint": "slow",
+          "direction_changes": false
+        },
+        "temporal_order": [
+          "static garden scene with plants",
+          "slight vegetation movement",
+          "no significant changes",
+          "scene remains stable"
+        ],
+        "notable": [
+          "overgrown vegetation area",
+          "white fence/railing visible",
+          "appears to be backyard or garden space",
+          "no human or vehicle activity"
+        ],
+        "quality": {
+          "lighting": "mixed",
+          "occlusion": true,
+          "motion_blur": "high"
+        },
+        "confidence": {
+          "overall": 0.4,
+          "entities": 0.8,
+          "movement": 0.3
+        }
+      }
+    },
+    {
+      "frame_index": 5,
+      "ms_from_chunk_start": 181,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 10,
+      "ms_from_chunk_start": 362,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 15,
+      "ms_from_chunk_start": 544,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 20,
+      "ms_from_chunk_start": 725,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.5600998997688293,
+          "bbox_xyxy": [
+            377.98785400390625,
+            3.88299560546875,
+            487.30633544921875,
+            175.738037109375
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 25,
+      "ms_from_chunk_start": 907,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 30,
+      "ms_from_chunk_start": 1088,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.2669324576854706,
+          "bbox_xyxy": [
+            283.16839599609375,
+            1.4090118408203125,
+            416.04339599609375,
+            179.8253936767578
+          ],
+          "track_id": 2
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 35,
+      "ms_from_chunk_start": 1269,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 40,
+      "ms_from_chunk_start": 1451,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 45,
+      "ms_from_chunk_start": 1632,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 50,
+      "ms_from_chunk_start": 1814,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 55,
+      "ms_from_chunk_start": 1995,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 60,
+      "ms_from_chunk_start": 2176,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 65,
+      "ms_from_chunk_start": 2358,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 70,
+      "ms_from_chunk_start": 2539,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 75,
+      "ms_from_chunk_start": 2721,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 80,
+      "ms_from_chunk_start": 2902,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 85,
+      "ms_from_chunk_start": 3083,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 90,
+      "ms_from_chunk_start": 3265,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 95,
+      "ms_from_chunk_start": 3446,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 100,
+      "ms_from_chunk_start": 3628,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 105,
+      "ms_from_chunk_start": 3809,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 110,
+      "ms_from_chunk_start": 3990,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.41095057129859924,
+          "bbox_xyxy": [
+            378.16253662109375,
+            3.170196533203125,
+            487.0438232421875,
+            174.999755859375
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 115,
+      "ms_from_chunk_start": 4172,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 120,
+      "ms_from_chunk_start": 4353,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.35083428025245667,
+          "bbox_xyxy": [
+            286.8460693359375,
+            1.73248291015625,
+            416.02001953125,
+            179.91949462890625
+          ],
+          "track_id": 2
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 125,
+      "ms_from_chunk_start": 4535,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 130,
+      "ms_from_chunk_start": 4716,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 135,
+      "ms_from_chunk_start": 4897,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 140,
+      "ms_from_chunk_start": 5079,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 145,
+      "ms_from_chunk_start": 5260,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 150,
+      "ms_from_chunk_start": 5442,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 155,
+      "ms_from_chunk_start": 5623,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 160,
+      "ms_from_chunk_start": 5804,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 165,
+      "ms_from_chunk_start": 5986,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 170,
+      "ms_from_chunk_start": 6167,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 175,
+      "ms_from_chunk_start": 6349,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 180,
+      "ms_from_chunk_start": 6530,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 185,
+      "ms_from_chunk_start": 6711,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 190,
+      "ms_from_chunk_start": 6893,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 195,
+      "ms_from_chunk_start": 7074,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 200,
+      "ms_from_chunk_start": 7256,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.5600998997688293,
+          "bbox_xyxy": [
+            377.98785400390625,
+            3.88299560546875,
+            487.30633544921875,
+            175.738037109375
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 205,
+      "ms_from_chunk_start": 7437,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 210,
+      "ms_from_chunk_start": 7618,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.2669324576854706,
+          "bbox_xyxy": [
+            283.16839599609375,
+            1.4090118408203125,
+            416.04339599609375,
+            179.8253936767578
+          ],
+          "track_id": 2
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 215,
+      "ms_from_chunk_start": 7800,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 220,
+      "ms_from_chunk_start": 7981,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 225,
+      "ms_from_chunk_start": 8163,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 230,
+      "ms_from_chunk_start": 8344,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 235,
+      "ms_from_chunk_start": 8525,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 240,
+      "ms_from_chunk_start": 8707,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 245,
+      "ms_from_chunk_start": 8888,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 250,
+      "ms_from_chunk_start": 9070,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 255,
+      "ms_from_chunk_start": 9251,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 260,
+      "ms_from_chunk_start": 9432,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 265,
+      "ms_from_chunk_start": 9614,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 270,
+      "ms_from_chunk_start": 9795,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 275,
+      "ms_from_chunk_start": 9977,
+      "detections": [],
+      "vlm_json": null
+    }
+  ],
+  "tracklets": {
+    "1": {
+      "cls": "person"
+    },
+    "2": {
+      "cls": "person"
+    }
+  },
+  "synopsis": "I\u2019m unable to view the clip you\u2019re referring to. Could you provide a brief description of the scene so I can create an accurate dispatch\u2011style summary?"
+}
