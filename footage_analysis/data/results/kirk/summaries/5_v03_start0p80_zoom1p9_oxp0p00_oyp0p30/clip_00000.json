@@ -1,0 +1,397 @@
+{
+  "video_path": "data/videos/kirk/processed/5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4",
+  "chunk_path": "data/results/kirk/chunks/5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30/5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30_00000.mp4",
+  "chunk_index": 0,
+  "start_sec": 0.0,
+  "end_sec": 10.0,
+  "frames": [
+    {
+      "frame_index": 0,
+      "ms_from_chunk_start": 0,
+      "detections": [],
+      "vlm_json": {
+        "entities": {
+          "people_count": 0,
+          "vehicles_summary": []
+        },
+        "actions_summary": [
+          "vegetation movement in wind"
+        ],
+        "movement": {
+          "dominant_direction": "unknown",
+          "speed_hint": "slow",
+          "direction_changes": false
+        },
+        "temporal_order": [
+          "static outdoor scene with garden area",
+          "slight vegetation movement",
+          "continued environmental motion"
+        ],
+        "notable": [
+          "residential deck/patio area",
+          "garden planters with green vegetation",
+          "white railing structure",
+          "no human or vehicle activity visible"
+        ],
+        "quality": {
+          "lighting": "dim",
+          "occlusion": true,
+          "motion_blur": "high"
+        },
+        "confidence": {
+          "overall": 0.4,
+          "entities": 0.6,
+          "movement": 0.3
+        }
+      }
+    },
+    {
+      "frame_index": 5,
+      "ms_from_chunk_start": 181,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 10,
+      "ms_from_chunk_start": 362,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 15,
+      "ms_from_chunk_start": 544,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 20,
+      "ms_from_chunk_start": 725,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 25,
+      "ms_from_chunk_start": 907,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 30,
+      "ms_from_chunk_start": 1088,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 35,
+      "ms_from_chunk_start": 1269,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 40,
+      "ms_from_chunk_start": 1451,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 45,
+      "ms_from_chunk_start": 1632,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 50,
+      "ms_from_chunk_start": 1814,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 55,
+      "ms_from_chunk_start": 1995,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 60,
+      "ms_from_chunk_start": 2176,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 65,
+      "ms_from_chunk_start": 2358,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 70,
+      "ms_from_chunk_start": 2539,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 75,
+      "ms_from_chunk_start": 2721,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 80,
+      "ms_from_chunk_start": 2902,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 85,
+      "ms_from_chunk_start": 3083,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 90,
+      "ms_from_chunk_start": 3265,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 95,
+      "ms_from_chunk_start": 3446,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 100,
+      "ms_from_chunk_start": 3628,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 105,
+      "ms_from_chunk_start": 3809,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 110,
+      "ms_from_chunk_start": 3990,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 115,
+      "ms_from_chunk_start": 4172,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 120,
+      "ms_from_chunk_start": 4353,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 125,
+      "ms_from_chunk_start": 4535,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 130,
+      "ms_from_chunk_start": 4716,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 135,
+      "ms_from_chunk_start": 4897,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 140,
+      "ms_from_chunk_start": 5079,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 145,
+      "ms_from_chunk_start": 5260,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 150,
+      "ms_from_chunk_start": 5442,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 155,
+      "ms_from_chunk_start": 5623,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 160,
+      "ms_from_chunk_start": 5804,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 165,
+      "ms_from_chunk_start": 5986,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 170,
+      "ms_from_chunk_start": 6167,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 175,
+      "ms_from_chunk_start": 6349,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 180,
+      "ms_from_chunk_start": 6530,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 185,
+      "ms_from_chunk_start": 6711,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 190,
+      "ms_from_chunk_start": 6893,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 195,
+      "ms_from_chunk_start": 7074,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 200,
+      "ms_from_chunk_start": 7256,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 205,
+      "ms_from_chunk_start": 7437,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.29174500703811646,
+          "bbox_xyxy": [
+            763.691650390625,
+            284.5382080078125,
+            820.036376953125,
+            453.109130859375
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 210,
+      "ms_from_chunk_start": 7618,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 215,
+      "ms_from_chunk_start": 7800,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 220,
+      "ms_from_chunk_start": 7981,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 225,
+      "ms_from_chunk_start": 8163,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 230,
+      "ms_from_chunk_start": 8344,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 235,
+      "ms_from_chunk_start": 8525,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 240,
+      "ms_from_chunk_start": 8707,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 245,
+      "ms_from_chunk_start": 8888,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 250,
+      "ms_from_chunk_start": 9070,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 255,
+      "ms_from_chunk_start": 9251,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 260,
+      "ms_from_chunk_start": 9432,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 265,
+      "ms_from_chunk_start": 9614,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 270,
+      "ms_from_chunk_start": 9795,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 275,
+      "ms_from_chunk_start": 9977,
+      "detections": [],
+      "vlm_json": null
+    }
+  ],
+  "tracklets": {
+    "1": {
+      "cls": "person"
+    }
+  },
+  "synopsis": "I\u2019m unable to view the clip. Could you provide a description of the scene or the key details you\u2019d like summarized?"
+}

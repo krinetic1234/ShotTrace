@@ -1,0 +1,421 @@
+{
+  "video_path": "data/videos/kirk/processed/4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4",
+  "chunk_path": "data/results/kirk/chunks/4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00/4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00_00001.mp4",
+  "chunk_index": 1,
+  "start_sec": 10.0,
+  "end_sec": 20.0,
+  "frames": [
+    {
+      "frame_index": 0,
+      "ms_from_chunk_start": 0,
+      "detections": [],
+      "vlm_json": {
+        "entities": {
+          "people_count": 0,
+          "vehicles_summary": []
+        },
+        "actions_summary": [],
+        "movement": {
+          "dominant_direction": "unknown",
+          "speed_hint": "unknown",
+          "direction_changes": false
+        },
+        "temporal_order": [],
+        "notable": [
+          "Image heavily blurred with motion blur or depth of field effects",
+          "Green/grey color tones dominate the frame",
+          "Appears to show partial text or numbers but unreadable due to blur"
+        ],
+        "quality": {
+          "lighting": "dim",
+          "occlusion": true,
+          "motion_blur": "high"
+        },
+        "confidence": {
+          "overall": 0.1,
+          "entities": 0.1,
+          "movement": 0.1
+        }
+      }
+    },
+    {
+      "frame_index": 5,
+      "ms_from_chunk_start": 176,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 10,
+      "ms_from_chunk_start": 352,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 15,
+      "ms_from_chunk_start": 528,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 20,
+      "ms_from_chunk_start": 705,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 25,
+      "ms_from_chunk_start": 881,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 30,
+      "ms_from_chunk_start": 1057,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 35,
+      "ms_from_chunk_start": 1234,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 40,
+      "ms_from_chunk_start": 1410,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 45,
+      "ms_from_chunk_start": 1586,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 50,
+      "ms_from_chunk_start": 1762,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 55,
+      "ms_from_chunk_start": 1939,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 60,
+      "ms_from_chunk_start": 2115,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 65,
+      "ms_from_chunk_start": 2291,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 70,
+      "ms_from_chunk_start": 2468,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 75,
+      "ms_from_chunk_start": 2644,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 80,
+      "ms_from_chunk_start": 2820,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 85,
+      "ms_from_chunk_start": 2996,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 90,
+      "ms_from_chunk_start": 3173,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 95,
+      "ms_from_chunk_start": 3349,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 100,
+      "ms_from_chunk_start": 3525,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 105,
+      "ms_from_chunk_start": 3702,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 110,
+      "ms_from_chunk_start": 3878,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 115,
+      "ms_from_chunk_start": 4054,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 120,
+      "ms_from_chunk_start": 4230,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 125,
+      "ms_from_chunk_start": 4407,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 130,
+      "ms_from_chunk_start": 4583,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 135,
+      "ms_from_chunk_start": 4759,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 140,
+      "ms_from_chunk_start": 4936,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 145,
+      "ms_from_chunk_start": 5112,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 150,
+      "ms_from_chunk_start": 5288,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 155,
+      "ms_from_chunk_start": 5464,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 160,
+      "ms_from_chunk_start": 5641,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 165,
+      "ms_from_chunk_start": 5817,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 170,
+      "ms_from_chunk_start": 5993,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 175,
+      "ms_from_chunk_start": 6170,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 180,
+      "ms_from_chunk_start": 6346,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 185,
+      "ms_from_chunk_start": 6522,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 190,
+      "ms_from_chunk_start": 6698,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 195,
+      "ms_from_chunk_start": 6875,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 200,
+      "ms_from_chunk_start": 7051,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 205,
+      "ms_from_chunk_start": 7227,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 210,
+      "ms_from_chunk_start": 7404,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 215,
+      "ms_from_chunk_start": 7580,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 220,
+      "ms_from_chunk_start": 7756,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 225,
+      "ms_from_chunk_start": 7932,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 230,
+      "ms_from_chunk_start": 8109,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 235,
+      "ms_from_chunk_start": 8285,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 240,
+      "ms_from_chunk_start": 8461,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 245,
+      "ms_from_chunk_start": 8638,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 250,
+      "ms_from_chunk_start": 8814,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 255,
+      "ms_from_chunk_start": 8990,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 260,
+      "ms_from_chunk_start": 9166,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 265,
+      "ms_from_chunk_start": 9343,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 270,
+      "ms_from_chunk_start": 9519,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 275,
+      "ms_from_chunk_start": 9695,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 280,
+      "ms_from_chunk_start": 9872,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 285,
+      "ms_from_chunk_start": 10048,
+      "detections": [],
+      "vlm_json": {
+        "entities": {
+          "people_count": 0,
+          "vehicles_summary": []
+        },
+        "actions_summary": [
+          "text overlay display",
+          "static background imagery"
+        ],
+        "movement": {
+          "dominant_direction": "none",
+          "speed_hint": "unknown",
+          "direction_changes": false
+        },
+        "temporal_order": [
+          "static text overlay remains visible",
+          "blurred background elements persist",
+          "no significant scene changes occur"
+        ],
+        "notable": [
+          "large text overlay dominates frames",
+          "heavy motion blur throughout sequence",
+          "green color scheme predominant",
+          "appears to be graphic/title overlay rather than live action"
+        ],
+        "quality": {
+          "lighting": "mixed",
+          "occlusion": true,
+          "motion_blur": "high"
+        },
+        "confidence": {
+          "overall": 0.3,
+          "entities": 0.2,
+          "movement": 0.1
+        }
+      }
+    }
+  ],
+  "tracklets": {},
+  "synopsis": "I\u2019m unable to view the clip, so I can\u2019t create a dispatch\u2011style summary without more information about its contents. If you can provide a description of what is shown (people, vehicles, locations, directions of travel, etc.), I\u2019ll be happy to draft the requested summary."
+}
