@@ -8,12 +8,7 @@ processes long mp4 videos into structured json summaries with:
 - per-chunk and per-video summaries
 
 ## quickstart
-1) install ffmpeg on your system
-2) `python -m venv .venv && source .venv/bin/activate`
-3) `pip install -r requirements.txt`
-4) copy `.env.example` → `.env` and set api keys
-5) put hour-long `.mp4` files in `./videos`
-6) `python main.py`
+Run `PYTHONPATH=.. uv run python -m footage_analysis.main --job_name kirk --jobs 8` from this folder
 
 outputs land in `./artifacts/` as chunk files and json summaries.
 
