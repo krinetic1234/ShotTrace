@@ -1,8 +1,8 @@
-videos_dir: "./videos"
-artifacts_dir: "./artifacts"
+videos_base_dir: "data/videos"
+results_base_dir: "data/results"
 
 # chunking
-chunk_seconds: 300          # 5m
+chunk_seconds: 10           # 10s
 
 # frames
 frame_stride: 5             # analyze every Nth frame
@@ -15,3 +15,9 @@ target_classes: ["person", "car", "truck", "gun"]
 conf_threshold: 0.25
 track_iou_threshold: 0.4
 track_max_age_frames: 45
+
+# vlm
+enable_vlm: true
+anthropic_model: "claude-sonnet-4-20250514"
+vlm_interval_seconds: 10
+vlm_images_per_call: 4
