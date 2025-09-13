@@ -1,0 +1,9 @@
+ultralytics
+opencv-python
+numpy
+pydantic>=2
+anthropic>=0.36
+tqdm
+python-dotenv
+PyYAML
+requests

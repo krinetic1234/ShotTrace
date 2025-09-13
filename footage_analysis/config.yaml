@@ -1,0 +1,17 @@
+videos_dir: "./videos"
+artifacts_dir: "./artifacts"
+
+# chunking
+chunk_seconds: 300          # 5m
+
+# frames
+frame_stride: 5             # analyze every Nth frame
+vlm_every_n_frames: 30      # vision llm cadence on analyzed frames
+max_frames_per_chunk: 5000
+
+# yolo
+yolo_weights: "yolo12n.pt"  # path or model name; change as needed
+target_classes: ["person", "car", "truck", "gun"]
+conf_threshold: 0.25
+track_iou_threshold: 0.4
+track_max_age_frames: 45
