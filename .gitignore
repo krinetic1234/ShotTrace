@@ -11,6 +11,9 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# Yolo weights
+footage_analysis/yolo12n.pt
+
 # Next.js
 .next/
 out/
