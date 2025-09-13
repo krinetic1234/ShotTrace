@@ -1,0 +1,200 @@
+{
+  "video_path": "data/videos/kirk/processed/4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4",
+  "chunk_path": "data/results/kirk/chunks/4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30/4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30_00007.mp4",
+  "chunk_index": 7,
+  "start_sec": 70.0,
+  "end_sec": 80.0,
+  "frames": [
+    {
+      "frame_index": 0,
+      "ms_from_chunk_start": 0,
+      "detections": [],
+      "vlm_json": {
+        "entities": {
+          "people_count": 0,
+          "vehicles_summary": []
+        },
+        "actions_summary": [],
+        "movement": {
+          "dominant_direction": "unknown",
+          "speed_hint": "unknown",
+          "direction_changes": false
+        },
+        "temporal_order": [],
+        "notable": [
+          "Image appears to show text or signage with 'JIM' visible",
+          "Heavy blur and distortion throughout frame",
+          "Green tinting dominates the visual field"
+        ],
+        "quality": {
+          "lighting": "dim",
+          "occlusion": true,
+          "motion_blur": "high"
+        },
+        "confidence": {
+          "overall": 0.1,
+          "entities": 0.0,
+          "movement": 0.0
+        }
+      }
+    },
+    {
+      "frame_index": 5,
+      "ms_from_chunk_start": 176,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 10,
+      "ms_from_chunk_start": 352,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 15,
+      "ms_from_chunk_start": 528,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 20,
+      "ms_from_chunk_start": 705,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 25,
+      "ms_from_chunk_start": 881,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 30,
+      "ms_from_chunk_start": 1057,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 35,
+      "ms_from_chunk_start": 1234,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 40,
+      "ms_from_chunk_start": 1410,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 45,
+      "ms_from_chunk_start": 1586,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 50,
+      "ms_from_chunk_start": 1762,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 55,
+      "ms_from_chunk_start": 1939,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 60,
+      "ms_from_chunk_start": 2115,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 65,
+      "ms_from_chunk_start": 2291,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 70,
+      "ms_from_chunk_start": 2468,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 75,
+      "ms_from_chunk_start": 2644,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 80,
+      "ms_from_chunk_start": 2820,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 85,
+      "ms_from_chunk_start": 2996,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 90,
+      "ms_from_chunk_start": 3173,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 95,
+      "ms_from_chunk_start": 3349,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 100,
+      "ms_from_chunk_start": 3525,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 105,
+      "ms_from_chunk_start": 3702,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 110,
+      "ms_from_chunk_start": 3878,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 115,
+      "ms_from_chunk_start": 4054,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 120,
+      "ms_from_chunk_start": 4230,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 125,
+      "ms_from_chunk_start": 4407,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 130,
+      "ms_from_chunk_start": 4583,
+      "detections": [],
+      "vlm_json": null
+    }
+  ],
+  "tracklets": {},
+  "synopsis": "I\u2019m unable to view the clip you\u2019re referring to, so I can\u2019t generate a dispatch\u2011style summary. If you can provide a description of the visual details (people, vehicles, locations, directions of travel, etc.), I\u2019ll be happy to craft the requested summary."
+}

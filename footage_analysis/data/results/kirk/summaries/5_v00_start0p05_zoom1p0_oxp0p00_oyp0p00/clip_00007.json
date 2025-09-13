@@ -1,0 +1,714 @@
+{
+  "video_path": "data/videos/kirk/processed/5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4",
+  "chunk_path": "data/results/kirk/chunks/5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00/5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00_00007.mp4",
+  "chunk_index": 7,
+  "start_sec": 70.0,
+  "end_sec": 80.0,
+  "frames": [
+    {
+      "frame_index": 0,
+      "ms_from_chunk_start": 0,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.7156331539154053,
+          "bbox_xyxy": [
+            946.8427734375,
+            81.62535095214844,
+            1051.671630859375,
+            168.86732482910156
+          ],
+          "track_id": 1
+        },
+        {
+          "cls": "car",
+          "conf": 0.6837517023086548,
+          "bbox_xyxy": [
+            1092.330810546875,
+            72.49899291992188,
+            1199.567626953125,
+            170.5631103515625
+          ],
+          "track_id": 2
+        },
+        {
+          "cls": "car",
+          "conf": 0.4630512595176697,
+          "bbox_xyxy": [
+            607.7528076171875,
+            86.32755279541016,
+            738.1119384765625,
+            154.02041625976562
+          ],
+          "track_id": 3
+        },
+        {
+          "cls": "person",
+          "conf": 0.3955063819885254,
+          "bbox_xyxy": [
+            105.57362365722656,
+            232.6287841796875,
+            140.96470642089844,
+            352.74755859375
+          ],
+          "track_id": 4
+        },
+        {
+          "cls": "car",
+          "conf": 0.36570554971694946,
+          "bbox_xyxy": [
+            1240.096923828125,
+            74.66098022460938,
+            1279.485107421875,
+            169.62005615234375
+          ],
+          "track_id": 5
+        },
+        {
+          "cls": "car",
+          "conf": 0.3273567259311676,
+          "bbox_xyxy": [
+            608.3787841796875,
+            86.8895034790039,
+            700.5369873046875,
+            154.99551391601562
+          ],
+          "track_id": 6
+        }
+      ],
+      "vlm_json": {
+        "entities": {
+          "people_count": 1,
+          "vehicles_summary": [
+            {
+              "type": "car",
+              "color": "dark",
+              "approx_count": 2
+            },
+            {
+              "type": "car",
+              "color": "white",
+              "approx_count": 1
+            }
+          ]
+        },
+        "actions_summary": [
+          "person walking on residential street",
+          "vehicles parked in driveways"
+        ],
+        "movement": {
+          "dominant_direction": "left_to_right",
+          "speed_hint": "slow",
+          "direction_changes": false
+        },
+        "temporal_order": [
+          "person visible on residential street",
+          "person walking along roadway",
+          "vehicles remain stationary in background"
+        ],
+        "notable": [
+          "residential neighborhood setting",
+          "well-maintained landscaping",
+          "clear daytime conditions"
+        ],
+        "quality": {
+          "lighting": "bright",
+          "occlusion": true,
+          "motion_blur": "low"
+        },
+        "confidence": {
+          "overall": 0.75,
+          "entities": 0.8,
+          "movement": 0.7
+        }
+      }
+    },
+    {
+      "frame_index": 5,
+      "ms_from_chunk_start": 181,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.6966762542724609,
+          "bbox_xyxy": [
+            946.887451171875,
+            81.565673828125,
+            1051.3551025390625,
+            169.8380126953125
+          ],
+          "track_id": 1
+        },
+        {
+          "cls": "car",
+          "conf": 0.6641285419464111,
+          "bbox_xyxy": [
+            1092.548583984375,
+            72.45948028564453,
+            1199.346923828125,
+            170.878662109375
+          ],
+          "track_id": 2
+        },
+        {
+          "cls": "car",
+          "conf": 0.4587302803993225,
+          "bbox_xyxy": [
+            608.896484375,
+            87.21123504638672,
+            718.9873046875,
+            156.8377685546875
+          ],
+          "track_id": 3
+        },
+        {
+          "cls": "car",
+          "conf": 0.4006568491458893,
+          "bbox_xyxy": [
+            1240.649169921875,
+            74.74951171875,
+            1279.475830078125,
+            169.6202392578125
+          ],
+          "track_id": 5
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 10,
+      "ms_from_chunk_start": 362,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.7486497163772583,
+          "bbox_xyxy": [
+            952.406982421875,
+            81.33969116210938,
+            1054.613037109375,
+            168.66989135742188
+          ],
+          "track_id": 1
+        },
+        {
+          "cls": "car",
+          "conf": 0.6250911951065063,
+          "bbox_xyxy": [
+            1096.245361328125,
+            70.99136352539062,
+            1205.655517578125,
+            171.0379638671875
+          ],
+          "track_id": 2
+        },
+        {
+          "cls": "person",
+          "conf": 0.5683981776237488,
+          "bbox_xyxy": [
+            124.96992492675781,
+            230.74429321289062,
+            160.2504119873047,
+            350.5214538574219
+          ],
+          "track_id": 7
+        },
+        {
+          "cls": "car",
+          "conf": 0.4595240652561188,
+          "bbox_xyxy": [
+            612.492431640625,
+            85.63080596923828,
+            745.82421875,
+            151.09100341796875
+          ],
+          "track_id": 3
+        },
+        {
+          "cls": "car",
+          "conf": 0.296080082654953,
+          "bbox_xyxy": [
+            613.1080932617188,
+            85.02336120605469,
+            705.2890014648438,
+            152.7069854736328
+          ],
+          "track_id": 6
+        },
+        {
+          "cls": "car",
+          "conf": 0.25781354308128357,
+          "bbox_xyxy": [
+            1098.320068359375,
+            112.37940979003906,
+            1201.470458984375,
+            172.31834411621094
+          ],
+          "track_id": 8
+        },
+        {
+          "cls": "car",
+          "conf": 0.25536420941352844,
+          "bbox_xyxy": [
+            1244.993408203125,
+            78.45034790039062,
+            1279.491943359375,
+            168.71282958984375
+          ],
+          "track_id": 5
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 15,
+      "ms_from_chunk_start": 544,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 20,
+      "ms_from_chunk_start": 725,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 25,
+      "ms_from_chunk_start": 907,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.7986278533935547,
+          "bbox_xyxy": [
+            12.99930191040039,
+            195.7552490234375,
+            117.91598510742188,
+            447.00604248046875
+          ],
+          "track_id": 9
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 30,
+      "ms_from_chunk_start": 1088,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.7516040802001953,
+          "bbox_xyxy": [
+            90.54452514648438,
+            191.50059509277344,
+            166.98709106445312,
+            440.303955078125
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 35,
+      "ms_from_chunk_start": 1269,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.2614988088607788,
+          "bbox_xyxy": [
+            119.33868408203125,
+            181.48446655273438,
+            180.4127197265625,
+            439.8168640136719
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 40,
+      "ms_from_chunk_start": 1451,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.7351909279823303,
+          "bbox_xyxy": [
+            132.16598510742188,
+            192.09088134765625,
+            198.03005981445312,
+            439.4140625
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 45,
+      "ms_from_chunk_start": 1632,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.5236716270446777,
+          "bbox_xyxy": [
+            151.72100830078125,
+            190.87753295898438,
+            223.86215209960938,
+            436.1792297363281
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 50,
+      "ms_from_chunk_start": 1814,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.7373854517936707,
+          "bbox_xyxy": [
+            169.92669677734375,
+            192.41836547851562,
+            252.5615234375,
+            436.2959289550781
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 55,
+      "ms_from_chunk_start": 1995,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.7760301232337952,
+          "bbox_xyxy": [
+            171.97561645507812,
+            181.1311798095703,
+            259.32586669921875,
+            436.41156005859375
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 60,
+      "ms_from_chunk_start": 2176,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.6996051073074341,
+          "bbox_xyxy": [
+            176.8807373046875,
+            185.7661590576172,
+            283.33221435546875,
+            438.94293212890625
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 65,
+      "ms_from_chunk_start": 2358,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.7631236910820007,
+          "bbox_xyxy": [
+            197.0823974609375,
+            191.3768310546875,
+            285.7712707519531,
+            429.959228515625
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 70,
+      "ms_from_chunk_start": 2539,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.4218764305114746,
+          "bbox_xyxy": [
+            230.5688018798828,
+            169.5609130859375,
+            295.44110107421875,
+            432.399169921875
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 75,
+      "ms_from_chunk_start": 2721,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.7000256776809692,
+          "bbox_xyxy": [
+            248.1983184814453,
+            167.81695556640625,
+            323.74102783203125,
+            424.11090087890625
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 80,
+      "ms_from_chunk_start": 2902,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.6172084808349609,
+          "bbox_xyxy": [
+            260.5203857421875,
+            169.29669189453125,
+            329.5172119140625,
+            421.01898193359375
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 85,
+      "ms_from_chunk_start": 3083,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.580024003982544,
+          "bbox_xyxy": [
+            275.3280944824219,
+            170.09832763671875,
+            360.4621276855469,
+            422.6995849609375
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 90,
+      "ms_from_chunk_start": 3265,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.35097384452819824,
+          "bbox_xyxy": [
+            296.15032958984375,
+            171.43942260742188,
+            404.19586181640625,
+            425.1738586425781
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 95,
+      "ms_from_chunk_start": 3446,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.4668436348438263,
+          "bbox_xyxy": [
+            301.218505859375,
+            165.218994140625,
+            405.86431884765625,
+            428.29132080078125
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 100,
+      "ms_from_chunk_start": 3628,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.7507830858230591,
+          "bbox_xyxy": [
+            326.30865478515625,
+            161.40847778320312,
+            410.96014404296875,
+            420.1356506347656
+          ],
+          "track_id": 10
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 105,
+      "ms_from_chunk_start": 3809,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.5246953368186951,
+          "bbox_xyxy": [
+            367.2933349609375,
+            154.8917236328125,
+            433.12530517578125,
+            414.51953125
+          ],
+          "track_id": 11
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 110,
+      "ms_from_chunk_start": 3990,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 115,
+      "ms_from_chunk_start": 4172,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.651978611946106,
+          "bbox_xyxy": [
+            408.8494873046875,
+            197.6297607421875,
+            477.73956298828125,
+            416.6829833984375
+          ],
+          "track_id": 12
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 120,
+      "ms_from_chunk_start": 4353,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.51099693775177,
+          "bbox_xyxy": [
+            426.81396484375,
+            218.9468994140625,
+            492.007080078125,
+            422.41241455078125
+          ],
+          "track_id": 12
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 125,
+      "ms_from_chunk_start": 4535,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.7782533168792725,
+          "bbox_xyxy": [
+            451.78094482421875,
+            244.043701171875,
+            513.8486328125,
+            427.0914306640625
+          ],
+          "track_id": 12
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 130,
+      "ms_from_chunk_start": 4716,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.746209979057312,
+          "bbox_xyxy": [
+            1185.24755859375,
+            154.59649658203125,
+            1279.6884765625,
+            249.31292724609375
+          ],
+          "track_id": 13
+        },
+        {
+          "cls": "person",
+          "conf": 0.7141112685203552,
+          "bbox_xyxy": [
+            491.2430419921875,
+            288.8614807128906,
+            551.0301513671875,
+            431.7715759277344
+          ],
+          "track_id": 14
+        }
+      ],
+      "vlm_json": null
+    }
+  ],
+  "tracklets": {
+    "1": {
+      "cls": "car"
+    },
+    "2": {
+      "cls": "car"
+    },
+    "3": {
+      "cls": "car"
+    },
+    "4": {
+      "cls": "person"
+    },
+    "5": {
+      "cls": "car"
+    },
+    "6": {
+      "cls": "car"
+    },
+    "7": {
+      "cls": "person"
+    },
+    "8": {
+      "cls": "car"
+    },
+    "9": {
+      "cls": "person"
+    },
+    "10": {
+      "cls": "person"
+    },
+    "11": {
+      "cls": "person"
+    },
+    "12": {
+      "cls": "person"
+    },
+    "13": {
+      "cls": "car"
+    },
+    "14": {
+      "cls": "person"
+    }
+  },
+  "synopsis": "I\u2019m unable to view the clip, so I can\u2019t generate a summary without more information. Could you provide a brief description of what is shown (people, vehicles, locations, directions of travel, and any clear visual identifiers)? With those details I can craft a concise, neutral dispatch\u2011style summary."
+}
