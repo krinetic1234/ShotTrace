@@ -1,0 +1,199 @@
+2025-09-13 16:10:06,719 INFO Found 5 source videos. Writing outputs to data/videos/kirk/processed
+2025-09-13 16:10:06,752 INFO Processing 1.mp4 (2048x1536 @ 9.98 fps). Variants: 4 -> output dir data/videos/kirk/processed
+2025-09-13 16:10:06,901 INFO Start clip -> out=1_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4 start=0.80s zoom=1.00 offset=(+0.00,+0.00) target=75.00s freeze_start=2.00s crop=(0,0,2048,1536) alpha=1.05 beta=3.0 gamma=1.00 sat=1.05
+2025-09-13 16:10:11,318 INFO Progress 1_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 99/748 frames
+2025-09-13 16:10:12,014 INFO Progress 1_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 198/748 frames
+2025-09-13 16:10:12,667 INFO Progress 1_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 297/748 frames
+2025-09-13 16:10:13,392 INFO Progress 1_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 396/748 frames
+2025-09-13 16:10:14,059 INFO Progress 1_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 495/748 frames
+2025-09-13 16:10:14,711 INFO Progress 1_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 594/748 frames
+2025-09-13 16:10:15,432 INFO Progress 1_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 693/748 frames
+2025-09-13 16:10:15,801 INFO Done clip -> out=1_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4
+2025-09-13 16:10:16,029 INFO Start clip -> out=1_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4 start=4.78s zoom=1.60 offset=(-0.28,-0.10) target=75.00s freeze_start=2.50s crop=(26,192,1306,1152) alpha=1.15 beta=0.0 gamma=1.05 sat=0.95
+2025-09-13 16:10:20,510 INFO Progress 1_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 99/748 frames
+2025-09-13 16:10:21,109 INFO Progress 1_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 198/748 frames
+2025-09-13 16:10:21,720 INFO Progress 1_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 297/748 frames
+2025-09-13 16:10:22,307 INFO Progress 1_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 396/748 frames
+2025-09-13 16:10:22,892 INFO Progress 1_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 495/748 frames
+2025-09-13 16:10:23,499 INFO Progress 1_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 594/748 frames
+2025-09-13 16:10:24,071 INFO Progress 1_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 693/748 frames
+2025-09-13 16:10:24,411 INFO Done clip -> out=1_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4
+2025-09-13 16:10:24,674 INFO Start clip -> out=1_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4 start=8.76s zoom=2.20 offset=(+0.32,+0.00) target=75.00s freeze_start=1.50s crop=(856,419,1787,1117) alpha=1.08 beta=8.0 gamma=0.95 sat=1.10
+2025-09-13 16:10:27,660 INFO Progress 1_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 99/748 frames
+2025-09-13 16:10:28,249 INFO Progress 1_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 198/748 frames
+2025-09-13 16:10:28,894 INFO Progress 1_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 297/748 frames
+2025-09-13 16:10:29,468 INFO Progress 1_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 396/748 frames
+2025-09-13 16:10:30,046 INFO Progress 1_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 495/748 frames
+2025-09-13 16:10:30,635 INFO Progress 1_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 594/748 frames
+2025-09-13 16:10:31,249 INFO Progress 1_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 693/748 frames
+2025-09-13 16:10:31,591 INFO Done clip -> out=1_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4
+2025-09-13 16:10:31,894 INFO Start clip -> out=1_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4 start=12.75s zoom=1.90 offset=(+0.00,+0.30) target=75.00s freeze_start=2.00s crop=(485,606,1563,1414) alpha=1.10 beta=-3.0 gamma=1.02 sat=0.92
+2025-09-13 16:10:35,215 INFO Progress 1_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 99/748 frames
+2025-09-13 16:10:35,804 INFO Progress 1_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 198/748 frames
+2025-09-13 16:10:36,425 INFO Progress 1_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 297/748 frames
+2025-09-13 16:10:37,028 INFO Progress 1_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 396/748 frames
+2025-09-13 16:10:37,625 INFO Progress 1_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 495/748 frames
+2025-09-13 16:10:38,243 INFO Progress 1_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 594/748 frames
+2025-09-13 16:10:38,835 INFO Progress 1_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 693/748 frames
+2025-09-13 16:10:39,174 INFO Done clip -> out=1_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4
+2025-09-13 16:10:39,217 INFO Processing 2.mp4 (2048x1536 @ 9.98 fps). Variants: 4 -> output dir data/videos/kirk/processed
+2025-09-13 16:10:39,531 INFO Start clip -> out=2_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4 start=2.50s zoom=1.00 offset=(+0.00,+0.00) target=75.00s freeze_start=2.00s crop=(0,0,2048,1536) alpha=1.05 beta=3.0 gamma=1.00 sat=1.05
+2025-09-13 16:10:45,959 INFO Progress 2_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 99/748 frames
+2025-09-13 16:10:46,859 INFO Progress 2_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 198/748 frames
+2025-09-13 16:10:47,494 INFO Progress 2_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 297/748 frames
+2025-09-13 16:10:48,086 INFO Progress 2_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 396/748 frames
+2025-09-13 16:10:48,726 INFO Progress 2_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 495/748 frames
+2025-09-13 16:10:49,406 INFO Progress 2_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 594/748 frames
+2025-09-13 16:10:50,031 INFO Progress 2_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 693/748 frames
+2025-09-13 16:10:50,379 INFO Done clip -> out=2_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4
+2025-09-13 16:10:50,871 INFO Start clip -> out=2_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4 start=15.00s zoom=1.60 offset=(-0.28,-0.10) target=75.00s freeze_start=2.50s crop=(26,192,1306,1152) alpha=1.15 beta=0.0 gamma=1.05 sat=0.95
+2025-09-13 16:10:56,719 INFO Progress 2_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 99/748 frames
+2025-09-13 16:10:57,282 INFO Progress 2_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 198/748 frames
+2025-09-13 16:10:57,797 INFO Progress 2_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 297/748 frames
+2025-09-13 16:10:58,457 INFO Progress 2_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 396/748 frames
+2025-09-13 16:10:59,133 INFO Progress 2_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 495/748 frames
+2025-09-13 16:10:59,748 INFO Progress 2_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 594/748 frames
+2025-09-13 16:11:00,271 INFO Progress 2_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 693/748 frames
+2025-09-13 16:11:00,612 INFO Done clip -> out=2_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4
+2025-09-13 16:11:01,051 INFO Start clip -> out=2_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4 start=27.51s zoom=2.20 offset=(+0.32,+0.00) target=75.00s freeze_start=1.50s crop=(856,419,1787,1117) alpha=1.08 beta=8.0 gamma=0.95 sat=1.10
+2025-09-13 16:11:04,180 INFO Progress 2_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 99/748 frames
+2025-09-13 16:11:04,703 INFO Progress 2_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 198/748 frames
+2025-09-13 16:11:05,216 INFO Progress 2_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 297/748 frames
+2025-09-13 16:11:05,739 INFO Progress 2_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 396/748 frames
+2025-09-13 16:11:06,277 INFO Progress 2_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 495/748 frames
+2025-09-13 16:11:06,789 INFO Progress 2_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 594/748 frames
+2025-09-13 16:11:07,321 INFO Progress 2_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 693/748 frames
+2025-09-13 16:11:07,616 INFO Done clip -> out=2_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4
+2025-09-13 16:11:08,075 ERROR Failed to generate 2_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: No frames in source video
+Traceback (most recent call last):
+  File "/Users/krishm/Desktop/Projects/ShotTrace/footage_analysis/data/videos/process.py", line 331, in main
+    write_angle_clip(
+    ~~~~~~~~~~~~~~~~^
+        source_video=src,
+        ^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        center_xy=center_xy,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/krishm/Desktop/Projects/ShotTrace/footage_analysis/data/videos/process.py", line 137, in write_angle_clip
+    raise RuntimeError("No frames in source video")
+RuntimeError: No frames in source video
+2025-09-13 16:11:08,111 INFO Processing 3.mp4 (2048x1536 @ 9.96 fps). Variants: 4 -> output dir data/videos/kirk/processed
+2025-09-13 16:11:08,536 INFO Start clip -> out=3_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4 start=2.49s zoom=1.00 offset=(+0.00,+0.00) target=75.00s freeze_start=2.00s crop=(0,0,2048,1536) alpha=1.05 beta=3.0 gamma=1.00 sat=1.05
+2025-09-13 16:11:15,238 INFO Progress 3_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 99/747 frames
+2025-09-13 16:11:15,951 INFO Progress 3_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 198/747 frames
+2025-09-13 16:11:16,710 INFO Progress 3_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 297/747 frames
+2025-09-13 16:11:17,389 INFO Progress 3_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 396/747 frames
+2025-09-13 16:11:18,112 INFO Progress 3_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 495/747 frames
+2025-09-13 16:11:18,796 INFO Progress 3_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 594/747 frames
+2025-09-13 16:11:19,529 INFO Progress 3_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 693/747 frames
+2025-09-13 16:11:19,902 INFO Done clip -> out=3_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4
+2025-09-13 16:11:20,370 INFO Start clip -> out=3_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4 start=14.91s zoom=1.60 offset=(-0.28,-0.10) target=75.00s freeze_start=2.50s crop=(26,192,1306,1152) alpha=1.15 beta=0.0 gamma=1.05 sat=0.95
+2025-09-13 16:11:26,213 INFO Progress 3_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 99/747 frames
+2025-09-13 16:11:26,918 INFO Progress 3_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 198/747 frames
+2025-09-13 16:11:27,552 INFO Progress 3_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 297/747 frames
+2025-09-13 16:11:28,191 INFO Progress 3_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 396/747 frames
+2025-09-13 16:11:28,805 INFO Progress 3_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 495/747 frames
+2025-09-13 16:11:29,502 INFO Progress 3_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 594/747 frames
+2025-09-13 16:11:30,166 INFO Progress 3_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 693/747 frames
+2025-09-13 16:11:30,520 INFO Done clip -> out=3_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4
+2025-09-13 16:11:31,062 INFO Start clip -> out=3_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4 start=27.34s zoom=2.20 offset=(+0.32,+0.00) target=75.00s freeze_start=1.50s crop=(856,419,1787,1117) alpha=1.08 beta=8.0 gamma=0.95 sat=1.10
+2025-09-13 16:11:34,232 INFO Progress 3_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 99/747 frames
+2025-09-13 16:11:34,884 INFO Progress 3_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 198/747 frames
+2025-09-13 16:11:35,529 INFO Progress 3_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 297/747 frames
+2025-09-13 16:11:36,183 INFO Progress 3_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 396/747 frames
+2025-09-13 16:11:36,802 INFO Progress 3_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 495/747 frames
+2025-09-13 16:11:37,446 INFO Progress 3_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 594/747 frames
+2025-09-13 16:11:38,085 INFO Progress 3_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 693/747 frames
+2025-09-13 16:11:38,454 INFO Done clip -> out=3_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4
+2025-09-13 16:11:38,785 ERROR Failed to generate 3_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: No frames in source video
+Traceback (most recent call last):
+  File "/Users/krishm/Desktop/Projects/ShotTrace/footage_analysis/data/videos/process.py", line 331, in main
+    write_angle_clip(
+    ~~~~~~~~~~~~~~~~^
+        source_video=src,
+        ^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        center_xy=center_xy,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/krishm/Desktop/Projects/ShotTrace/footage_analysis/data/videos/process.py", line 137, in write_angle_clip
+    raise RuntimeError("No frames in source video")
+RuntimeError: No frames in source video
+2025-09-13 16:11:38,796 INFO Processing 4.mp4 (1280x720 @ 28.36 fps). Variants: 4 -> output dir data/videos/kirk/processed
+2025-09-13 16:11:38,825 INFO Start clip -> out=4_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4 start=2.74s zoom=1.00 offset=(+0.00,+0.00) target=75.00s freeze_start=2.00s crop=(0,0,1280,720) alpha=1.05 beta=3.0 gamma=1.00 sat=1.05
+2025-09-13 16:11:45,170 INFO Progress 4_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 283/2127 frames
+2025-09-13 16:11:45,547 INFO Progress 4_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 566/2127 frames
+2025-09-13 16:11:45,844 INFO Progress 4_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 849/2127 frames
+2025-09-13 16:11:46,144 INFO Progress 4_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 1132/2127 frames
+2025-09-13 16:11:46,462 INFO Progress 4_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 1415/2127 frames
+2025-09-13 16:11:46,797 INFO Progress 4_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 1698/2127 frames
+2025-09-13 16:11:47,091 INFO Progress 4_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 1981/2127 frames
+2025-09-13 16:11:47,242 INFO Done clip -> out=4_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4
+2025-09-13 16:11:47,392 INFO Start clip -> out=4_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4 start=16.46s zoom=1.60 offset=(-0.28,-0.10) target=75.00s freeze_start=2.50s crop=(16,90,816,540) alpha=1.15 beta=0.0 gamma=1.05 sat=0.95
+2025-09-13 16:11:53,180 INFO Progress 4_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 283/2127 frames
+2025-09-13 16:11:53,453 INFO Progress 4_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 566/2127 frames
+2025-09-13 16:11:53,729 INFO Progress 4_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 849/2127 frames
+2025-09-13 16:11:54,026 INFO Progress 4_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 1132/2127 frames
+2025-09-13 16:11:54,290 INFO Progress 4_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 1415/2127 frames
+2025-09-13 16:11:54,567 INFO Progress 4_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 1698/2127 frames
+2025-09-13 16:11:54,874 INFO Progress 4_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 1981/2127 frames
+2025-09-13 16:11:55,019 INFO Done clip -> out=4_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4
+2025-09-13 16:11:55,109 INFO Start clip -> out=4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4 start=30.17s zoom=2.20 offset=(+0.32,+0.00) target=75.00s freeze_start=1.50s crop=(535,196,1117,523) alpha=1.08 beta=8.0 gamma=0.95 sat=1.10
+2025-09-13 16:11:58,603 INFO Progress 4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 283/2127 frames
+2025-09-13 16:11:58,853 INFO Progress 4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 566/2127 frames
+2025-09-13 16:11:59,102 INFO Progress 4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 849/2127 frames
+2025-09-13 16:11:59,360 INFO Progress 4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 1132/2127 frames
+2025-09-13 16:11:59,669 INFO Progress 4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 1415/2127 frames
+2025-09-13 16:11:59,930 INFO Progress 4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 1698/2127 frames
+2025-09-13 16:12:00,183 INFO Progress 4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 1981/2127 frames
+2025-09-13 16:12:00,318 INFO Done clip -> out=4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4
+2025-09-13 16:12:00,399 INFO Start clip -> out=4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4 start=43.89s zoom=1.90 offset=(+0.00,+0.30) target=75.00s freeze_start=2.00s crop=(303,284,977,663) alpha=1.10 beta=-3.0 gamma=1.02 sat=0.92
+2025-09-13 16:12:03,008 INFO Progress 4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 283/2127 frames
+2025-09-13 16:12:03,263 INFO Progress 4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 566/2127 frames
+2025-09-13 16:12:03,518 INFO Progress 4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 849/2127 frames
+2025-09-13 16:12:03,777 INFO Progress 4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 1132/2127 frames
+2025-09-13 16:12:04,030 INFO Progress 4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 1415/2127 frames
+2025-09-13 16:12:04,286 INFO Progress 4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 1698/2127 frames
+2025-09-13 16:12:04,543 INFO Progress 4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 1981/2127 frames
+2025-09-13 16:12:04,674 INFO Done clip -> out=4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4
+2025-09-13 16:12:04,691 INFO Processing 5.mp4 (1280x720 @ 27.56 fps). Variants: 4 -> output dir data/videos/kirk/processed
+2025-09-13 16:12:04,739 INFO Start clip -> out=5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4 start=1.84s zoom=1.00 offset=(+0.00,+0.00) target=75.00s freeze_start=2.00s crop=(0,0,1280,720) alpha=1.05 beta=3.0 gamma=1.00 sat=1.05
+2025-09-13 16:12:09,616 INFO Progress 5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 275/2067 frames
+2025-09-13 16:12:10,069 INFO Progress 5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 550/2067 frames
+2025-09-13 16:12:10,560 INFO Progress 5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 825/2067 frames
+2025-09-13 16:12:11,044 INFO Progress 5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 1100/2067 frames
+2025-09-13 16:12:11,588 INFO Progress 5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 1375/2067 frames
+2025-09-13 16:12:12,020 INFO Progress 5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 1650/2067 frames
+2025-09-13 16:12:12,498 INFO Progress 5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4: 1925/2067 frames
+2025-09-13 16:12:12,714 INFO Done clip -> out=5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4
+2025-09-13 16:12:12,824 INFO Start clip -> out=5_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4 start=11.04s zoom=1.60 offset=(-0.28,-0.10) target=75.00s freeze_start=2.50s crop=(16,90,816,540) alpha=1.15 beta=0.0 gamma=1.05 sat=0.95
+2025-09-13 16:12:17,440 INFO Progress 5_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 275/2067 frames
+2025-09-13 16:12:17,864 INFO Progress 5_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 550/2067 frames
+2025-09-13 16:12:18,309 INFO Progress 5_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 825/2067 frames
+2025-09-13 16:12:18,719 INFO Progress 5_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 1100/2067 frames
+2025-09-13 16:12:19,109 INFO Progress 5_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 1375/2067 frames
+2025-09-13 16:12:19,519 INFO Progress 5_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 1650/2067 frames
+2025-09-13 16:12:20,001 INFO Progress 5_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4: 1925/2067 frames
+2025-09-13 16:12:20,217 INFO Done clip -> out=5_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4
+2025-09-13 16:12:20,309 INFO Start clip -> out=5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4 start=20.23s zoom=2.20 offset=(+0.32,+0.00) target=75.00s freeze_start=1.50s crop=(535,196,1117,523) alpha=1.08 beta=8.0 gamma=0.95 sat=1.10
+2025-09-13 16:12:23,338 INFO Progress 5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 275/2067 frames
+2025-09-13 16:12:23,765 INFO Progress 5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 550/2067 frames
+2025-09-13 16:12:24,242 INFO Progress 5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 825/2067 frames
+2025-09-13 16:12:24,682 INFO Progress 5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 1100/2067 frames
+2025-09-13 16:12:25,157 INFO Progress 5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 1375/2067 frames
+2025-09-13 16:12:25,583 INFO Progress 5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 1650/2067 frames
+2025-09-13 16:12:26,022 INFO Progress 5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4: 1925/2067 frames
+2025-09-13 16:12:26,294 INFO Done clip -> out=5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4
+2025-09-13 16:12:26,378 INFO Start clip -> out=5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4 start=29.43s zoom=1.90 offset=(+0.00,+0.30) target=75.00s freeze_start=2.00s crop=(303,284,977,663) alpha=1.10 beta=-3.0 gamma=1.02 sat=0.92
+2025-09-13 16:12:28,847 INFO Progress 5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 275/2067 frames
+2025-09-13 16:12:29,377 INFO Progress 5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 550/2067 frames
+2025-09-13 16:12:29,859 INFO Progress 5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 825/2067 frames
+2025-09-13 16:12:30,333 INFO Progress 5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 1100/2067 frames
+2025-09-13 16:12:30,818 INFO Progress 5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 1375/2067 frames
+2025-09-13 16:12:31,306 INFO Progress 5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 1650/2067 frames
+2025-09-13 16:12:31,833 INFO Progress 5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4: 1925/2067 frames
+2025-09-13 16:12:32,085 INFO Done clip -> out=5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4
+2025-09-13 16:12:32,092 INFO Completed. 18 clips written to data/videos/kirk/processed. Manifest at data/videos/kirk/processed/manifest.json

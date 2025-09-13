@@ -1,0 +1,293 @@
+{
+  "outputs_count": 18,
+  "outputs": [
+    {
+      "source": "data/videos/kirk/raw/1.mp4",
+      "file": "data/videos/kirk/processed/1_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4",
+      "start_seconds": 0.7968115234375001,
+      "zoom": 1.0,
+      "offset_frac": [
+        0.0,
+        0.0
+      ],
+      "freeze_start_seconds": 2.0,
+      "alpha": 1.05,
+      "beta": 3.0,
+      "gamma": 1.0,
+      "sat": 1.05,
+      "freeze_noise_std": 0.3
+    },
+    {
+      "source": "data/videos/kirk/raw/1.mp4",
+      "file": "data/videos/kirk/processed/1_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4",
+      "start_seconds": 4.780869140625,
+      "zoom": 1.6,
+      "offset_frac": [
+        -0.28,
+        -0.1
+      ],
+      "freeze_start_seconds": 2.5,
+      "alpha": 1.15,
+      "beta": 0.0,
+      "gamma": 1.05,
+      "sat": 0.95,
+      "freeze_noise_std": 0.4
+    },
+    {
+      "source": "data/videos/kirk/raw/1.mp4",
+      "file": "data/videos/kirk/processed/1_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4",
+      "start_seconds": 8.764926757812502,
+      "zoom": 2.2,
+      "offset_frac": [
+        0.32,
+        0.0
+      ],
+      "freeze_start_seconds": 1.5,
+      "alpha": 1.08,
+      "beta": 8.0,
+      "gamma": 0.95,
+      "sat": 1.1,
+      "freeze_noise_std": 0.3
+    },
+    {
+      "source": "data/videos/kirk/raw/1.mp4",
+      "file": "data/videos/kirk/processed/1_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4",
+      "start_seconds": 12.748984375000001,
+      "zoom": 1.9,
+      "offset_frac": [
+        0.0,
+        0.3
+      ],
+      "freeze_start_seconds": 2.0,
+      "alpha": 1.1,
+      "beta": -3.0,
+      "gamma": 1.02,
+      "sat": 0.92,
+      "freeze_noise_std": 0.5
+    },
+    {
+      "source": "data/videos/kirk/raw/2.mp4",
+      "file": "data/videos/kirk/processed/2_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4",
+      "start_seconds": 2.5005810546875,
+      "zoom": 1.0,
+      "offset_frac": [
+        0.0,
+        0.0
+      ],
+      "freeze_start_seconds": 2.0,
+      "alpha": 1.05,
+      "beta": 3.0,
+      "gamma": 1.0,
+      "sat": 1.05,
+      "freeze_noise_std": 0.3
+    },
+    {
+      "source": "data/videos/kirk/raw/2.mp4",
+      "file": "data/videos/kirk/processed/2_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4",
+      "start_seconds": 15.003486328124998,
+      "zoom": 1.6,
+      "offset_frac": [
+        -0.28,
+        -0.1
+      ],
+      "freeze_start_seconds": 2.5,
+      "alpha": 1.15,
+      "beta": 0.0,
+      "gamma": 1.05,
+      "sat": 0.95,
+      "freeze_noise_std": 0.4
+    },
+    {
+      "source": "data/videos/kirk/raw/2.mp4",
+      "file": "data/videos/kirk/processed/2_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4",
+      "start_seconds": 27.5063916015625,
+      "zoom": 2.2,
+      "offset_frac": [
+        0.32,
+        0.0
+      ],
+      "freeze_start_seconds": 1.5,
+      "alpha": 1.08,
+      "beta": 8.0,
+      "gamma": 0.95,
+      "sat": 1.1,
+      "freeze_noise_std": 0.3
+    },
+    {
+      "source": "data/videos/kirk/raw/3.mp4",
+      "file": "data/videos/kirk/processed/3_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4",
+      "start_seconds": 2.4850000000000003,
+      "zoom": 1.0,
+      "offset_frac": [
+        0.0,
+        0.0
+      ],
+      "freeze_start_seconds": 2.0,
+      "alpha": 1.05,
+      "beta": 3.0,
+      "gamma": 1.0,
+      "sat": 1.05,
+      "freeze_noise_std": 0.3
+    },
+    {
+      "source": "data/videos/kirk/raw/3.mp4",
+      "file": "data/videos/kirk/processed/3_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4",
+      "start_seconds": 14.91,
+      "zoom": 1.6,
+      "offset_frac": [
+        -0.28,
+        -0.1
+      ],
+      "freeze_start_seconds": 2.5,
+      "alpha": 1.15,
+      "beta": 0.0,
+      "gamma": 1.05,
+      "sat": 0.95,
+      "freeze_noise_std": 0.4
+    },
+    {
+      "source": "data/videos/kirk/raw/3.mp4",
+      "file": "data/videos/kirk/processed/3_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4",
+      "start_seconds": 27.335000000000004,
+      "zoom": 2.2,
+      "offset_frac": [
+        0.32,
+        0.0
+      ],
+      "freeze_start_seconds": 1.5,
+      "alpha": 1.08,
+      "beta": 8.0,
+      "gamma": 0.95,
+      "sat": 1.1,
+      "freeze_noise_std": 0.3
+    },
+    {
+      "source": "data/videos/kirk/raw/4.mp4",
+      "file": "data/videos/kirk/processed/4_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4",
+      "start_seconds": 2.7429977793333333,
+      "zoom": 1.0,
+      "offset_frac": [
+        0.0,
+        0.0
+      ],
+      "freeze_start_seconds": 2.0,
+      "alpha": 1.05,
+      "beta": 3.0,
+      "gamma": 1.0,
+      "sat": 1.05,
+      "freeze_noise_std": 0.3
+    },
+    {
+      "source": "data/videos/kirk/raw/4.mp4",
+      "file": "data/videos/kirk/processed/4_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4",
+      "start_seconds": 16.457986675999997,
+      "zoom": 1.6,
+      "offset_frac": [
+        -0.28,
+        -0.1
+      ],
+      "freeze_start_seconds": 2.5,
+      "alpha": 1.15,
+      "beta": 0.0,
+      "gamma": 1.05,
+      "sat": 0.95,
+      "freeze_noise_std": 0.4
+    },
+    {
+      "source": "data/videos/kirk/raw/4.mp4",
+      "file": "data/videos/kirk/processed/4_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4",
+      "start_seconds": 30.17297557266667,
+      "zoom": 2.2,
+      "offset_frac": [
+        0.32,
+        0.0
+      ],
+      "freeze_start_seconds": 1.5,
+      "alpha": 1.08,
+      "beta": 8.0,
+      "gamma": 0.95,
+      "sat": 1.1,
+      "freeze_noise_std": 0.3
+    },
+    {
+      "source": "data/videos/kirk/raw/4.mp4",
+      "file": "data/videos/kirk/processed/4_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4",
+      "start_seconds": 43.88796446933333,
+      "zoom": 1.9,
+      "offset_frac": [
+        0.0,
+        0.3
+      ],
+      "freeze_start_seconds": 2.0,
+      "alpha": 1.1,
+      "beta": -3.0,
+      "gamma": 1.02,
+      "sat": 0.92,
+      "freeze_noise_std": 0.5
+    },
+    {
+      "source": "data/videos/kirk/raw/5.mp4",
+      "file": "data/videos/kirk/processed/5_v00_start0p05_zoom1p0_oxp0p00_oyp0p00.mp4",
+      "start_seconds": 1.8394422236666668,
+      "zoom": 1.0,
+      "offset_frac": [
+        0.0,
+        0.0
+      ],
+      "freeze_start_seconds": 2.0,
+      "alpha": 1.05,
+      "beta": 3.0,
+      "gamma": 1.0,
+      "sat": 1.05,
+      "freeze_noise_std": 0.3
+    },
+    {
+      "source": "data/videos/kirk/raw/5.mp4",
+      "file": "data/videos/kirk/processed/5_v01_start0p30_zoom1p6_oxm0p28_oym0p10.mp4",
+      "start_seconds": 11.036653342,
+      "zoom": 1.6,
+      "offset_frac": [
+        -0.28,
+        -0.1
+      ],
+      "freeze_start_seconds": 2.5,
+      "alpha": 1.15,
+      "beta": 0.0,
+      "gamma": 1.05,
+      "sat": 0.95,
+      "freeze_noise_std": 0.4
+    },
+    {
+      "source": "data/videos/kirk/raw/5.mp4",
+      "file": "data/videos/kirk/processed/5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4",
+      "start_seconds": 20.233864460333336,
+      "zoom": 2.2,
+      "offset_frac": [
+        0.32,
+        0.0
+      ],
+      "freeze_start_seconds": 1.5,
+      "alpha": 1.08,
+      "beta": 8.0,
+      "gamma": 0.95,
+      "sat": 1.1,
+      "freeze_noise_std": 0.3
+    },
+    {
+      "source": "data/videos/kirk/raw/5.mp4",
+      "file": "data/videos/kirk/processed/5_v03_start0p80_zoom1p9_oxp0p00_oyp0p30.mp4",
+      "start_seconds": 29.43107557866667,
+      "zoom": 1.9,
+      "offset_frac": [
+        0.0,
+        0.3
+      ],
+      "freeze_start_seconds": 2.0,
+      "alpha": 1.1,
+      "beta": -3.0,
+      "gamma": 1.02,
+      "sat": 0.92,
+      "freeze_noise_std": 0.5
+    }
+  ]
+}
