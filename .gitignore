@@ -94,10 +94,6 @@ public
 tmp/
 temp/
 
-# Logs
-logs
-*.log
-
 # Runtime data
 pids
 *.pid
@@ -250,7 +246,6 @@ coverage.xml
 *.pot
 
 # Django stuff:
-*.log
 local_settings.py
 db.sqlite3
 
@@ -309,9 +304,6 @@ dmypy.json
 *.h5
 *.hdf5
 *.model
-models/
-data/
-datasets/
 
 # Audio/Video files (for development)
 *.wav
