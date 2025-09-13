@@ -17,9 +17,14 @@ def chunk_video(video_path: str | Path, out_root: str | Path, seconds: int) -> L
         "error",
         "-i",
         str(vp),
+        # map video/audio if present; don't fail if stream missing
         "-map",
-        "0",
-        "-c",
+        "0:v:0?",
+        "-map",
+        "0:a:0?",
+        "-c:v",
+        "copy",
+        "-c:a",
         "copy",
         "-f",
         "segment",
@@ -29,7 +34,9 @@ def chunk_video(video_path: str | Path, out_root: str | Path, seconds: int) -> L
         "1",
         str(pattern),
     ]
-    subprocess.run(cmd, check=True)
+    proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    if proc.returncode != 0:
+        raise RuntimeError(f"ffmpeg segment failed for {vp.name}: {proc.stderr.strip()}")
 
     out = []
     for i, p in enumerate(sorted(odir.glob(f"{vp.stem}_*.mp4"))):
