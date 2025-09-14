@@ -32,7 +32,12 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
 
   return (
     <div className="shotmap-root">
-      <Map initialViewState={initialViewState} mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json" reuseMaps>
+      <Map 
+        initialViewState={initialViewState} 
+        mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json" 
+        reuseMaps
+        style={{ width: '100%', height: '100%' }}
+      >
         <NavigationControl position="top-left" />
         <ScaleControl position="bottom-left" />
 
