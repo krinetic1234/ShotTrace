@@ -51,29 +51,31 @@ def handle_disconnect():
 
 @socketio.on('trigger_gunshot')
 def handle_trigger_gunshot(data):
-    """Handle gunshot trigger via WebSocket"""
+    """Handle gunshot trigger via WebSocket with time delays"""
     global last_gunshot
     
     try:
-        location = data.get('location', None)
+        # Expect time delays from microphones
+        readings_data = data.get('readings', None)
         
-        # Validate location if provided
-        if location:
-            available_locations = localizer.get_available_locations()
-            if location not in available_locations:
-                emit('error', {
-                    'message': f'Invalid location "{location}". Available: {available_locations}'
-                })
-                return
+        if not readings_data:
+            # Use default test readings if none provided (for demo purposes)
+            readings = [
+                MicrophoneReading("1", 0.0),
+                MicrophoneReading("2", 0.002), 
+                MicrophoneReading("3", 0.001)
+            ]
+        else:
+            # Parse readings from WebSocket data
+            readings = []
+            for reading_data in readings_data:
+                readings.append(MicrophoneReading(
+                    microphone_id=str(reading_data['microphone_id']),
+                    time_delay=float(reading_data['time_delay'])
+                ))
         
-        # Create dummy readings for simulation
-        readings = [
-            MicrophoneReading("1", 0.0),
-            MicrophoneReading("2", 0.001), 
-            MicrophoneReading("3", 0.002)
-        ]
-        
-        result = localizer.calculate_gunshot_location(readings, location)
+        # Calculate using TDOA triangulation (no location parameter)
+        result = localizer.calculate_gunshot_location(readings)
         
         gunshot_data = {
             'id': str(uuid.uuid4()),
@@ -81,24 +83,31 @@ def handle_trigger_gunshot(data):
             'lng': result.lng,
             't': result.timestamp * 1000,  # Convert to milliseconds for frontend
             'confidence': result.confidence,
-            'location_used': location or 'random'
+            'readings_used': [{'mic': r.microphone_id, 'delay': r.time_delay} for r in readings]
         }
         
         last_gunshot = gunshot_data
         
         # Broadcast to all connected clients
         emit('gunshot_detected', gunshot_data, broadcast=True)
-        print(f"Gunshot broadcast to all clients: {location or 'random'}")
+        print(f"Gunshot triangulated and broadcast to all clients")
         
     except Exception as e:
         emit('error', {'message': str(e)})
 
-@socketio.on('get_locations')
-def handle_get_locations():
-    """Get available predefined locations via WebSocket"""
+@socketio.on('get_microphones')
+def handle_get_microphones():
+    """Get microphone information via WebSocket"""
     try:
-        locations = localizer.get_available_locations()
-        emit('locations_list', {'locations': locations})
+        mic_positions = get_microphone_positions()
+        mics = []
+        for mic_id, coords in mic_positions.items():
+            mics.append({
+                'micId': mic_id,
+                'lat': coords['lat'],
+                'lng': coords['lng']
+            })
+        emit('microphones_info', {'mics': mics})
     except Exception as e:
         emit('error', {'message': str(e)})
 
@@ -128,7 +137,7 @@ def get_mics():
 @app.route('/api/gunshot-location', methods=['POST'])
 def calculate_gunshot():
     """
-    Calculate gunshot location from microphone readings.
+    Calculate gunshot location from microphone readings using TDOA triangulation.
     
     Expected payload:
     {
@@ -136,8 +145,7 @@ def calculate_gunshot():
             {"microphone_id": "1", "time_delay": 0.0},
             {"microphone_id": "2", "time_delay": 0.15},
             {"microphone_id": "3", "time_delay": 0.08}
-        ],
-        "location": "1"  // Optional: "1", "2", "3"
+        ]
     }
     """
     global last_gunshot
@@ -164,20 +172,9 @@ def calculate_gunshot():
                 time_delay=float(reading_data['time_delay'])
             ))
         
-        # Get optional location parameter
-        location_name = data.get('location', None)  # None means random selection
-        
-        # Validate location name if provided
-        if location_name:
-            available_locations = localizer.get_available_locations()
-            if location_name not in available_locations:
-                return jsonify({
-                    'success': False,
-                    'error': f'Invalid location "{location_name}". Available: {available_locations}'
-                }), 400
-        
-        # Calculate gunshot location
-        result = localizer.calculate_gunshot_location(readings, location_name)
+        # Calculate gunshot location using TDOA triangulation  
+        # Triangulates on local scale (0,0), (1.5,0), (0.75,0.75) then scales up to Boston coordinates
+        result = localizer.calculate_gunshot_location(readings)
         
         # Store as last gunshot with new UUID
         gunshot_data = {
@@ -186,13 +183,13 @@ def calculate_gunshot():
             'lng': result.lng,
             't': result.timestamp * 1000,  # Convert to milliseconds for frontend consistency
             'confidence': result.confidence,
-            'location_used': location_name or 'random'  # Track which location was used
+            'readings_used': [{'mic': r.microphone_id, 'delay': r.time_delay} for r in readings]
         }
         last_gunshot = gunshot_data
         
-        # IMPORTANT: Also broadcast to WebSocket clients for real-time updates
+        # Also broadcast to WebSocket clients for real-time updates
         socketio.emit('gunshot_detected', gunshot_data)
-        print(f"REST API: Gunshot broadcast to WebSocket clients: {location_name or 'random'}")
+        print(f"REST API: Gunshot triangulated and broadcast to WebSocket clients")
         
         return jsonify({
             'success': True,
@@ -227,13 +224,20 @@ def get_last_gunshot():
         }), 500
 
 @app.route('/api/locations', methods=['GET'])
-def get_available_locations():
-    """Get list of available predefined locations."""
+def get_microphone_info():
+    """Get microphone configuration instead of predefined locations."""
     try:
-        locations = localizer.get_available_locations()
+        mic_positions = get_microphone_positions()
+        mics = []
+        for mic_id, coords in mic_positions.items():
+            mics.append({
+                'micId': mic_id,
+                'lat': coords['lat'],
+                'lng': coords['lng']
+            })
         return jsonify({
             'success': True,
-            'locations': locations
+            'microphones': mics
         })
     except Exception as e:
         return jsonify({
@@ -249,20 +253,26 @@ if __name__ == '__main__':
     for mic_id, coords in mic_positions.items():
         print(f"  Microphone {mic_id}: lat={coords['lat']:.9f}, lng={coords['lng']:.9f}")
     
-    print(f"\nAvailable predefined locations: {localizer.get_available_locations()}")
+    print(f"\nMicrophone Triangulation System using TDOA (Time Difference of Arrival)")
+    print("Local microphone positions: (0,0), (1.5,0), (0.75,0.75) meters")
+    print("Scales up to Boston coordinates with ~442x factor")
+    
+    print("\nSimplified Workflow:")
+    print("  GET  /api/gunshot - Returns most recent gunshot if any")
+    print("  POST /api/gunshot-location - Processes time delays and triangulates position")
     
     print("\nWebSocket Events:")
     print("  connect - Client connects and receives microphones")
-    print("  trigger_gunshot - Trigger gunshot with optional location ('1', '2', '3')")
-    print("  get_locations - Get available locations")
-    print("  gunshot_detected - Broadcast gunshot to all clients")
+    print("  trigger_gunshot - Trigger gunshot with time delay readings")
+    print("    Example: {'readings': [{'microphone_id': '1', 'time_delay': 0.0}, ...]}")
+    print("  get_microphones - Get microphone information")
+    print("  gunshot_detected - Broadcast triangulated gunshot to all clients")
     print("  microphones_loaded - Send microphone positions")
     
-    print("\nREST API endpoints (legacy support):")
+    print("\nREST API endpoints:")
     print("  GET  /api/mics - Get microphone configuration")
-    print("  POST /api/gunshot-location - Calculate gunshot location")
-    print("       Optional 'location' parameter: '1', '2', '3'")
+    print("  POST /api/gunshot-location - Calculate gunshot location from time delays")
     print("  GET  /api/gunshot - Poll for last gunshot")
-    print("  GET  /api/locations - Get available predefined locations")
+    print("  GET  /api/locations - Get microphone information")
     
     socketio.run(app, host='0.0.0.0', port=5001, debug=True)
