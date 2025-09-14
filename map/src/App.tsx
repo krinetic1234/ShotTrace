@@ -2,18 +2,39 @@ import { useState, useEffect } from 'react'
 import { io } from 'socket.io-client'
 import './App.css'
 import ShotMap from './components/ShotMap'
-import { mics, gunshot } from './data'  // Use hardcoded microphones
-// import type { Gunshot } from './types'
+import { mics } from './data'  // Only import mics, not hardcoded gunshot
+import type { Gunshot } from './types'
 
 const API_BASE_URL = 'http://localhost:5001'
 
 function App() {
-  // const [gunshot, setGunshot] = useState<Gunshot | null>(null)
+  const [gunshot, setGunshot] = useState<Gunshot | null>(null)  // Start with no gunshot
   const [error, setError] = useState<string | null>(null)
   const [connectionStatus, setConnectionStatus] = useState<string>('Connecting...')
 
+  // Fetch initial gunshot state from API
+  const fetchInitialGunshot = async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/gunshot`)
+      if (response.ok) {
+        const data = await response.json()
+        if (data.success && data.gunshot) {
+          setGunshot(data.gunshot)
+          console.log('Initial gunshot loaded:', data.gunshot)
+        } else {
+          console.log('No initial gunshot data')
+        }
+      }
+    } catch (error) {
+      console.warn('Failed to fetch initial gunshot:', error)
+    }
+  }
+
   // Initialize WebSocket connection
   useEffect(() => {
+    // Fetch initial gunshot state when component mounts
+    fetchInitialGunshot()
+    
     const newSocket = io(API_BASE_URL)
 
     // Connection events
@@ -58,7 +79,7 @@ function App() {
         <div style={{ color: 'red', textAlign: 'center' }}>
           <h3>WebSocket Connection Error</h3>
           <p>{error}</p>
-          <p style={{ fontSize: '14px', color: '#666' }}>Make sure the server is running on http://localhost:5000</p>
+          <p style={{ fontSize: '14px', color: '#666' }}>Make sure the server is running on http://localhost:5001</p>
           <p style={{ fontSize: '14px', color: '#666' }}>Status: {connectionStatus}</p>
         </div>
       </div>
