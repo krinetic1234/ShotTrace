@@ -6,21 +6,26 @@ import "./ShotMap.css";
 
 interface ShotMapProps {
   mics: Mic[];
-  gunshot: Gunshot;
+  gunshot: Gunshot | null;
 }
 
 const DEFAULT_ZOOM = 15;
 
 export default function ShotMap({ mics, gunshot }: ShotMapProps) {
   const { places, loading, error } = useBuildings(
-    { lat: gunshot.lat, lng: gunshot.lng },
+    gunshot ? { lat: gunshot.lat, lng: gunshot.lng } : null,
     60
   );
 
-  const initialViewState = useMemo(
-    () => ({ longitude: gunshot.lng, latitude: gunshot.lat, zoom: DEFAULT_ZOOM }),
-    [gunshot.lng, gunshot.lat]
-  );
+  const initialViewState = useMemo(() => {
+    if (gunshot) {
+      return { longitude: gunshot.lng, latitude: gunshot.lat, zoom: DEFAULT_ZOOM };
+    } else {
+      // Use mic 2 as default view
+      const mic2 = mics.find(mic => mic.micId === '2')!;
+      return { longitude: mic2.lng, latitude: mic2.lat, zoom: DEFAULT_ZOOM };
+    }
+  }, [gunshot, mics]);
 
   return (
     <div className="shotmap-root">
@@ -28,10 +33,12 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
         <NavigationControl position="top-left" />
         <ScaleControl position="bottom-left" />
 
-        {/* Gunshot marker */}
-        <Marker longitude={gunshot.lng} latitude={gunshot.lat} anchor="bottom">
-          <div className="marker-gunshot" title={`Gunshot ${new Date(gunshot.t).toLocaleString()}`} />
-        </Marker>
+        {/* Gunshot marker - only show if gunshot exists */}
+        {gunshot && (
+          <Marker longitude={gunshot.lng} latitude={gunshot.lat} anchor="bottom">
+            <div className="marker-gunshot" title={`Gunshot ${new Date(gunshot.t).toLocaleString()}`} />
+          </Marker>
+        )}
 
         {/* Microphones */}
         {mics.map((mic) => (
@@ -54,16 +61,16 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
       </Map>
 
       {/* Debug info */}
-      <div className="places-list">
-        {loading && <div>Loading buildings...</div>}
-        {error && <div className="error">Error: {error}</div>}
-        {places.map((p) => (
-          <div key={p.place_id}>
-            <strong>{p.name || 'Building'}</strong> - {p.formatted_address}
-            {p.types && p.types.length > 1 && ` • Type: ${p.types[1]}`}
-          </div>
-        ))}
-      </div>
+        <div className="places-list">
+          {loading && <div>Loading buildings...</div>}
+          {error && <div className="error">Error: {error}</div>}
+          {places.map((p) => (
+            <div key={p.place_id}>
+              <strong>{p.name || 'Building'}</strong> - {p.formatted_address}
+              {p.types && p.types.length > 1 && ` • Type: ${p.types[1]}`}
+            </div>
+          ))}
+        </div>
     </div>
   );
 }
