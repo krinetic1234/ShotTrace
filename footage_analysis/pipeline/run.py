@@ -7,6 +7,7 @@ import logging
 
 from ..schemas import FrameResult, ClipSummary, VideoSummary, Detection
 from ..utils import ensure_dir, ms_from_frames, write_json, prompts
+from ..utils.context import build_clip_context, build_video_context
 from .chunker import chunk_video
 from .tracker import SimpleTracker
 from ..models.yolo import YoloDetector
@@ -79,7 +80,9 @@ def process_chunk(meta: Dict, cfg: Dict, yolo: YoloDetector, vlm: VisionLLM, vid
     cap.release()
     tracklets = tracker.summarize()
 
-    synopsis = synthesize_text(prompts.CLIP_SYNOPSIS, cfg) if enable_llm else ""
+    # build compact text context for the LLM (no images)
+    clip_ctx = build_clip_context(frames, seconds=meta["end_sec"] - meta["start_sec"]) if enable_llm else None
+    synopsis = synthesize_text(f"Context JSON: {clip_ctx}\n\n{prompts.CLIP_SYNOPSIS}", cfg) if enable_llm else ""
 
     cs = ClipSummary(
         video_path=video_path,
@@ -132,7 +135,8 @@ def process_video(video_path: str, cfg: Dict) -> VideoSummary:
                     }
                 )
 
-    narrative = synthesize_text(prompts.VIDEO_NARRATIVE, cfg) if enable_llm else ""
+    video_ctx = build_video_context(clip_summaries, timeline) if enable_llm else None
+    narrative = synthesize_text(f"Context JSON: {video_ctx}\n\n{prompts.VIDEO_NARRATIVE}", cfg) if enable_llm else ""
 
     vs = VideoSummary(
         video_path=video_path,
@@ -141,6 +145,7 @@ def process_video(video_path: str, cfg: Dict) -> VideoSummary:
         narrative=narrative or None,
     )
 
+    # write primary summary only (job-level will produce combined responder report)
     write_json(vs.model_dump(), out_dir / "video_summary.json")
     logger.info(f"done video {video_path} chunks={len(clip_summaries)} -> {out_dir}")
     return vs
