@@ -30,3 +30,17 @@
 	border: 2px solid #ffffff;
 	box-shadow: 0 0 0 2px green;
 }
+
+.places-list {
+	margin-top: 1rem;
+	padding: 1rem;
+	background-color: #f8f9fa;
+	border-radius: 0.5rem;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.error {
+	color: #dc2626; /* red-600 */
+	font-weight: 500;
+}
