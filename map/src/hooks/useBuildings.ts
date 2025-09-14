@@ -45,7 +45,7 @@ function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: numbe
 
 export function useBuildings(
   location: { lat: number; lng: number } | null,
-  maxResults: number = 60
+  maxResults: number = 200
 ) {
   const [places, setPlaces] = useState<Place[]>([]);
   const [loading, setLoading] = useState(false);
@@ -101,7 +101,6 @@ export function useBuildings(
         };
 
         places.push(place);
-        if (places.length >= maxResults) break;
       }
 
       // Sort by distance from the gunshot location
@@ -116,8 +115,7 @@ export function useBuildings(
         );
         return distA - distB;
       });
-
-      setPlaces(places);
+      setPlaces(places.slice(0, maxResults));
     } catch (err) {
       setError(`Failed to process buildings data: ${err}`);
       setPlaces([]);

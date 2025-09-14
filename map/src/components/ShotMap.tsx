@@ -14,7 +14,7 @@ const DEFAULT_ZOOM = 15;
 export default function ShotMap({ mics, gunshot }: ShotMapProps) {
   const { places, loading, error } = useBuildings(
     gunshot ? { lat: gunshot.lat, lng: gunshot.lng } : null,
-    60
+    20
   );
 
   const initialViewState = useMemo(() => {
@@ -34,11 +34,11 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
         <ScaleControl position="bottom-left" />
 
         {/* Gunshot marker - only show if gunshot exists */}
-        {gunshot && (
+        {/* {gunshot && ( */}
           <Marker longitude={gunshot.lng} latitude={gunshot.lat} anchor="bottom">
             <div className="marker-gunshot" title={`Gunshot ${new Date(gunshot.t).toLocaleString()}`} />
           </Marker>
-        )}
+        {/* )} */}
 
         {/* Microphones */}
         {mics.map((mic) => (
