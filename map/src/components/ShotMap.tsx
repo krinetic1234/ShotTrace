@@ -191,7 +191,6 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
         reuseMaps
         style={{ width: '100%', height: '100%' }}
       >
-        <NavigationControl position="top-left" />
         <ScaleControl position="bottom-left" />
 
         {/* Triangulation circles - only show when toggle is enabled */}
