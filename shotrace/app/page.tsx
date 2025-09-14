@@ -8,7 +8,6 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch available jobs and redirect to the first one
     fetch("/api/jobs")
       .then(r => r.json())
       .then(data => {
@@ -17,7 +16,6 @@ export default function Home() {
         router.replace(`/videos?job=${encodeURIComponent(defaultJob)}`);
       })
       .catch(() => {
-        // Fallback if API fails
         router.replace("/videos?job=kirk");
       })
       .finally(() => {
