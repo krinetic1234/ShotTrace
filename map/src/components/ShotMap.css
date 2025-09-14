@@ -20,3 +20,13 @@
 	border: 2px solid #ffffff;
 	box-shadow: 0 0 0 2px #2563eb;
 }
+
+
+.marker-place {
+	width: 12px;
+	height: 12px;
+	border-radius: 9999px;
+	background-color: green; /* blue-600 */
+	border: 2px solid #ffffff;
+	box-shadow: 0 0 0 2px green;
+}
