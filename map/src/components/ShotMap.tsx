@@ -44,11 +44,13 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
         {/* Gunshot marker - only show if gunshot exists */}
         {gunshot && (
           <Marker longitude={gunshot.lng} latitude={gunshot.lat} anchor="bottom">
-            <div 
-              className="marker-gunshot clickable" 
-              title={`Gunshot ${new Date(gunshot.t).toLocaleString()}`}
-              onClick={() => setSelectedItem({ type: 'gunshot', data: gunshot })}
-            />
+            <div className="marker-gunshot-container">
+              <div 
+                className="marker-gunshot clickable" 
+                title={`Gunshot ${new Date(gunshot.t).toLocaleString()}`}
+                onClick={() => setSelectedItem({ type: 'gunshot', data: gunshot })}
+              />
+            </div>
           </Marker>
         )}
 
