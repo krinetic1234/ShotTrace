@@ -2,11 +2,25 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.8 e802775f",
   "osm3s": {
-    "timestamp_osm_base": "2025-09-14T03:54:12Z",
+    "timestamp_osm_base": "2025-09-14T08:38:59Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
 
+{
+  "type": "node",
+  "id": 367780026,
+  "lat": 42.3528753,
+  "lon": -71.0758847,
+  "tags": {
+    "addr:state": "MA",
+    "building": "residential",
+    "ele": "3",
+    "gnis:feature_id": "1971312",
+    "name": "Hale House",
+    "source": "USGS Geonames"
+  }
+},
 {
   "type": "node",
   "id": 2631376206,
@@ -28,6 +42,19 @@
 },
 {
   "type": "way",
+  "id": 29552800,
+  "center": {
+    "lat": 42.3459014,
+    "lon": -71.0784206
+  },
+  "tags": {
+    "addr:housenumber": "9;11;13;15;17",
+    "addr:street": "Harcourt Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 29554384,
   "center": {
     "lat": 42.3501320,
@@ -39,6 +66,19 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29554820,
+  "center": {
+    "lat": 42.3509232,
+    "lon": -71.0852229
+  },
+  "tags": {
+    "addr:housenumber": "334",
+    "addr:street": "Marlborough Street",
     "building": "yes"
   }
 },
@@ -86,6 +126,36 @@
 },
 {
   "type": "way",
+  "id": 29559331,
+  "center": {
+    "lat": 42.3516399,
+    "lon": -71.0759112
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "232",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29564178,
+  "center": {
+    "lat": 42.3460762,
+    "lon": -71.0822847
+  },
+  "tags": {
+    "building": "yes",
+    "building:colour": "#FFFFDD",
+    "building:levels": "9",
+    "height": "35"
+  }
+},
+{
+  "type": "way",
   "id": 29565400,
   "center": {
     "lat": 42.3525477,
@@ -118,6 +188,72 @@
 },
 {
   "type": "way",
+  "id": 29566196,
+  "center": {
+    "lat": 42.3456404,
+    "lon": -71.0809665
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "120",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Huntington Avenue",
+    "building": "yes",
+    "building:colour": "#664422",
+    "building:levels": "8",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 29567442,
+  "center": {
+    "lat": 42.3490960,
+    "lon": -71.0855715
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "48",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Hereford Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29567611,
+  "center": {
+    "lat": 42.3455120,
+    "lon": -71.0789929
+  },
+  "tags": {
+    "addr:housenumber": "30;32",
+    "addr:street": "Garrison Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29567737,
+  "center": {
+    "lat": 42.3460515,
+    "lon": -71.0786593
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "7",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Harcourt Street",
+    "building": "residential",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
   "id": 29599776,
   "center": {
     "lat": 42.3469952,
@@ -143,6 +279,22 @@
     "stroller": "yes",
     "website": "https://www.simon.com/mall/copley-place",
     "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29599954,
+  "center": {
+    "lat": 42.3486000,
+    "lon": -71.0853236
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "314",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
   }
 },
 {
@@ -224,6 +376,58 @@
 },
 {
   "type": "way",
+  "id": 29609611,
+  "center": {
+    "lat": 42.3544168,
+    "lon": -71.0801180
+  },
+  "tags": {
+    "access": "yes",
+    "addr:housenumber": "21",
+    "addr:street": "James J Storrow Memorial Drive",
+    "amenity": "toilets",
+    "building": "yes",
+    "fee": "no",
+    "opening_hours": "sunrise-sunset",
+    "toilets:disposal": "flush",
+    "toilets:handwashing": "yes",
+    "unisex": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29610490,
+  "center": {
+    "lat": 42.3524039,
+    "lon": -71.0847118
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "354",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "house",
+    "building:levels": "5",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 29611544,
+  "center": {
+    "lat": 42.3462132,
+    "lon": -71.0764137
+  },
+  "tags": {
+    "addr:housenumber": "2;4;6;8",
+    "addr:street": "Yarmouth Place",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
   "id": 29612602,
   "center": {
     "lat": 42.3499597,
@@ -255,6 +459,19 @@
     "building:levels": "4",
     "operator": "Kensington Investment Company, Inc.",
     "website": "https://www.kicboston.com/properties/867-boylston-street/"
+  }
+},
+{
+  "type": "way",
+  "id": 29616506,
+  "center": {
+    "lat": 42.3459206,
+    "lon": -71.0791751
+  },
+  "tags": {
+    "addr:housenumber": "56",
+    "addr:street": "Saint Botolph Street",
+    "building": "yes"
   }
 },
 {
@@ -302,6 +519,23 @@
 },
 {
   "type": "way",
+  "id": 29619286,
+  "center": {
+    "lat": 42.3505234,
+    "lon": -71.0849817
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "20",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "apartments",
+    "building:levels": "5"
+  }
+},
+{
+  "type": "way",
   "id": 29619517,
   "center": {
     "lat": 42.3492418,
@@ -318,6 +552,42 @@
 },
 {
   "type": "way",
+  "id": 29620605,
+  "center": {
+    "lat": 42.3539010,
+    "lon": -71.0770924
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "205",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 29621628,
+  "center": {
+    "lat": 42.3535891,
+    "lon": -71.0769235
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "103",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential",
+    "building:levels": "3",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
   "id": 29621780,
   "center": {
     "lat": 42.3528278,
@@ -330,6 +600,64 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29623247,
+  "center": {
+    "lat": 42.3520630,
+    "lon": -71.0756444
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "90",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "8",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 29624557,
+  "center": {
+    "lat": 42.3518579,
+    "lon": -71.0834677
+  },
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Fairfield Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29628154,
+  "center": {
+    "lat": 42.3484279,
+    "lon": -71.0750144
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "40",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Trinity Place",
+    "architect": "The Architectural Team, Inc.",
+    "brand": "Raffles",
+    "brand:wikidata": "Q4306661",
+    "building": "yes",
+    "building:levels": "33",
+    "contact:website": "https://www.rafflesresidencesboston.com/",
+    "description": "147 hotel rooms and 146 Raffles-branded condos",
+    "height": "136",
+    "name": "Raffles",
+    "operator": "Trinity Stuart LLC",
+    "tourism": "hotel",
+    "website": "http://www.bostonplans.org/projects/development-projects/40-trinity-place"
   }
 },
 {
@@ -361,6 +689,43 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29650724,
+  "center": {
+    "lat": 42.3497020,
+    "lon": -71.0735263
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "200",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Berkeley Street",
+    "alt_name": "Old John Hancock Building",
+    "building": "yes",
+    "building:colour": "#DDDDAA",
+    "building:material": "concrete",
+    "name": "The Berkeley Building",
+    "wikipedia": "en:Berkeley Building"
+  }
+},
+{
+  "type": "way",
+  "id": 29650726,
+  "center": {
+    "lat": 42.3494961,
+    "lon": -71.0840653
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "31",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
     "building": "yes"
   }
 },
@@ -416,6 +781,46 @@
 },
 {
   "type": "way",
+  "id": 29715650,
+  "center": {
+    "lat": 42.3466340,
+    "lon": -71.0760627
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "130",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Dartmouth Street",
+    "building": "apartments",
+    "building:flats": "269",
+    "building:levels": "12",
+    "name": "Tent City Apartments",
+    "operator": "Maloney Properties, Inc.",
+    "phone": "+1-617-267-8195",
+    "website": "https://www.tentcityapartments.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 29717636,
+  "center": {
+    "lat": 42.3527057,
+    "lon": -71.0768831
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "109-111",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
   "id": 29718371,
   "center": {
     "lat": 42.3513148,
@@ -428,6 +833,38 @@
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29718693,
+  "center": {
+    "lat": 42.3537981,
+    "lon": -71.0764826
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "277",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 29719180,
+  "center": {
+    "lat": 42.3518704,
+    "lon": -71.0751309
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "93-95",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "commercial"
   }
 },
 {
@@ -445,6 +882,87 @@
     "addr:street": "Boylston Street",
     "building": "yes",
     "building:levels": "4"
+  }
+},
+{
+  "type": "way",
+  "id": 29740490,
+  "center": {
+    "lat": 42.3489661,
+    "lon": -71.0838226
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "282",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 29743515,
+  "center": {
+    "lat": 42.3532225,
+    "lon": -71.0762294
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "265",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 29744398,
+  "center": {
+    "lat": 42.3517366,
+    "lon": -71.0837054
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "287",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29744571,
+  "center": {
+    "lat": 42.3540935,
+    "lon": -71.0783623
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "214",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 29745274,
+  "center": {
+    "lat": 42.3517099,
+    "lon": -71.0851814
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "1",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "apartments"
   }
 },
 {
@@ -520,6 +1038,38 @@
 },
 {
   "type": "way",
+  "id": 29806530,
+  "center": {
+    "lat": 42.3474198,
+    "lon": -71.0753072
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "145",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Dartmouth Street",
+    "architect": "Kallmann McKinnell & Wood",
+    "building": "train_station",
+    "building:material": "brick",
+    "check_date": "2025-05-10",
+    "fixme": "heights estimated",
+    "internet_access": "no",
+    "opening_hours": "Mo-Su 05:00-11:59",
+    "operator": "MBTA",
+    "roof:material": "concrete",
+    "roof:shape": "flat",
+    "start_date": "1987",
+    "subway": "yes",
+    "train": "yes",
+    "website": "https://www.mbta.com/stops/place-bbsta",
+    "wheelchair": "yes",
+    "wikidata": "Q3675991",
+    "wikipedia": "en:Back Bay station"
+  }
+},
+{
+  "type": "way",
   "id": 29807483,
   "center": {
     "lat": 42.3489838,
@@ -547,6 +1097,22 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Boylston Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29842551,
+  "center": {
+    "lat": 42.3494439,
+    "lon": -71.0845355
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "30",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
     "building": "yes"
   }
 },
@@ -596,6 +1162,41 @@
 },
 {
   "type": "way",
+  "id": 29862973,
+  "center": {
+    "lat": 42.3504305,
+    "lon": -71.0742533
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "500",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Boylston Street",
+    "building": "yes",
+    "building:colour": "#FFFF99",
+    "building:material": "concrete",
+    "name": "500 Boylston Street",
+    "roof:material": "concrete",
+    "wikidata": "Q2817125",
+    "wikipedia": "en:500 Boylston Street"
+  }
+},
+{
+  "type": "way",
+  "id": 29863252,
+  "center": {
+    "lat": 42.3464222,
+    "lon": -71.0792369
+  },
+  "tags": {
+    "addr:housenumber": "41",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
   "id": 29863481,
   "center": {
     "lat": 42.3512733,
@@ -614,6 +1215,36 @@
     "start_date": "1870-02-05",
     "wikidata": "Q60696758",
     "wikimedia_commons": "File:Hotel Vendome 1881.JPG"
+  }
+},
+{
+  "type": "way",
+  "id": 29864860,
+  "center": {
+    "lat": 42.3458745,
+    "lon": -71.0798432
+  },
+  "tags": {
+    "addr:housenumber": "19",
+    "addr:street": "Garrison Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29865288,
+  "center": {
+    "lat": 42.3461001,
+    "lon": -71.0803176
+  },
+  "tags": {
+    "addr:housenumber": "118",
+    "addr:street": "Huntington Avenue",
+    "building": "yes",
+    "building:colour": "white",
+    "building:levels": "15",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
   }
 },
 {
@@ -695,6 +1326,46 @@
 },
 {
   "type": "way",
+  "id": 29869363,
+  "center": {
+    "lat": 42.3465436,
+    "lon": -71.0797587
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "building": "yes",
+    "building:levels": "14",
+    "check_date": "2025-02-09",
+    "fixme": "Unsure of street number & street name for this building."
+  }
+},
+{
+  "type": "way",
+  "id": 29869880,
+  "center": {
+    "lat": 42.3471718,
+    "lon": -71.0825082
+  },
+  "tags": {
+    "addr:housenumber": "800",
+    "addr:postcode": "02199",
+    "addr:street": "Boylston Street",
+    "building": "office",
+    "building:colour": "#FFFFDD",
+    "building:levels": "52",
+    "building:material": "concrete",
+    "height": "228.6m",
+    "layer": "1",
+    "name": "Prudential Tower",
+    "roof:material": "concrete",
+    "roof:shape": "flat",
+    "wikipedia": "en:Prudential Tower"
+  }
+},
+{
+  "type": "way",
   "id": 29870451,
   "center": {
     "lat": 42.3520812,
@@ -713,6 +1384,47 @@
 },
 {
   "type": "way",
+  "id": 29943070,
+  "center": {
+    "lat": 42.3497082,
+    "lon": -71.0845680
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "284",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29943599,
+  "center": {
+    "lat": 42.3516193,
+    "lon": -71.0855270
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "401",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "architect": "Embarc Studio",
+    "building": "residential",
+    "building:levels": "5",
+    "building:material": "brick",
+    "name": "The Lydon",
+    "operator": "Cabot & Company",
+    "parking": "underground",
+    "swimming_pool": "rooftop",
+    "website": "https://www.thelydon.com/",
+    "website:design": "https://www.embarcstudio.com/401-beacon"
+  }
+},
+{
+  "type": "way",
   "id": 29943638,
   "center": {
     "lat": 42.3513124,
@@ -725,6 +1437,19 @@
     "addr:state": "MA",
     "addr:street": "Newbury Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 29944877,
+  "center": {
+    "lat": 42.3460682,
+    "lon": -71.0765895
+  },
+  "tags": {
+    "addr:housenumber": "15;21;27",
+    "addr:street": "Yarmouth Street",
+    "building": "apartments"
   }
 },
 {
@@ -753,6 +1478,50 @@
     "addr:street": "Boylston Street",
     "building": "yes",
     "building:levels": "8"
+  }
+},
+{
+  "type": "way",
+  "id": 29948629,
+  "center": {
+    "lat": 42.3455422,
+    "lon": -71.0797289
+  },
+  "tags": {
+    "addr:housenumber": "70",
+    "addr:street": "Saint Botolph Street",
+    "building": "yes",
+    "building:levels": "8"
+  }
+},
+{
+  "type": "way",
+  "id": 29949758,
+  "center": {
+    "lat": 42.3462111,
+    "lon": -71.0788184
+  },
+  "tags": {
+    "addr:housenumber": "38",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 29950686,
+  "center": {
+    "lat": 42.3518266,
+    "lon": -71.0753428
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "99-101",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "commercial",
+    "building:levels": "5"
   }
 },
 {
@@ -907,6 +1676,37 @@
 },
 {
   "type": "way",
+  "id": 240255515,
+  "center": {
+    "lat": 42.3464848,
+    "lon": -71.0814683
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:country": "US",
+    "addr:housenumber": "111",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Huntington Avenue",
+    "alt_name": "The R2-D2 Building",
+    "architect": "Childs Bertman Tseckares Inc. (CBT)",
+    "building": "office",
+    "building:colour": "#33CCFF",
+    "building:levels": "36",
+    "building:material": "glass",
+    "height": "169",
+    "name": "111 Huntington Ave",
+    "operator": "Boston Properties, Inc.",
+    "roof:material": "concrete",
+    "roof:shape": "flat",
+    "start_date": "2001",
+    "wheelchair": "yes",
+    "wikidata": "Q170441",
+    "wikipedia": "en:111 Huntington Avenue"
+  }
+},
+{
+  "type": "way",
   "id": 240260886,
   "center": {
     "lat": 42.3471548,
@@ -915,6 +1715,346 @@
   "tags": {
     "building": "bridge",
     "layer": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 240496186,
+  "center": {
+    "lat": 42.3529180,
+    "lon": -71.0831306
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "322",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240496187,
+  "center": {
+    "lat": 42.3529899,
+    "lon": -71.0828642
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "316",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "6",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240496188,
+  "center": {
+    "lat": 42.3529658,
+    "lon": -71.0829571
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "318",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:levels": "6",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240496189,
+  "center": {
+    "lat": 42.3529416,
+    "lon": -71.0830460
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "320",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498095,
+  "center": {
+    "lat": 42.3532246,
+    "lon": -71.0819936
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "292",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498098,
+  "center": {
+    "lat": 42.3531952,
+    "lon": -71.0820791
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "294",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "6",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498103,
+  "center": {
+    "lat": 42.3530858,
+    "lon": -71.0821304
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "296",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:levels": "3",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498108,
+  "center": {
+    "lat": 42.3530799,
+    "lon": -71.0825267
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "306",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "6",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498112,
+  "center": {
+    "lat": 42.3532551,
+    "lon": -71.0818854
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "290",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "6",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498113,
+  "center": {
+    "lat": 42.3530376,
+    "lon": -71.0822830
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "300",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:levels": "5",
+    "building:material": "concrete",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498117,
+  "center": {
+    "lat": 42.3531098,
+    "lon": -71.0823927
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "302",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498119,
+  "center": {
+    "lat": 42.3530113,
+    "lon": -71.0827848
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "314",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498121,
+  "center": {
+    "lat": 42.3530922,
+    "lon": -71.0824640
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "304",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498122,
+  "center": {
+    "lat": 42.3530546,
+    "lon": -71.0826232
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "310",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498124,
+  "center": {
+    "lat": 42.3532944,
+    "lon": -71.0815411
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "282",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:levels": "10",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498126,
+  "center": {
+    "lat": 42.3532024,
+    "lon": -71.0817074
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "286",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240498128,
+  "center": {
+    "lat": 42.3531501,
+    "lon": -71.0822573
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "298",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:levels": "5",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
   }
 },
 {
@@ -956,6 +2096,80 @@
 },
 {
   "type": "way",
+  "id": 240504564,
+  "center": {
+    "lat": 42.3535341,
+    "lon": -71.0805579
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "266",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 240504566,
+  "center": {
+    "lat": 42.3537476,
+    "lon": -71.0798111
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "246",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 240504568,
+  "center": {
+    "lat": 42.3534533,
+    "lon": -71.0809513
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "274",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:levels": "10",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240504569,
+  "center": {
+    "lat": 42.3533793,
+    "lon": -71.0811822
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "280",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:levels": "6",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
   "id": 240526093,
   "center": {
     "lat": 42.3481418,
@@ -986,6 +2200,22 @@
     "fixme": "height and levels estimated",
     "wikidata": "Q5452368",
     "wikipedia": "en:First Baptist Church (Boston, Massachusetts)"
+  }
+},
+{
+  "type": "way",
+  "id": 240531414,
+  "center": {
+    "lat": 42.3520617,
+    "lon": -71.0761145
+  },
+  "tags": {
+    "building": "church",
+    "building:colour": "#CC9933",
+    "fixme": "height and levels estimated",
+    "height": "50",
+    "roof:colour": "#CC9933",
+    "wikidata": "Q5452368"
   }
 },
 {
@@ -1044,6 +2274,165 @@
     "building:material": "brick",
     "roof:material": "concrete",
     "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 240534441,
+  "center": {
+    "lat": 42.3506660,
+    "lon": -71.0733637
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "222",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Berkeley Street",
+    "building": "yes",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 241039968,
+  "center": {
+    "lat": 42.3485041,
+    "lon": -71.0840505
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "893-901",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Boylston Street",
+    "building": "yes",
+    "building:colour": "#EEEEBB",
+    "building:levels": "3",
+    "building:material": "stone",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 241039969,
+  "center": {
+    "lat": 42.3484946,
+    "lon": -71.0842431
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "903-905",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Boylston Street",
+    "building": "yes",
+    "building:levels": "2",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 241039970,
+  "center": {
+    "lat": 42.3484601,
+    "lon": -71.0843269
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "907-909",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Boylston Street",
+    "building": "yes",
+    "building:levels": "4",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 241039971,
+  "center": {
+    "lat": 42.3484392,
+    "lon": -71.0844073
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "911-913",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Boylston Street",
+    "building": "yes",
+    "building:levels": "4",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 241039973,
+  "center": {
+    "lat": 42.3482401,
+    "lon": -71.0837598
+  },
+  "tags": {
+    "building": "roof",
+    "building:levels": "1",
+    "layer": "1",
+    "roof:colour": "#999999",
+    "roof:material": "glass",
+    "roof:shape": "gabled"
+  }
+},
+{
+  "type": "way",
+  "id": 241039976,
+  "center": {
+    "lat": 42.3484248,
+    "lon": -71.0846013
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "921",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Boylston Street",
+    "building": "university",
+    "building:levels": "6",
+    "building:material": "brick",
+    "name": "Genko Uchida Building",
+    "operator": "Berklee College of Music",
+    "roof:material": "concrete",
+    "roof:shape": "flat",
+    "start_date": "1910",
+    "website": "https://www.mds-bos.com/berklee-college-of-music-genko-uchida-building"
+  }
+},
+{
+  "type": "way",
+  "id": 241040775,
+  "center": {
+    "lat": 42.3482874,
+    "lon": -71.0850083
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "927-939",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Boylston Street",
+    "architect": "Parker and Thomas",
+    "building": "yes",
+    "building:levels": "5",
+    "building:material": "brick",
+    "roof:shape": "hipped"
   }
 },
 {
@@ -1187,6 +2576,102 @@
 },
 {
   "type": "way",
+  "id": 241968078,
+  "center": {
+    "lat": 42.3469053,
+    "lon": -71.0750202
+  },
+  "tags": {
+    "addr:housenumber": "131",
+    "addr:street": "Dartmouth Street",
+    "building": "office",
+    "layer": "1",
+    "roof:colour": "#EEEEEE",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 241971727,
+  "center": {
+    "lat": 42.3485927,
+    "lon": -71.0744782
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "140",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "yes",
+    "building:levels": "12",
+    "building:material": "brick",
+    "height": "47.5",
+    "name": "140 Clarendon",
+    "old_name": "YWCA",
+    "roof:material": "concrete",
+    "roof:shape": "flat",
+    "source": "esri/Boston_MA_Addresses",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 242391317,
+  "center": {
+    "lat": 42.3537694,
+    "lon": -71.0799746
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "250",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:levels": "8",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 405331235,
+  "center": {
+    "lat": 42.3543827,
+    "lon": -71.0777073
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "194",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331237,
+  "center": {
+    "lat": 42.3540205,
+    "lon": -71.0786777
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "222",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
   "id": 405331242,
   "center": {
     "lat": 42.3529449,
@@ -1199,6 +2684,58 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405331243,
+  "center": {
+    "lat": 42.3523464,
+    "lon": -71.0848538
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "360",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 405331247,
+  "center": {
+    "lat": 42.3520952,
+    "lon": -71.0839439
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "361",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331250,
+  "center": {
+    "lat": 42.3536025,
+    "lon": -71.0783623
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "243",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
   }
 },
 {
@@ -1251,6 +2788,73 @@
 },
 {
   "type": "way",
+  "id": 405331259,
+  "center": {
+    "lat": 42.3519172,
+    "lon": -71.0845930
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "381",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331263,
+  "center": {
+    "lat": 42.3533185,
+    "lon": -71.0792352
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "330",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Dartmouth Street",
+    "building": "residential",
+    "building:levels": "8",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 405331266,
+  "center": {
+    "lat": 42.3535620,
+    "lon": -71.0804145
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "264",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331268,
+  "center": {
+    "lat": 42.3521276,
+    "lon": -71.0838256
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "357",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405331271,
   "center": {
     "lat": 42.3525976,
@@ -1283,6 +2887,124 @@
 },
 {
   "type": "way",
+  "id": 405331275,
+  "center": {
+    "lat": 42.3537897,
+    "lon": -71.0776114
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "221",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331277,
+  "center": {
+    "lat": 42.3536973,
+    "lon": -71.0802654
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "260",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331278,
+  "center": {
+    "lat": 42.3521921,
+    "lon": -71.0835906
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "351",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405331279,
+  "center": {
+    "lat": 42.3518268,
+    "lon": -71.0849228
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "391",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405331282,
+  "center": {
+    "lat": 42.3542382,
+    "lon": -71.0781979
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "208",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331290,
+  "center": {
+    "lat": 42.3537053,
+    "lon": -71.0779529
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "231",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331295,
+  "center": {
+    "lat": 42.3519896,
+    "lon": -71.0843289
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "371",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
   "id": 405331296,
   "center": {
     "lat": 42.3530238,
@@ -1295,6 +3017,41 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405331298,
+  "center": {
+    "lat": 42.3536506,
+    "lon": -71.0781510
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "237",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331302,
+  "center": {
+    "lat": 42.3542004,
+    "lon": -71.0783323
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "212",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
   }
 },
 {
@@ -1315,6 +3072,39 @@
 },
 {
   "type": "way",
+  "id": 405331307,
+  "center": {
+    "lat": 42.3519353,
+    "lon": -71.0845269
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "379",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331309,
+  "center": {
+    "lat": 42.3543129,
+    "lon": -71.0779583
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "200-202",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
   "id": 405331312,
   "center": {
     "lat": 42.3532187,
@@ -1327,6 +3117,24 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405331313,
+  "center": {
+    "lat": 42.3538112,
+    "lon": -71.0775333
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "219",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
   }
 },
 {
@@ -1347,6 +3155,22 @@
 },
 {
   "type": "way",
+  "id": 405331318,
+  "center": {
+    "lat": 42.3521701,
+    "lon": -71.0836704
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "353",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405331322,
   "center": {
     "lat": 42.3531308,
@@ -1359,6 +3183,106 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405331325,
+  "center": {
+    "lat": 42.3525714,
+    "lon": -71.0844223
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "348",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 405331328,
+  "center": {
+    "lat": 42.3524784,
+    "lon": -71.0825213
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "331",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405331329,
+  "center": {
+    "lat": 42.3517725,
+    "lon": -71.0851208
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "397",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405331330,
+  "center": {
+    "lat": 42.3537060,
+    "lon": -71.0778073
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "227",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331333,
+  "center": {
+    "lat": 42.3524309,
+    "lon": -71.0826946
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "335",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405331335,
+  "center": {
+    "lat": 42.3520257,
+    "lon": -71.0841970
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "367",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
   }
 },
 {
@@ -1379,6 +3303,23 @@
 },
 {
   "type": "way",
+  "id": 405331339,
+  "center": {
+    "lat": 42.3540733,
+    "lon": -71.0784328
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "216",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
   "id": 405331341,
   "center": {
     "lat": 42.3532785,
@@ -1391,6 +3332,56 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405331343,
+  "center": {
+    "lat": 42.3537231,
+    "lon": -71.0778889
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "229",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331347,
+  "center": {
+    "lat": 42.3520077,
+    "lon": -71.0842630
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "369",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331350,
+  "center": {
+    "lat": 42.3521533,
+    "lon": -71.0837318
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "355",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
   }
 },
 {
@@ -1411,6 +3402,39 @@
 },
 {
   "type": "way",
+  "id": 405331354,
+  "center": {
+    "lat": 42.3535856,
+    "lon": -71.0803263
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "262",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331356,
+  "center": {
+    "lat": 42.3524983,
+    "lon": -71.0824489
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "329",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
   "id": 405331358,
   "center": {
     "lat": 42.3529894,
@@ -1423,6 +3447,59 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405331360,
+  "center": {
+    "lat": 42.3538535,
+    "lon": -71.0794165
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "236",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:levels": "4",
+    "building:material": "brick",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331361,
+  "center": {
+    "lat": 42.3526412,
+    "lon": -71.0841669
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "342",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "house",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331362,
+  "center": {
+    "lat": 42.3518811,
+    "lon": -71.0847250
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "385",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
   }
 },
 {
@@ -1443,6 +3520,74 @@
 },
 {
   "type": "way",
+  "id": 405331369,
+  "center": {
+    "lat": 42.3538299,
+    "lon": -71.0774631
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "217",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331371,
+  "center": {
+    "lat": 42.3540218,
+    "lon": -71.0790220
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "232",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331373,
+  "center": {
+    "lat": 42.3518449,
+    "lon": -71.0848568
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "389",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331375,
+  "center": {
+    "lat": 42.3541910,
+    "lon": -71.0782489
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "210",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
   "id": 405331377,
   "center": {
     "lat": 42.3531549,
@@ -1459,6 +3604,55 @@
 },
 {
   "type": "way",
+  "id": 405331385,
+  "center": {
+    "lat": 42.3517907,
+    "lon": -71.0850549
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "395",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331386,
+  "center": {
+    "lat": 42.3543416,
+    "lon": -71.0778555
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "198",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331390,
+  "center": {
+    "lat": 42.3524546,
+    "lon": -71.0826079
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "333",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
   "id": 405331392,
   "center": {
     "lat": 42.3527087,
@@ -1471,6 +3665,90 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331394,
+  "center": {
+    "lat": 42.3536699,
+    "lon": -71.0780811
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "235",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331395,
+  "center": {
+    "lat": 42.3524072,
+    "lon": -71.0827812
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "337",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405331398,
+  "center": {
+    "lat": 42.3519534,
+    "lon": -71.0844609
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "377",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331399,
+  "center": {
+    "lat": 42.3538679,
+    "lon": -71.0773257
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "213",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331403,
+  "center": {
+    "lat": 42.3520485,
+    "lon": -71.0841147
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "365",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
   }
 },
 {
@@ -1507,6 +3785,89 @@
 },
 {
   "type": "way",
+  "id": 405331409,
+  "center": {
+    "lat": 42.3537674,
+    "lon": -71.0776905
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "223",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331411,
+  "center": {
+    "lat": 42.3518992,
+    "lon": -71.0846590
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "383",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331415,
+  "center": {
+    "lat": 42.3537721,
+    "lon": -71.0797261
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "244",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331418,
+  "center": {
+    "lat": 42.3518629,
+    "lon": -71.0847909
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "387",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331420,
+  "center": {
+    "lat": 42.3520717,
+    "lon": -71.0840295
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "363",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
   "id": 405331422,
   "center": {
     "lat": 42.3525227,
@@ -1539,6 +3900,111 @@
 },
 {
   "type": "way",
+  "id": 405331424,
+  "center": {
+    "lat": 42.3537970,
+    "lon": -71.0796275
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "242",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331426,
+  "center": {
+    "lat": 42.3535465,
+    "lon": -71.0785652
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "249",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331431,
+  "center": {
+    "lat": 42.3535838,
+    "lon": -71.0784299
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "245",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331438,
+  "center": {
+    "lat": 42.3536212,
+    "lon": -71.0782947
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "241",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331439,
+  "center": {
+    "lat": 42.3536876,
+    "lon": -71.0780170
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "233",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331443,
+  "center": {
+    "lat": 42.3519716,
+    "lon": -71.0843949
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "375",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405331445,
   "center": {
     "lat": 42.3532370,
@@ -1551,6 +4017,57 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405331448,
+  "center": {
+    "lat": 42.3522960,
+    "lon": -71.0831300
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "345",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405331450,
+  "center": {
+    "lat": 42.3538492,
+    "lon": -71.0773933
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "215",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331455,
+  "center": {
+    "lat": 42.3540751,
+    "lon": -71.0788213
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "226",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:material": "brick"
   }
 },
 {
@@ -1571,6 +4088,22 @@
 },
 {
   "type": "way",
+  "id": 405331464,
+  "center": {
+    "lat": 42.3518087,
+    "lon": -71.0849889
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "393",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405331465,
   "center": {
     "lat": 42.3525623,
@@ -1583,6 +4116,23 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331467,
+  "center": {
+    "lat": 42.3541783,
+    "lon": -71.0780877
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "206",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
   }
 },
 {
@@ -1603,6 +4153,26 @@
 },
 {
   "type": "way",
+  "id": 405331474,
+  "center": {
+    "lat": 42.3529324,
+    "lon": -71.0826703
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "312",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:levels": "5",
+    "building:material": "brick",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
   "id": 405331476,
   "center": {
     "lat": 42.3527256,
@@ -1615,6 +4185,144 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331477,
+  "center": {
+    "lat": 42.3541977,
+    "lon": -71.0780194
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "204",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331478,
+  "center": {
+    "lat": 42.3526620,
+    "lon": -71.0840882
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "340",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405331483,
+  "center": {
+    "lat": 42.3532551,
+    "lon": -71.0795921
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "263",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405331484,
+  "center": {
+    "lat": 42.3540001,
+    "lon": -71.0791004
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "234",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "house",
+    "building:levels": "5",
+    "building:material": "brick",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331487,
+  "center": {
+    "lat": 42.3535651,
+    "lon": -71.0784976
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "247",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331493,
+  "center": {
+    "lat": 42.3536308,
+    "lon": -71.0782226
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "239",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331496,
+  "center": {
+    "lat": 42.3522404,
+    "lon": -71.0832277
+  },
+  "tags": {
+    "access": "private",
+    "addr:city": "Boston",
+    "addr:housenumber": "347",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "architect": "John H. Besarick",
+    "building": "apartments",
+    "building:levels": "5",
+    "building:material": "brick",
+    "contact:facebook": "https://www.facebook.com/JohnsonOConnorResearchFoundation",
+    "email": "boston@jocrf.org",
+    "heritage": "https://backbayhouses.org/347-beacon/",
+    "image": "https://backbayhouses.files.wordpress.com/2013/07/beac-347-2013-01-0a.jpg",
+    "name": "Johnson O'Connor Research Foundation",
+    "name:etymology:wikidata": "Q6268383",
+    "name:etymology:wikipedia": "en:Johnson O'Connor",
+    "office": "research",
+    "opening_hours": "Mo-Fr 08:30-16:30",
+    "phone": "+1-617-536-0409",
+    "research": "education",
+    "roof:colour": "grey",
+    "start_date": "1922",
+    "website": "https://www.jocrf.org/locations/boston"
   }
 },
 {
@@ -1635,6 +4343,94 @@
 },
 {
   "type": "way",
+  "id": 405331498,
+  "center": {
+    "lat": 42.3536509,
+    "lon": -71.0800873
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "256",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331501,
+  "center": {
+    "lat": 42.3535270,
+    "lon": -71.0786348
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "251",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331504,
+  "center": {
+    "lat": 42.3537487,
+    "lon": -71.0777567
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "225",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331508,
+  "center": {
+    "lat": 42.3538868,
+    "lon": -71.0772566
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "211",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331509,
+  "center": {
+    "lat": 42.3543615,
+    "lon": -71.0777791
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "196",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
   "id": 405331511,
   "center": {
     "lat": 42.3527603,
@@ -1651,6 +4447,24 @@
 },
 {
   "type": "way",
+  "id": 405331513,
+  "center": {
+    "lat": 42.3539272,
+    "lon": -71.0769856
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "278",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
   "id": 405331518,
   "center": {
     "lat": 42.3526121,
@@ -1663,6 +4477,199 @@
     "addr:state": "MA",
     "addr:street": "Beacon Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405331521,
+  "center": {
+    "lat": 42.3524737,
+    "lon": -71.0845023
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "350",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:levels": "5",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 405331524,
+  "center": {
+    "lat": 42.3523426,
+    "lon": -71.0829644
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "341",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405331526,
+  "center": {
+    "lat": 42.3540562,
+    "lon": -71.0785390
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "220",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331530,
+  "center": {
+    "lat": 42.3526215,
+    "lon": -71.0842396
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "344",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "house",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331533,
+  "center": {
+    "lat": 42.3540494,
+    "lon": -71.0789190
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "230",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 405331535,
+  "center": {
+    "lat": 42.3525098,
+    "lon": -71.0846531
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "352",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 405331536,
+  "center": {
+    "lat": 42.3525219,
+    "lon": -71.0842835
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "346",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331541,
+  "center": {
+    "lat": 42.3534511,
+    "lon": -71.0787573
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "255",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "5",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331542,
+  "center": {
+    "lat": 42.3538830,
+    "lon": -71.0771618
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "209",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405331544,
+  "center": {
+    "lat": 42.3526011,
+    "lon": -71.0839585
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "338",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "2"
+  }
+},
+{
+  "type": "way",
+  "id": 405331547,
+  "center": {
+    "lat": 42.3535356,
+    "lon": -71.0807674
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "270",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "apartments",
+    "building:material": "brick"
   }
 },
 {
@@ -1688,6 +4695,22 @@
 },
 {
   "type": "way",
+  "id": 405334587,
+  "center": {
+    "lat": 42.3514431,
+    "lon": -71.0847762
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "321",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405334589,
   "center": {
     "lat": 42.3525360,
@@ -1702,6 +4725,38 @@
     "architect": "J. Lyman Faxon",
     "building": "residential",
     "start_date": "1891-10-31"
+  }
+},
+{
+  "type": "way",
+  "id": 405334591,
+  "center": {
+    "lat": 42.3517174,
+    "lon": -71.0837758
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "289",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334594,
+  "center": {
+    "lat": 42.3536335,
+    "lon": -71.0768379
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "274",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "terrace"
   }
 },
 {
@@ -1724,6 +4779,54 @@
 },
 {
   "type": "way",
+  "id": 405334601,
+  "center": {
+    "lat": 42.3535547,
+    "lon": -71.0770053
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "105",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405334602,
+  "center": {
+    "lat": 42.3538435,
+    "lon": -71.0765033
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "279",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405334603,
+  "center": {
+    "lat": 42.3513346,
+    "lon": -71.0854216
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "6",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405334604,
   "center": {
     "lat": 42.3523085,
@@ -1732,6 +4835,103 @@
   "tags": {
     "addr:city": "Boston",
     "addr:housenumber": "233",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334606,
+  "center": {
+    "lat": 42.3517550,
+    "lon": -71.0836384
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "285",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334607,
+  "center": {
+    "lat": 42.3516579,
+    "lon": -71.0839930
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "295",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334610,
+  "center": {
+    "lat": 42.3533876,
+    "lon": -71.0776063
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "119",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405334611,
+  "center": {
+    "lat": 42.3536938,
+    "lon": -71.0764301
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "273-275",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "residential",
+    "building:levels": "4"
+  }
+},
+{
+  "type": "way",
+  "id": 405334614,
+  "center": {
+    "lat": 42.3515417,
+    "lon": -71.0844169
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "311",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334615,
+  "center": {
+    "lat": 42.3516741,
+    "lon": -71.0839337
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "293",
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
@@ -1754,6 +4954,38 @@
     "architect": "Carl Fehmer",
     "building": "residential",
     "start_date": "1881-06-13"
+  }
+},
+{
+  "type": "way",
+  "id": 405334621,
+  "center": {
+    "lat": 42.3514660,
+    "lon": -71.0846925
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "319",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334624,
+  "center": {
+    "lat": 42.3533653,
+    "lon": -71.0776883
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "121",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
   }
 },
 {
@@ -1790,6 +5022,22 @@
 },
 {
   "type": "way",
+  "id": 405334627,
+  "center": {
+    "lat": 42.3514127,
+    "lon": -71.0850353
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "5",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405334629,
   "center": {
     "lat": 42.3528570,
@@ -1816,6 +5064,38 @@
   "tags": {
     "addr:city": "Boston",
     "addr:housenumber": "241",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334634,
+  "center": {
+    "lat": 42.3515778,
+    "lon": -71.0842850
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "303",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334635,
+  "center": {
+    "lat": 42.3515590,
+    "lon": -71.0843535
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "309",
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
@@ -1924,6 +5204,70 @@
 },
 {
   "type": "way",
+  "id": 405334647,
+  "center": {
+    "lat": 42.3515988,
+    "lon": -71.0842083
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "301",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334649,
+  "center": {
+    "lat": 42.3533231,
+    "lon": -71.0780519
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "129",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405334652,
+  "center": {
+    "lat": 42.3532484,
+    "lon": -71.0786468
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "321",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Dartmouth Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405334654,
+  "center": {
+    "lat": 42.3535135,
+    "lon": -71.0771775
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "109",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405334656,
   "center": {
     "lat": 42.3527392,
@@ -1954,6 +5298,86 @@
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334658,
+  "center": {
+    "lat": 42.3532595,
+    "lon": -71.0781235
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "131",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405334660,
+  "center": {
+    "lat": 42.3534891,
+    "lon": -71.0772659
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "111",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405334661,
+  "center": {
+    "lat": 42.3516948,
+    "lon": -71.0838583
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "291",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334662,
+  "center": {
+    "lat": 42.3534112,
+    "lon": -71.0775206
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "117",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405334663,
+  "center": {
+    "lat": 42.3533303,
+    "lon": -71.0778666
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "125",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
   }
 },
 {
@@ -2008,6 +5432,49 @@
 },
 {
   "type": "way",
+  "id": 405334668,
+  "center": {
+    "lat": 42.3514041,
+    "lon": -71.0854556
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "4",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334670,
+  "center": {
+    "lat": 42.3519303,
+    "lon": -71.0835046
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334674,
+  "center": {
+    "lat": 42.3515068,
+    "lon": -71.0845439
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "315",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405334676,
   "center": {
     "lat": 42.3521631,
@@ -2035,6 +5502,54 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334684,
+  "center": {
+    "lat": 42.3534348,
+    "lon": -71.0774349
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "115",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405334685,
+  "center": {
+    "lat": 42.3516210,
+    "lon": -71.0841272
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "299",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334691,
+  "center": {
+    "lat": 42.3514922,
+    "lon": -71.0850748
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "3",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
     "building": "yes"
   }
 },
@@ -2074,6 +5589,70 @@
 },
 {
   "type": "way",
+  "id": 405334695,
+  "center": {
+    "lat": 42.3516413,
+    "lon": -71.0840534
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "297",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334696,
+  "center": {
+    "lat": 42.3514883,
+    "lon": -71.0846116
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "317",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334697,
+  "center": {
+    "lat": 42.3515242,
+    "lon": -71.0844804
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "313",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334698,
+  "center": {
+    "lat": 42.3531737,
+    "lon": -71.0786099
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "319",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Dartmouth Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405334699,
   "center": {
     "lat": 42.3518813,
@@ -2086,6 +5665,49 @@
     "addr:state": "MA",
     "addr:street": "Fairfield Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334702,
+  "center": {
+    "lat": 42.3533075,
+    "lon": -71.0779495
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "127",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405334703,
+  "center": {
+    "lat": 42.3517797,
+    "lon": -71.0834289
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334704,
+  "center": {
+    "lat": 42.3537580,
+    "lon": -71.0762392
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "89",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
   }
 },
 {
@@ -2175,6 +5797,38 @@
 },
 {
   "type": "way",
+  "id": 405334715,
+  "center": {
+    "lat": 42.3512243,
+    "lon": -71.0855832
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "337",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334716,
+  "center": {
+    "lat": 42.3534647,
+    "lon": -71.0773544
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "113",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405334717,
   "center": {
     "lat": 42.3523776,
@@ -2225,6 +5879,22 @@
 },
 {
   "type": "way",
+  "id": 405334724,
+  "center": {
+    "lat": 42.3513516,
+    "lon": -71.0849741
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "7",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405334725,
   "center": {
     "lat": 42.3525626,
@@ -2245,6 +5915,22 @@
 },
 {
   "type": "way",
+  "id": 405334726,
+  "center": {
+    "lat": 42.3514213,
+    "lon": -71.0848565
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "323",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405334729,
   "center": {
     "lat": 42.3523809,
@@ -2257,6 +5943,62 @@
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334730,
+  "center": {
+    "lat": 42.3533545,
+    "lon": -71.0777791
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "123",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405334731,
+  "center": {
+    "lat": 42.3535499,
+    "lon": -71.0770986
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "107",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "architect": "James Stearns Lee",
+    "building": "school",
+    "building:levels": "6",
+    "building:material": "brick",
+    "heritage:website": "https://backbayhouses.org/107-marlborough/",
+    "name": "McCord Building",
+    "operator": "The Learning Project",
+    "roof:colour": "grey",
+    "start_date": "1917"
+  }
+},
+{
+  "type": "way",
+  "id": 405334734,
+  "center": {
+    "lat": 42.3532216,
+    "lon": -71.0782845
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "135",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
   }
 },
 {
@@ -2285,6 +6027,22 @@
   "tags": {
     "addr:city": "Boston",
     "addr:housenumber": "10",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Fairfield Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405334737,
+  "center": {
+    "lat": 42.3520393,
+    "lon": -71.0831283
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "8",
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Fairfield Street",
@@ -2330,6 +6088,22 @@
     "name": "Cushing-Endicott House",
     "operator": "Cushing-Endicott House LP",
     "start_date": "1870-11-29"
+  }
+},
+{
+  "type": "way",
+  "id": 405334744,
+  "center": {
+    "lat": 42.3512530,
+    "lon": -71.0854143
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "8",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
   }
 },
 {
@@ -2382,6 +6156,23 @@
 },
 {
   "type": "way",
+  "id": 405394866,
+  "center": {
+    "lat": 42.3503838,
+    "lon": -71.0856026
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "293-295",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "apartments",
+    "building:levels": "6"
+  }
+},
+{
+  "type": "way",
   "id": 405394868,
   "center": {
     "lat": 42.3519340,
@@ -2394,6 +6185,23 @@
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
     "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405394869,
+  "center": {
+    "lat": 42.3503197,
+    "lon": -71.0857740
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "297",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "apartments",
+    "building:levels": "4"
   }
 },
 {
@@ -2429,6 +6237,22 @@
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
     "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405394873,
+  "center": {
+    "lat": 42.3533337,
+    "lon": -71.0762828
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "92",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
   }
 },
 {
@@ -2497,6 +6321,38 @@
 },
 {
   "type": "way",
+  "id": 405394881,
+  "center": {
+    "lat": 42.3529958,
+    "lon": -71.0773039
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "124",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405394882,
+  "center": {
+    "lat": 42.3507372,
+    "lon": -71.0840941
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "265",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405394883,
   "center": {
     "lat": 42.3517937,
@@ -2509,6 +6365,22 @@
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
     "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405394884,
+  "center": {
+    "lat": 42.3512035,
+    "lon": -71.0839924
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "300",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
   }
 },
 {
@@ -2535,6 +6407,38 @@
 },
 {
   "type": "way",
+  "id": 405394890,
+  "center": {
+    "lat": 42.3533960,
+    "lon": -71.0758156
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "86",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405394891,
+  "center": {
+    "lat": 42.3530449,
+    "lon": -71.0771260
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "118",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405394893,
   "center": {
     "lat": 42.3522272,
@@ -2547,6 +6451,22 @@
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
     "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405394896,
+  "center": {
+    "lat": 42.3511470,
+    "lon": -71.0841985
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "306",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
   }
 },
 {
@@ -2567,6 +6487,71 @@
 },
 {
   "type": "way",
+  "id": 405394898,
+  "center": {
+    "lat": 42.3529441,
+    "lon": -71.0774915
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "130",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405394899,
+  "center": {
+    "lat": 42.3507649,
+    "lon": -71.0839930
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "263",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "apartments",
+    "building:levels": "4"
+  }
+},
+{
+  "type": "way",
+  "id": 405394901,
+  "center": {
+    "lat": 42.3529800,
+    "lon": -71.0773613
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "126",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405394902,
+  "center": {
+    "lat": 42.3510442,
+    "lon": -71.0845736
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "320",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405394903,
   "center": {
     "lat": 42.3518432,
@@ -2581,6 +6566,22 @@
     "building": "residential",
     "building:levels": "4",
     "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405394907,
+  "center": {
+    "lat": 42.3534303,
+    "lon": -71.0756928
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "82",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
   }
 },
 {
@@ -2700,6 +6701,22 @@
 },
 {
   "type": "way",
+  "id": 405394919,
+  "center": {
+    "lat": 42.3528999,
+    "lon": -71.0776514
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "134",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405394920,
   "center": {
     "lat": 42.3518651,
@@ -2764,6 +6781,22 @@
 },
 {
   "type": "way",
+  "id": 405394926,
+  "center": {
+    "lat": 42.3512492,
+    "lon": -71.0838257
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "296",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405394928,
   "center": {
     "lat": 42.3520269,
@@ -2797,6 +6830,22 @@
 },
 {
   "type": "way",
+  "id": 405394930,
+  "center": {
+    "lat": 42.3507911,
+    "lon": -71.0855938
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "342",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405394931,
   "center": {
     "lat": 42.3518176,
@@ -2809,6 +6858,38 @@
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
     "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405394932,
+  "center": {
+    "lat": 42.3512264,
+    "lon": -71.0839091
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "298",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405394933,
+  "center": {
+    "lat": 42.3531340,
+    "lon": -71.0768031
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "108",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
   }
 },
 {
@@ -2862,6 +6943,54 @@
 },
 {
   "type": "way",
+  "id": 405394945,
+  "center": {
+    "lat": 42.3511650,
+    "lon": -71.0841327
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "304",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405394946,
+  "center": {
+    "lat": 42.3531148,
+    "lon": -71.0768731
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "110",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405394948,
+  "center": {
+    "lat": 42.3530968,
+    "lon": -71.0769384
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "112",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405394950,
   "center": {
     "lat": 42.3513797,
@@ -2878,6 +7007,22 @@
 },
 {
   "type": "way",
+  "id": 405394951,
+  "center": {
+    "lat": 42.3531778,
+    "lon": -71.0765964
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "270",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405394954,
   "center": {
     "lat": 42.3517225,
@@ -2890,6 +7035,39 @@
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405394956,
+  "center": {
+    "lat": 42.3531670,
+    "lon": -71.0762034
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "263",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405394957,
+  "center": {
+    "lat": 42.3506481,
+    "lon": -71.0844182
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "273",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "terrace",
+    "building:levels": "4"
   }
 },
 {
@@ -3029,6 +7207,38 @@
 },
 {
   "type": "way",
+  "id": 405394970,
+  "center": {
+    "lat": 42.3530129,
+    "lon": -71.0772421
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "122",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405394973,
+  "center": {
+    "lat": 42.3510904,
+    "lon": -71.0844050
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "312",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405394974,
   "center": {
     "lat": 42.3517462,
@@ -3077,6 +7287,22 @@
 },
 {
   "type": "way",
+  "id": 405394979,
+  "center": {
+    "lat": 42.3510672,
+    "lon": -71.0844893
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "314",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405394982,
   "center": {
     "lat": 42.3512862,
@@ -3106,6 +7332,22 @@
     "addr:street": "Commonwealth Avenue",
     "building": "apartments",
     "building:levels": "4"
+  }
+},
+{
+  "type": "way",
+  "id": 405394985,
+  "center": {
+    "lat": 42.3532744,
+    "lon": -71.0762541
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "267",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "residential"
   }
 },
 {
@@ -3156,6 +7398,38 @@
     "addr:state": "MA",
     "addr:street": "Commonwealth Avenue",
     "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405394992,
+  "center": {
+    "lat": 42.3511110,
+    "lon": -71.0843300
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "310",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405394995,
+  "center": {
+    "lat": 42.3511831,
+    "lon": -71.0840670
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "302",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
   }
 },
 {
@@ -3291,6 +7565,40 @@
 },
 {
   "type": "way",
+  "id": 405395010,
+  "center": {
+    "lat": 42.3529463,
+    "lon": -71.0759263
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "63",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405395013,
+  "center": {
+    "lat": 42.3530617,
+    "lon": -71.0770655
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "116",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405395016,
   "center": {
     "lat": 42.3516036,
@@ -3357,6 +7665,54 @@
 },
 {
   "type": "way",
+  "id": 405395023,
+  "center": {
+    "lat": 42.3533345,
+    "lon": -71.0760350
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "90",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405395024,
+  "center": {
+    "lat": 42.3506855,
+    "lon": -71.0842827
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "269",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395029,
+  "center": {
+    "lat": 42.3508327,
+    "lon": -71.0854420
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "338",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
   "id": 405395031,
   "center": {
     "lat": 42.3512293,
@@ -3386,6 +7742,22 @@
 },
 {
   "type": "way",
+  "id": 405395033,
+  "center": {
+    "lat": 42.3530293,
+    "lon": -71.0771826
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "120",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405395034,
   "center": {
     "lat": 42.3516310,
@@ -3403,6 +7775,40 @@
 },
 {
   "type": "way",
+  "id": 405395035,
+  "center": {
+    "lat": 42.3511290,
+    "lon": -71.0842642
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "308",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395036,
+  "center": {
+    "lat": 42.3503739,
+    "lon": -71.0854409
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "291",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "apartments",
+    "building:levels": "3",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
   "id": 405395037,
   "center": {
     "lat": 42.3523843,
@@ -3414,6 +7820,65 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Commonwealth Avenue",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405395039,
+  "center": {
+    "lat": 42.3533685,
+    "lon": -71.0759135
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "88",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405395040,
+  "center": {
+    "lat": 42.3507102,
+    "lon": -71.0841925
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "267",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395041,
+  "center": {
+    "lat": 42.3508655,
+    "lon": -71.0851795
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395042,
+  "center": {
+    "lat": 42.3530789,
+    "lon": -71.0770032
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "114",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
     "building": "residential"
   }
 },
@@ -3494,6 +7959,22 @@
 },
 {
   "type": "way",
+  "id": 405395052,
+  "center": {
+    "lat": 42.3504774,
+    "lon": -71.0850736
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "283",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405395055,
   "center": {
     "lat": 42.3519199,
@@ -3528,6 +8009,38 @@
 },
 {
   "type": "way",
+  "id": 405395062,
+  "center": {
+    "lat": 42.3512720,
+    "lon": -71.0837423
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "294",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395063,
+  "center": {
+    "lat": 42.3529231,
+    "lon": -71.0775673
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "132",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405395065,
   "center": {
     "lat": 42.3511345,
@@ -3541,6 +8054,22 @@
     "addr:street": "Commonwealth Avenue",
     "building": "apartments",
     "building:levels": "5"
+  }
+},
+{
+  "type": "way",
+  "id": 405395066,
+  "center": {
+    "lat": 42.3509614,
+    "lon": -71.0848058
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "11",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
   }
 },
 {
@@ -3605,6 +8134,22 @@
     "addr:state": "MA",
     "addr:street": "Commonwealth Avenue",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395072,
+  "center": {
+    "lat": 42.3529628,
+    "lon": -71.0774237
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "128",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
   }
 },
 {
@@ -3709,6 +8254,100 @@
 },
 {
   "type": "way",
+  "id": 405395081,
+  "center": {
+    "lat": 42.3508119,
+    "lon": -71.0855179
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "340",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395083,
+  "center": {
+    "lat": 42.3508797,
+    "lon": -71.0847651
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "15",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395085,
+  "center": {
+    "lat": 42.3531530,
+    "lon": -71.0767346
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "106",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405395086,
+  "center": {
+    "lat": 42.3508087,
+    "lon": -71.0851514
+  },
+  "tags": {
+    "addr:housenumber": "12",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395088,
+  "center": {
+    "lat": 42.3510231,
+    "lon": -71.0846501
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "322",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395092,
+  "center": {
+    "lat": 42.3504607,
+    "lon": -71.0851680
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "285",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "apartments",
+    "building:levels": "5"
+  }
+},
+{
+  "type": "way",
   "id": 405395093,
   "center": {
     "lat": 42.3511678,
@@ -3722,6 +8361,33 @@
     "addr:street": "Commonwealth Avenue",
     "building": "apartments",
     "building:levels": "5"
+  }
+},
+{
+  "type": "way",
+  "id": 405395094,
+  "center": {
+    "lat": 42.3507500,
+    "lon": -71.0856577
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "344",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395096,
+  "center": {
+    "lat": 42.3507419,
+    "lon": -71.0851463
+  },
+  "tags": {
+    "building": "yes"
   }
 },
 {
@@ -3779,6 +8445,22 @@
 },
 {
   "type": "way",
+  "id": 405395102,
+  "center": {
+    "lat": 42.3508541,
+    "lon": -71.0853643
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "336",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
   "id": 405395103,
   "center": {
     "lat": 42.3521591,
@@ -3791,6 +8473,22 @@
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
     "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405395104,
+  "center": {
+    "lat": 42.3507304,
+    "lon": -71.0857284
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "346",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "yes"
   }
 },
 {
@@ -3829,6 +8527,109 @@
 },
 {
   "type": "way",
+  "id": 405395109,
+  "center": {
+    "lat": 42.3504221,
+    "lon": -71.0853112
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "287",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "terrace",
+    "building:levels": "3"
+  }
+},
+{
+  "type": "way",
+  "id": 405395110,
+  "center": {
+    "lat": 42.3531584,
+    "lon": -71.0766646
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "104",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Marlborough Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405395111,
+  "center": {
+    "lat": 42.3506191,
+    "lon": -71.0846035
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "17",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "apartments",
+    "building:levels": "3",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405395113,
+  "center": {
+    "lat": 42.3529470,
+    "lon": -71.0760923
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "65",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "7",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405395114,
+  "center": {
+    "lat": 42.3510258,
+    "lon": -71.0848096
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "9",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395116,
+  "center": {
+    "lat": 42.3530158,
+    "lon": -71.0757261
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "59",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
   "id": 405395120,
   "center": {
     "lat": 42.3517998,
@@ -3852,6 +8653,24 @@
     "start_date": "1872",
     "wikidata": "Q16892466",
     "wikipedia": "en:Hotel Agassiz"
+  }
+},
+{
+  "type": "way",
+  "id": 405395121,
+  "center": {
+    "lat": 42.3530397,
+    "lon": -71.0755606
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "55",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
   }
 },
 {
@@ -3900,6 +8719,24 @@
     "addr:state": "MA",
     "addr:street": "Commonwealth Avenue",
     "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405395128,
+  "center": {
+    "lat": 42.3530338,
+    "lon": -71.0756620
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "57",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
   }
 },
 {
@@ -3975,6 +8812,40 @@
 },
 {
   "type": "way",
+  "id": 405395136,
+  "center": {
+    "lat": 42.3526413,
+    "lon": -71.0771206
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "115",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405395137,
+  "center": {
+    "lat": 42.3529671,
+    "lon": -71.0758328
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "61",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
   "id": 405395138,
   "center": {
     "lat": 42.3515223,
@@ -3987,6 +8858,19 @@
     "addr:state": "MA",
     "addr:street": "Marlborough Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405395139,
+  "center": {
+    "lat": 42.3526657,
+    "lon": -71.0770377
+  },
+  "tags": {
+    "addr:housenumber": "113",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential"
   }
 },
 {
@@ -4039,6 +8923,24 @@
 },
 {
   "type": "way",
+  "id": 405395153,
+  "center": {
+    "lat": 42.3530818,
+    "lon": -71.0753668
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "49-51",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
   "id": 405397824,
   "center": {
     "lat": 42.3497800,
@@ -4067,6 +8969,22 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397829,
+  "center": {
+    "lat": 42.3491535,
+    "lon": -71.0856063
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "46",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Hereford Street",
     "building": "yes"
   }
 },
@@ -4138,6 +9056,40 @@
 },
 {
   "type": "way",
+  "id": 405397835,
+  "center": {
+    "lat": 42.3519156,
+    "lon": -71.0746826
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "79",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397836,
+  "center": {
+    "lat": 42.3523199,
+    "lon": -71.0748913
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "70",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "3",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
   "id": 405397838,
   "center": {
     "lat": 42.3508540,
@@ -4149,6 +9101,22 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397839,
+  "center": {
+    "lat": 42.3494523,
+    "lon": -71.0854975
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "306",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
     "building": "yes"
   }
 },
@@ -4187,6 +9155,22 @@
 },
 {
   "type": "way",
+  "id": 405397844,
+  "center": {
+    "lat": 42.3489414,
+    "lon": -71.0842730
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "284",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405397845,
   "center": {
     "lat": 42.3510881,
@@ -4196,6 +9180,22 @@
     "addr:city": "Boston",
     "addr:housenumber": "116",
     "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397846,
+  "center": {
+    "lat": 42.3488224,
+    "lon": -71.0845630
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "290",
+    "addr:postcode": "02115",
     "addr:state": "MA",
     "addr:street": "Newbury Street",
     "building": "yes"
@@ -4217,6 +9217,22 @@
     "building": "commercial",
     "building:levels": "5",
     "source": "survey;local knowledge;streetlevel imagery"
+  }
+},
+{
+  "type": "way",
+  "id": 405397849,
+  "center": {
+    "lat": 42.3485804,
+    "lon": -71.0853941
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "62",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Hereford Street",
+    "building": "yes"
   }
 },
 {
@@ -4269,6 +9285,22 @@
 },
 {
   "type": "way",
+  "id": 405397853,
+  "center": {
+    "lat": 42.3495956,
+    "lon": -71.0850477
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "296",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405397854,
   "center": {
     "lat": 42.3505105,
@@ -4296,6 +9328,38 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397858,
+  "center": {
+    "lat": 42.3492121,
+    "lon": -71.0847686
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "285",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397859,
+  "center": {
+    "lat": 42.3496757,
+    "lon": -71.0847502
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "288",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
     "building": "yes"
   }
 },
@@ -4379,6 +9443,38 @@
     "building": "apartments",
     "building:levels": "3",
     "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405397869,
+  "center": {
+    "lat": 42.3488831,
+    "lon": -71.0842446
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "42",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397872,
+  "center": {
+    "lat": 42.3495535,
+    "lon": -71.0840948
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "29",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
   }
 },
 {
@@ -4480,6 +9576,22 @@
 },
 {
   "type": "way",
+  "id": 405397880,
+  "center": {
+    "lat": 42.3522098,
+    "lon": -71.0752879
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "80",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405397881,
   "center": {
     "lat": 42.3496939,
@@ -4498,6 +9610,22 @@
     "internet_access:fee": "no",
     "name": "Teazzi",
     "opening_hours": "Mo-Su 09:00-21:00"
+  }
+},
+{
+  "type": "way",
+  "id": 405397882,
+  "center": {
+    "lat": 42.3491166,
+    "lon": -71.0851544
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "295",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "residential"
   }
 },
 {
@@ -4546,6 +9674,22 @@
     "addr:state": "MA",
     "addr:street": "Newbury Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397887,
+  "center": {
+    "lat": 42.3486071,
+    "lon": -71.0852448
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "308",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "residential"
   }
 },
 {
@@ -4648,6 +9792,22 @@
 },
 {
   "type": "way",
+  "id": 405397895,
+  "center": {
+    "lat": 42.3492657,
+    "lon": -71.0844513
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "36",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405397896,
   "center": {
     "lat": 42.3496887,
@@ -4680,6 +9840,23 @@
 },
 {
   "type": "way",
+  "id": 405397898,
+  "center": {
+    "lat": 42.3522276,
+    "lon": -71.0752241
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "78",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "5"
+  }
+},
+{
+  "type": "way",
   "id": 405397899,
   "center": {
     "lat": 42.3501524,
@@ -4691,6 +9868,22 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397902,
+  "center": {
+    "lat": 42.3493806,
+    "lon": -71.0857520
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "40",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Hereford Street",
     "building": "yes"
   }
 },
@@ -4827,6 +10020,39 @@
 },
 {
   "type": "way",
+  "id": 405397915,
+  "center": {
+    "lat": 42.3491949,
+    "lon": -71.0848450
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "287",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397916,
+  "center": {
+    "lat": 42.3520980,
+    "lon": -71.0742748
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "69",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "retail",
+    "building:levels": "5"
+  }
+},
+{
+  "type": "way",
   "id": 405397917,
   "center": {
     "lat": 42.3495767,
@@ -4875,6 +10101,22 @@
 },
 {
   "type": "way",
+  "id": 405397920,
+  "center": {
+    "lat": 42.3518953,
+    "lon": -71.0747592
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "81",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405397921,
   "center": {
     "lat": 42.3500753,
@@ -4903,6 +10145,22 @@
     "addr:state": "MA",
     "addr:street": "Commonwealth Avenue",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397923,
+  "center": {
+    "lat": 42.3523448,
+    "lon": -71.0748015
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "68",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential"
   }
 },
 {
@@ -5056,6 +10314,22 @@
 },
 {
   "type": "way",
+  "id": 405397939,
+  "center": {
+    "lat": 42.3492451,
+    "lon": -71.0847016
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "283",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405397941,
   "center": {
     "lat": 42.3498229,
@@ -5120,6 +10394,43 @@
 },
 {
   "type": "way",
+  "id": 405397948,
+  "center": {
+    "lat": 42.3487813,
+    "lon": -71.0837351
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "49",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes",
+    "building:levels": "4",
+    "building:material": "brick",
+    "operator": "Kensington Investment Company, Inc.",
+    "start_date": "1899",
+    "website": "https://www.kicboston.com/properties/49-51-gloucester-st/"
+  }
+},
+{
+  "type": "way",
+  "id": 405397950,
+  "center": {
+    "lat": 42.3496974,
+    "lon": -71.0846710
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "286",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405397952,
   "center": {
     "lat": 42.3508074,
@@ -5152,6 +10463,22 @@
 },
 {
   "type": "way",
+  "id": 405397955,
+  "center": {
+    "lat": 42.3487809,
+    "lon": -71.0847145
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "294",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405397956,
   "center": {
     "lat": 42.3516254,
@@ -5166,6 +10493,22 @@
     "building": "apartments",
     "building:levels": "3",
     "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405397959,
+  "center": {
+    "lat": 42.3494373,
+    "lon": -71.0840377
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "33",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
   }
 },
 {
@@ -5266,6 +10609,23 @@
 },
 {
   "type": "way",
+  "id": 405397980,
+  "center": {
+    "lat": 42.3521429,
+    "lon": -71.0755293
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "86",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "3"
+  }
+},
+{
+  "type": "way",
   "id": 405397982,
   "center": {
     "lat": 42.3496731,
@@ -5288,6 +10648,22 @@
 },
 {
   "type": "way",
+  "id": 405397983,
+  "center": {
+    "lat": 42.3492634,
+    "lon": -71.0846344
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "281",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405397985,
   "center": {
     "lat": 42.3502438,
@@ -5306,6 +10682,24 @@
     "name": "Enlighten Beauty Studio",
     "operator": "UrbanMeritage",
     "website": "https://jldunn.com/project/205-207-newbury-street.html"
+  }
+},
+{
+  "type": "way",
+  "id": 405397986,
+  "center": {
+    "lat": 42.3512241,
+    "lon": -71.0756499
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "224",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "yes",
+    "historic": "building",
+    "name": "Guildford Hall"
   }
 },
 {
@@ -5354,6 +10748,22 @@
     "addr:state": "MA",
     "addr:street": "Newbury Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405397991,
+  "center": {
+    "lat": 42.3487284,
+    "lon": -71.0849057
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "298-300",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "residential"
   }
 },
 {
@@ -5422,6 +10832,22 @@
 },
 {
   "type": "way",
+  "id": 405398001,
+  "center": {
+    "lat": 42.3495228,
+    "lon": -71.0853127
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "302",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398003,
   "center": {
     "lat": 42.3496691,
@@ -5470,6 +10896,22 @@
 },
 {
   "type": "way",
+  "id": 405398006,
+  "center": {
+    "lat": 42.3493854,
+    "lon": -71.0845093
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "32",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398007,
   "center": {
     "lat": 42.3497392,
@@ -5482,6 +10924,24 @@
     "addr:state": "MA",
     "addr:street": "Newbury Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398008,
+  "center": {
+    "lat": 42.3522463,
+    "lon": -71.0751566
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "74",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "3",
+    "roof:levels": "1"
   }
 },
 {
@@ -5640,6 +11100,23 @@
 },
 {
   "type": "way",
+  "id": 405398022,
+  "center": {
+    "lat": 42.3517564,
+    "lon": -71.0754532
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "103-105",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "commercial",
+    "building:levels": "5"
+  }
+},
+{
+  "type": "way",
   "id": 405398023,
   "center": {
     "lat": 42.3496468,
@@ -5736,6 +11213,40 @@
 },
 {
   "type": "way",
+  "id": 405398031,
+  "center": {
+    "lat": 42.3522677,
+    "lon": -71.0750793
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "70",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "3",
+    "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405398032,
+  "center": {
+    "lat": 42.3491382,
+    "lon": -71.0850770
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "293",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398034,
   "center": {
     "lat": 42.3501282,
@@ -5796,6 +11307,22 @@
     "addr:state": "MA",
     "addr:street": "Commonwealth Avenue",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398039,
+  "center": {
+    "lat": 42.3491755,
+    "lon": -71.0849233
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "289",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "residential"
   }
 },
 {
@@ -5864,6 +11391,49 @@
 },
 {
   "type": "way",
+  "id": 405398047,
+  "center": {
+    "lat": 42.3490956,
+    "lon": -71.0852357
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "297",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398048,
+  "center": {
+    "lat": 42.3517150,
+    "lon": -71.0759487
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398049,
+  "center": {
+    "lat": 42.3520521,
+    "lon": -71.0744616
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "73",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398050,
   "center": {
     "lat": 42.3495907,
@@ -5875,6 +11445,42 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Boylston Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398051,
+  "center": {
+    "lat": 42.3487203,
+    "lon": -71.0837030
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "51",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "residential",
+    "building:levels": "4",
+    "building:material": "brick",
+    "operator": "Kensington Investment Company, Inc.",
+    "website": "https://www.kicboston.com/properties/49-51-gloucester-st/"
+  }
+},
+{
+  "type": "way",
+  "id": 405398053,
+  "center": {
+    "lat": 42.3495723,
+    "lon": -71.0851324
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "298",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
     "building": "yes"
   }
 },
@@ -5912,6 +11518,22 @@
 },
 {
   "type": "way",
+  "id": 405398056,
+  "center": {
+    "lat": 42.3524036,
+    "lon": -71.0746254
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "64",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398059,
   "center": {
     "lat": 42.3507840,
@@ -5921,6 +11543,43 @@
     "addr:city": "Boston",
     "addr:housenumber": "167",
     "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398060,
+  "center": {
+    "lat": 42.3486859,
+    "lon": -71.0840755
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "48",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes",
+    "building:colour": "#EEEEBB",
+    "building:levels": "3",
+    "building:material": "stone",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
+  "id": 405398061,
+  "center": {
+    "lat": 42.3489738,
+    "lon": -71.0855590
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "305",
+    "addr:postcode": "02115",
     "addr:state": "MA",
     "addr:street": "Newbury Street",
     "building": "yes"
@@ -6027,6 +11686,27 @@
 },
 {
   "type": "way",
+  "id": 405398074,
+  "center": {
+    "lat": 42.3486304,
+    "lon": -71.0840477
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "50",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes",
+    "building:colour": "#EEEEBB",
+    "building:levels": "3",
+    "building:material": "stone",
+    "roof:material": "concrete",
+    "roof:shape": "flat"
+  }
+},
+{
+  "type": "way",
   "id": 405398075,
   "center": {
     "lat": 42.3514401,
@@ -6107,6 +11787,74 @@
 },
 {
   "type": "way",
+  "id": 405398082,
+  "center": {
+    "lat": 42.3490766,
+    "lon": -71.0853148
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "299",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398083,
+  "center": {
+    "lat": 42.3515779,
+    "lon": -71.0758804
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "230",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "architect": "Cummings and Sears",
+    "building": "yes",
+    "note": "Alternate address\n109 Newbury Street\nBoston, MA 02116",
+    "operator": "Wing Series LLC",
+    "start_date": "1872-01-05"
+  }
+},
+{
+  "type": "way",
+  "id": 405398084,
+  "center": {
+    "lat": 42.3521642,
+    "lon": -71.0754526
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "84",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 405398085,
+  "center": {
+    "lat": 42.3520294,
+    "lon": -71.0745475
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "75",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398086,
   "center": {
     "lat": 42.3507630,
@@ -6139,6 +11887,22 @@
 },
 {
   "type": "way",
+  "id": 405398089,
+  "center": {
+    "lat": 42.3486496,
+    "lon": -71.0850880
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "304",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398090,
   "center": {
     "lat": 42.3506044,
@@ -6150,6 +11914,22 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398091,
+  "center": {
+    "lat": 42.3486961,
+    "lon": -71.0850219
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "302",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
     "building": "yes"
   }
 },
@@ -6205,6 +11985,22 @@
 },
 {
   "type": "way",
+  "id": 405398100,
+  "center": {
+    "lat": 42.3495476,
+    "lon": -71.0852224
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "300",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398102,
   "center": {
     "lat": 42.3492933,
@@ -6238,6 +12034,22 @@
 },
 {
   "type": "way",
+  "id": 405398105,
+  "center": {
+    "lat": 42.3487741,
+    "lon": -71.0841594
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "46",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398106,
   "center": {
     "lat": 42.3490323,
@@ -6266,6 +12078,22 @@
     "addr:state": "MA",
     "addr:street": "Newbury Street",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398108,
+  "center": {
+    "lat": 42.3521875,
+    "lon": -71.0753687
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "82",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential"
   }
 },
 {
@@ -6324,6 +12152,54 @@
 },
 {
   "type": "way",
+  "id": 405398112,
+  "center": {
+    "lat": 42.3486286,
+    "lon": -71.0851656
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "306",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398113,
+  "center": {
+    "lat": 42.3491565,
+    "lon": -71.0850009
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "291",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398114,
+  "center": {
+    "lat": 42.3518172,
+    "lon": -71.0752021
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "97",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "retail"
+  }
+},
+{
+  "type": "way",
   "id": 405398115,
   "center": {
     "lat": 42.3491088,
@@ -6370,6 +12246,38 @@
     "building": "apartments",
     "building:levels": "2",
     "roof:levels": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 405398120,
+  "center": {
+    "lat": 42.3490448,
+    "lon": -71.0855445
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "50",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Hereford Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398121,
+  "center": {
+    "lat": 42.3496187,
+    "lon": -71.0849629
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "294",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
   }
 },
 {
@@ -6434,6 +12342,24 @@
     "addr:state": "MA",
     "addr:street": "Commonwealth Avenue",
     "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398128,
+  "center": {
+    "lat": 42.3522940,
+    "lon": -71.0749848
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "72",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential",
+    "building:levels": "3",
+    "roof:levels": "1"
   }
 },
 {
@@ -6586,6 +12512,22 @@
     "addr:street": "Newbury Street",
     "building": "yes",
     "name": "Skin MD - Boston"
+  }
+},
+{
+  "type": "way",
+  "id": 405398145,
+  "center": {
+    "lat": 42.3490559,
+    "lon": -71.0853968
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "301",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
   }
 },
 {
@@ -6757,6 +12699,38 @@
 },
 {
   "type": "way",
+  "id": 405398164,
+  "center": {
+    "lat": 42.3520772,
+    "lon": -71.0743673
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "71",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398166,
+  "center": {
+    "lat": 42.3518838,
+    "lon": -71.0748469
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "83",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "commercial"
+  }
+},
+{
+  "type": "way",
   "id": 405398168,
   "center": {
     "lat": 42.3499646,
@@ -6768,6 +12742,22 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398169,
+  "center": {
+    "lat": 42.3494770,
+    "lon": -71.0854068
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "304",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
     "building": "yes"
   }
 },
@@ -6869,6 +12859,22 @@
 },
 {
   "type": "way",
+  "id": 405398179,
+  "center": {
+    "lat": 42.3518959,
+    "lon": -71.0750348
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "91",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "commercial"
+  }
+},
+{
+  "type": "way",
   "id": 405398180,
   "center": {
     "lat": 42.3504356,
@@ -6917,6 +12923,22 @@
 },
 {
   "type": "way",
+  "id": 405398187,
+  "center": {
+    "lat": 42.3523306,
+    "lon": -71.0746873
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "66",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "residential"
+  }
+},
+{
+  "type": "way",
   "id": 405398190,
   "center": {
     "lat": 42.3510937,
@@ -6933,6 +12955,22 @@
 },
 {
   "type": "way",
+  "id": 405398192,
+  "center": {
+    "lat": 42.3488558,
+    "lon": -71.0844423
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "288",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398194,
   "center": {
     "lat": 42.3495441,
@@ -6944,6 +12982,38 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398195,
+  "center": {
+    "lat": 42.3518753,
+    "lon": -71.0749431
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "85",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "commercial"
+  }
+},
+{
+  "type": "way",
+  "id": 405398196,
+  "center": {
+    "lat": 42.3488216,
+    "lon": -71.0842145
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "44",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
     "building": "yes"
   }
 },
@@ -6981,6 +13051,22 @@
 },
 {
   "type": "way",
+  "id": 405398203,
+  "center": {
+    "lat": 42.3520068,
+    "lon": -71.0746327
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "77",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398204,
   "center": {
     "lat": 42.3497097,
@@ -7008,6 +13094,22 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398207,
+  "center": {
+    "lat": 42.3495944,
+    "lon": -71.0848262
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "290",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
     "building": "yes"
   }
 },
@@ -7045,6 +13147,22 @@
 },
 {
   "type": "way",
+  "id": 405398210,
+  "center": {
+    "lat": 42.3523801,
+    "lon": -71.0745069
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "62",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 405398211,
   "center": {
     "lat": 42.3507821,
@@ -7072,6 +13190,46 @@
     "addr:postcode": "02116",
     "addr:state": "MA",
     "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405398214,
+  "center": {
+    "lat": 42.3517678,
+    "lon": -71.0755630
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "233",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "architect": "Henry Hobson Richardson",
+    "building": "church",
+    "building:levels": "5",
+    "building:material": "brick",
+    "heritage:website": "https://backbayhouses.org/433-clarendon2/",
+    "name": "Trinity Rectory",
+    "start_date": "1880",
+    "wikidata": "Q7842941",
+    "wikipedia": "en:Trinity Rectory"
+  }
+},
+{
+  "type": "way",
+  "id": 405398215,
+  "center": {
+    "lat": 42.3493893,
+    "lon": -71.0856039
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "308",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
     "building": "yes"
   }
 },
@@ -7148,6 +13306,334 @@
 },
 {
   "type": "way",
+  "id": 405404559,
+  "center": {
+    "lat": 42.3456521,
+    "lon": -71.0801977
+  },
+  "tags": {
+    "addr:housenumber": "67",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405404560,
+  "center": {
+    "lat": 42.3460020,
+    "lon": -71.0800081
+  },
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:street": "Garrison Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405404595,
+  "center": {
+    "lat": 42.3457062,
+    "lon": -71.0801432
+  },
+  "tags": {
+    "addr:housenumber": "65",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405404598,
+  "center": {
+    "lat": 42.3459635,
+    "lon": -71.0799510
+  },
+  "tags": {
+    "addr:housenumber": "15",
+    "addr:street": "Garrison Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405404605,
+  "center": {
+    "lat": 42.3483734,
+    "lon": -71.0737735
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "131",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "building": "office",
+    "building:levels": "8"
+  }
+},
+{
+  "type": "way",
+  "id": 405404617,
+  "center": {
+    "lat": 42.3463306,
+    "lon": -71.0793474
+  },
+  "tags": {
+    "addr:housenumber": "45",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405404623,
+  "center": {
+    "lat": 42.3460745,
+    "lon": -71.0789861
+  },
+  "tags": {
+    "addr:housenumber": "42;44",
+    "addr:street": "Saint Botolph Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405404625,
+  "center": {
+    "lat": 42.3463754,
+    "lon": -71.0792934
+  },
+  "tags": {
+    "addr:housenumber": "43",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405404631,
+  "center": {
+    "lat": 42.3459257,
+    "lon": -71.0798946
+  },
+  "tags": {
+    "addr:housenumber": "17",
+    "addr:street": "Garrison Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405404647,
+  "center": {
+    "lat": 42.3454818,
+    "lon": -71.0803494
+  },
+  "tags": {
+    "addr:housenumber": "81",
+    "addr:street": "Saint Botolph Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405404651,
+  "center": {
+    "lat": 42.3455250,
+    "lon": -71.0802963
+  },
+  "tags": {
+    "addr:housenumber": "79",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405404664,
+  "center": {
+    "lat": 42.3464672,
+    "lon": -71.0791827
+  },
+  "tags": {
+    "addr:housenumber": "39",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405404672,
+  "center": {
+    "lat": 42.3457630,
+    "lon": -71.0800646
+  },
+  "tags": {
+    "addr:housenumber": "63",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405404674,
+  "center": {
+    "lat": 42.3455973,
+    "lon": -71.0802760
+  },
+  "tags": {
+    "addr:housenumber": "69",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 405512680,
+  "center": {
+    "lat": 42.3461458,
+    "lon": -71.0772941
+  },
+  "tags": {
+    "addr:housenumber": "34",
+    "addr:street": "Yarmouth Street",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 405512719,
+  "center": {
+    "lat": 42.3459671,
+    "lon": -71.0770282
+  },
+  "tags": {
+    "addr:housenumber": "26",
+    "addr:street": "Yarmouth Street",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 405512749,
+  "center": {
+    "lat": 42.3457729,
+    "lon": -71.0775849
+  },
+  "tags": {
+    "addr:housenumber": "241",
+    "addr:street": "West Canton Street",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 405512822,
+  "center": {
+    "lat": 42.3461115,
+    "lon": -71.0772430
+  },
+  "tags": {
+    "addr:housenumber": "34",
+    "addr:street": "Yarmouth Street",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 405512925,
+  "center": {
+    "lat": 42.3458551,
+    "lon": -71.0776613
+  },
+  "tags": {
+    "addr:housenumber": "245",
+    "addr:street": "West Canton Street",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 405512933,
+  "center": {
+    "lat": 42.3459318,
+    "lon": -71.0769757
+  },
+  "tags": {
+    "addr:housenumber": "24",
+    "addr:street": "Yarmouth Street",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 405512999,
+  "center": {
+    "lat": 42.3460762,
+    "lon": -71.0771905
+  },
+  "tags": {
+    "addr:housenumber": "32",
+    "addr:street": "Yarmouth Street",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 405513087,
+  "center": {
+    "lat": 42.3458058,
+    "lon": -71.0776337
+  },
+  "tags": {
+    "addr:housenumber": "243",
+    "addr:street": "West Canton Street",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 405513092,
+  "center": {
+    "lat": 42.3460420,
+    "lon": -71.0771395
+  },
+  "tags": {
+    "addr:housenumber": "30",
+    "addr:street": "Yarmouth Street",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 405513109,
+  "center": {
+    "lat": 42.3460051,
+    "lon": -71.0770848
+  },
+  "tags": {
+    "addr:housenumber": "28",
+    "addr:street": "Yarmouth Street",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
+  "id": 405513124,
+  "center": {
+    "lat": 42.3457384,
+    "lon": -71.0775338
+  },
+  "tags": {
+    "addr:housenumber": "239",
+    "addr:street": "West Canton Street",
+    "building": "house"
+  }
+},
+{
+  "type": "way",
   "id": 405655158,
   "center": {
     "lat": 42.3483365,
@@ -7187,6 +13673,52 @@
 },
 {
   "type": "way",
+  "id": 406424111,
+  "center": {
+    "lat": 42.3464410,
+    "lon": -71.0768608
+  },
+  "tags": {
+    "addr:housenumber": "1;3;5",
+    "addr:street": "Yarmouth Place",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 406424150,
+  "center": {
+    "lat": 42.3466881,
+    "lon": -71.0764803
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 406424181,
+  "center": {
+    "lat": 42.3466267,
+    "lon": -71.0765722
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 406424196,
+  "center": {
+    "lat": 42.3465758,
+    "lon": -71.0766493
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 485193876,
   "center": {
     "lat": 42.3485189,
@@ -7211,6 +13743,28 @@
     "addr:street": "Huntington Avenue",
     "building": "yes",
     "source": "esri/Boston_MA_Addresses"
+  }
+},
+{
+  "type": "way",
+  "id": 485919359,
+  "center": {
+    "lat": 42.3469198,
+    "lon": -71.0834468
+  },
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 485919395,
+  "center": {
+    "lat": 42.3469243,
+    "lon": -71.0839847
+  },
+  "tags": {
+    "building": "yes"
   }
 },
 {
@@ -7247,6 +13801,40 @@
     "architect": "James M. Standish",
     "building": "yes",
     "building:levels": "4"
+  }
+},
+{
+  "type": "way",
+  "id": 804768797,
+  "center": {
+    "lat": 42.3527711,
+    "lon": -71.0833640
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "330",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "17",
+    "roof:levels": "0"
+  }
+},
+{
+  "type": "way",
+  "id": 804811598,
+  "center": {
+    "lat": 42.3493283,
+    "lon": -71.0844818
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "34",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Gloucester Street",
+    "building": "yes"
   }
 },
 {
@@ -7339,6 +13927,48 @@
     "building": "yes",
     "lit": "yes",
     "shelter_type": "public_transport"
+  }
+},
+{
+  "type": "way",
+  "id": 813289442,
+  "center": {
+    "lat": 42.3488081,
+    "lon": -71.0737453
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "135",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Clarendon Street",
+    "architect": "Robert A.M. Stern Architects, LLP",
+    "building": "yes",
+    "building:levels": "33",
+    "building:material": "brick",
+    "name": "One Back Bay",
+    "phone": "+1-617-284-5100",
+    "roof:material": "concrete",
+    "roof:shape": "flat",
+    "website": "https://www.relatedrentals.com/apartment-rentals/boston/back-bay/one-back-bay"
+  }
+},
+{
+  "type": "way",
+  "id": 813447120,
+  "center": {
+    "lat": 42.3484670,
+    "lon": -71.0853354
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "66",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Hereford Street",
+    "building": "yes",
+    "building:material": "brick",
+    "wheelchair": "limited"
   }
 },
 {
@@ -7573,6 +14203,24 @@
 },
 {
   "type": "way",
+  "id": 822959751,
+  "center": {
+    "lat": 42.3506165,
+    "lon": -71.0744540
+  },
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "building:material": "cement_block",
+    "building:min_level": "1",
+    "building:part": "yes",
+    "height": "8.3",
+    "layer": "1",
+    "min_height": "7.3"
+  }
+},
+{
+  "type": "way",
   "id": 823008367,
   "center": {
     "lat": 42.3488380,
@@ -7599,6 +14247,17 @@
     "building": "yes",
     "building:levels": "17",
     "name": "888 Boylston Street"
+  }
+},
+{
+  "type": "way",
+  "id": 825058450,
+  "center": {
+    "lat": 42.3459356,
+    "lon": -71.0773000
+  },
+  "tags": {
+    "building": "yes"
   }
 },
 {
@@ -7688,6 +14347,22 @@
 },
 {
   "type": "way",
+  "id": 832824460,
+  "center": {
+    "lat": 42.3490002,
+    "lon": -71.0854653
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "303",
+    "addr:postcode": "02115",
+    "addr:state": "MA",
+    "addr:street": "Newbury Street",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
   "id": 833346865,
   "center": {
     "lat": 42.3525655,
@@ -7701,6 +14376,18 @@
     "addr:street": "Marlborough Street",
     "building": "residential",
     "building:material": "brick"
+  }
+},
+{
+  "type": "way",
+  "id": 835909122,
+  "center": {
+    "lat": 42.3526416,
+    "lon": -71.0833575
+  },
+  "tags": {
+    "building": "roof",
+    "layer": "1"
   }
 },
 {
@@ -7783,6 +14470,193 @@
 },
 {
   "type": "way",
+  "id": 838831147,
+  "center": {
+    "lat": 42.3464139,
+    "lon": -71.0825255
+  },
+  "tags": {
+    "building": "roof",
+    "building:levels": "1",
+    "building:material": "glass",
+    "height": "4",
+    "layer": "2"
+  }
+},
+{
+  "type": "way",
+  "id": 838846724,
+  "center": {
+    "lat": 42.3457039,
+    "lon": -71.0813942
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:postcode": "02199",
+    "addr:state": "MA",
+    "addr:street": "Huntington Avenue",
+    "air_conditioning": "no",
+    "bicycle": "no",
+    "building": "train_station",
+    "covered": "yes",
+    "foot": "designated",
+    "internet_access": "no",
+    "layer": "-1",
+    "level": "-1",
+    "light_rail": "yes",
+    "lit": "yes",
+    "location": "underground",
+    "name": "Prudential",
+    "operator": "MBTA",
+    "start_date": "1941-02-16",
+    "stroller": "yes",
+    "supervised": "yes",
+    "website": "https://www.mbta.com/stops/place-prmnl",
+    "wheelchair": "yes",
+    "wikidata": "Q7252977",
+    "wikipedia": "en:Prudential station"
+  }
+},
+{
+  "type": "way",
+  "id": 839522714,
+  "center": {
+    "lat": 42.3456639,
+    "lon": -71.0811746
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "shelter",
+    "bench": "no",
+    "building": "yes",
+    "conveying": "yes",
+    "covered": "yes",
+    "indoor": "room",
+    "level": "0;-1",
+    "lit": "yes",
+    "location": "indoor",
+    "oneway": "no",
+    "shelter_type": "public_transport",
+    "stairs": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 839522720,
+  "center": {
+    "lat": 42.3457786,
+    "lon": -71.0810106
+  },
+  "tags": {
+    "building": "roof",
+    "building:levels": "1",
+    "height": "4",
+    "layer": "1",
+    "min_height": "3"
+  }
+},
+{
+  "type": "way",
+  "id": 841133367,
+  "center": {
+    "lat": 42.3529391,
+    "lon": -71.0834460
+  },
+  "tags": {
+    "access": "residents",
+    "addr:city": "Boston",
+    "addr:housenumber": "330",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "amenity": "parking",
+    "building": "parking",
+    "building:levels": "2",
+    "covered": "yes",
+    "lit": "yes",
+    "operator": "330",
+    "operator:type": "private",
+    "parking": "multi-storey",
+    "supervised": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 848982265,
+  "center": {
+    "lat": 42.3496701,
+    "lon": -71.0841410
+  },
+  "tags": {
+    "access": "private",
+    "addr:city": "Boston",
+    "addr:housenumber": "282",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "garage",
+    "building:entrances": "2",
+    "building:levels": "1",
+    "building:material": "brick",
+    "capacity": "2",
+    "garage": "carports",
+    "height": "3",
+    "heritage:website": "https://backbayhouses.org/282-commonwealth/",
+    "image": "https://backbayhouses.files.wordpress.com/2013/07/comm-282-2013-03-6a.jpg",
+    "motor_vehicle": "private",
+    "parking": "carports",
+    "roof:colour": "grey",
+    "start_date": "1951-07",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1158819556,
+  "center": {
+    "lat": 42.3462890,
+    "lon": -71.0793976
+  },
+  "tags": {
+    "addr:housenumber": "47",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 1158819558,
+  "center": {
+    "lat": 42.3458068,
+    "lon": -71.0799849
+  },
+  "tags": {
+    "addr:housenumber": "61",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments"
+  }
+},
+{
+  "type": "way",
+  "id": 1159240334,
+  "center": {
+    "lat": 42.3485113,
+    "lon": -71.0747464
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "426",
+    "addr:state": "MA",
+    "addr:street": "Stuart Street",
+    "building": "yes",
+    "building:levels": "4",
+    "club": "yes",
+    "name": "The University Club"
+  }
+},
+{
+  "type": "way",
   "id": 1272741432,
   "center": {
     "lat": 42.3499734,
@@ -7809,6 +14683,60 @@
     "building": "yes",
     "building:levels": "4",
     "wikidata": "Q132562077"
+  }
+},
+{
+  "type": "way",
+  "id": 1361430834,
+  "center": {
+    "lat": 42.3498022,
+    "lon": -71.0842378
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "282",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Commonwealth Avenue",
+    "building": "yes",
+    "wikidata": "Q132566762"
+  }
+},
+{
+  "type": "way",
+  "id": 1363570959,
+  "center": {
+    "lat": 42.3526249,
+    "lon": -71.0838705
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "336",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "2"
+  }
+},
+{
+  "type": "way",
+  "id": 1363570960,
+  "center": {
+    "lat": 42.3527348,
+    "lon": -71.0838174
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "334",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Beacon Street",
+    "building": "residential",
+    "building:levels": "4",
+    "roof:levels": "2",
+    "wikidata": "Q132817989"
   }
 },
 {
@@ -7886,6 +14814,26 @@
 },
 {
   "type": "relation",
+  "id": 63945,
+  "center": {
+    "lat": 42.3512945,
+    "lon": -71.0746464
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "501",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Boylston Street",
+    "architect": "Cram and Ferguson;Hoyle Doran and Berry",
+    "building": "commercial",
+    "building:colour": "#FFFFCC",
+    "type": "multipolygon",
+    "website": "https://501boylstonstreet.com/"
+  }
+},
+{
+  "type": "relation",
   "id": 64066,
   "center": {
     "lat": 42.3500761,
@@ -7941,6 +14889,34 @@
 },
 {
   "type": "relation",
+  "id": 3640314,
+  "center": {
+    "lat": 42.3465250,
+    "lon": -71.0838516
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "39",
+    "addr:postcode": "02199",
+    "addr:state": "MA",
+    "addr:street": "Dalton Street",
+    "brand": "Sheraton",
+    "brand:wikidata": "Q634831",
+    "building": "yes",
+    "building:levels": "29",
+    "fax": "+1-617-236-1702",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Sheraton Boston Hotel",
+    "opening_hours:covid19": "closed",
+    "phone": "+1-617-236-2000",
+    "tourism": "hotel",
+    "type": "multipolygon",
+    "website": "https://www.marriott.com/hotels/travel/bosbo-sheraton-boston-hotel"
+  }
+},
+{
+  "type": "relation",
   "id": 11201377,
   "center": {
     "lat": 42.3502216,
@@ -7973,6 +14949,55 @@
     "wheelchair": "yes",
     "wikidata": "Q1059013",
     "wikipedia": "en:Old South Church"
+  }
+},
+{
+  "type": "relation",
+  "id": 15667770,
+  "center": {
+    "lat": 42.3461562,
+    "lon": -71.0796467
+  },
+  "tags": {
+    "addr:housenumber": "8",
+    "addr:street": "Garrison Street",
+    "building": "apartments",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 15667771,
+  "center": {
+    "lat": 42.3462574,
+    "lon": -71.0795064
+  },
+  "tags": {
+    "addr:housenumber": "49;51",
+    "addr:street": "Saint Botolph Street",
+    "building": "apartments",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 18889572,
+  "center": {
+    "lat": 42.3471511,
+    "lon": -71.0839191
+  },
+  "tags": {
+    "addr:city": "Boston",
+    "addr:housenumber": "900",
+    "addr:postcode": "02116",
+    "addr:state": "MA",
+    "addr:street": "Boylston Street",
+    "amenity": "conference_centre",
+    "building": "commercial",
+    "layer": "2",
+    "name": "Hynes Convention Center",
+    "type": "multipolygon",
+    "wikidata": "Q5956986"
   }
 }
 
