@@ -3,6 +3,7 @@ import { io } from 'socket.io-client'
 import './App.css'
 import ShotMap from './components/ShotMap'
 import { mics, gunshot } from './data'  // Use hardcoded microphones
+import { sendCall } from './utils/phoneCall'
 // import type { Gunshot } from './types'
 
 const API_BASE_URL = 'http://localhost:5001'
@@ -14,6 +15,20 @@ function App() {
 
   // Initialize WebSocket connection
   useEffect(() => {
+    (async () => {
+      try {
+        const result = await sendCall({
+          to: "+16508627094",
+          buildingAddress: "123 Market St, San Jose, CA",
+          distanceToGunshot: "300 feet",
+          timestamp: "2025-09-14 05:30 AM",
+        });
+        console.log("Response:", result);
+      } catch (error) {
+        console.error("Error sending call:", error);
+      }
+    })();
+
     const newSocket = io(API_BASE_URL)
 
     // Connection events
