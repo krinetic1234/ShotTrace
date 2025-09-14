@@ -10,12 +10,25 @@ interface ShotMapProps {
 
 const DEFAULT_ZOOM = 15;
 
+const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
+
 export default function ShotMap({ mics, gunshot }: ShotMapProps) {
 	const initialViewState = useMemo(() => ({
 		longitude: gunshot.lng,
 		latitude: gunshot.lat,
 		zoom: DEFAULT_ZOOM,
 	}), [gunshot.lng, gunshot.lat]);
+
+        // Reverse geocode Times Square
+        console.log(API_KEY);
+        fetch(
+        `https://maps.googleapis.com/maps/api/geocode/json?latlng=40.758,-73.9855&key=${API_KEY}`
+        )
+        .then((res) => res.json())
+        .then((data) => console.log("✅ API works:", data))
+        .catch((err) => console.error("❌ Error:", err));
+
 
 	return (
 		<div className="shotmap-root">
