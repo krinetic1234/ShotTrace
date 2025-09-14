@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react'
 import { io } from 'socket.io-client'
 import './App.css'
 import ShotMap from './components/ShotMap'
-import { mics } from './data'  // Use hardcoded microphones
-import type { Gunshot } from './types'
+import { mics, gunshot } from './data'  // Use hardcoded microphones
+// import type { Gunshot } from './types'
 
-const API_BASE_URL = 'http://localhost:5000'
+const API_BASE_URL = 'http://localhost:5001'
 
 function App() {
-  const [gunshot, setGunshot] = useState<Gunshot | null>(null)
+  // const [gunshot, setGunshot] = useState<Gunshot | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [connectionStatus, setConnectionStatus] = useState<string>('Connecting...')
 

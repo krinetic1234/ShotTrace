@@ -1,34 +1,249 @@
 .shotmap-root {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
 }
 
 .marker-gunshot {
-	width: 16px;
-	height: 16px;
-	border-radius: 9999px;
-	background-color: #e11d48; /* rose-600 */
-	border: 2px solid #ffffff;
-	box-shadow: 0 0 0 2px #e11d48;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #ff1744 0%, #e91e63 100%);
+	border: 3px solid #ffffff;
+	box-shadow: 0 0 0 3px #ff1744, 0 4px 20px rgba(255, 23, 68, 0.4);
+	position: relative;
+	z-index: 10;
+}
+
+.marker-gunshot-container {
+	position: relative;
+	display: inline-block;
+}
+
+.marker-gunshot-container::before,
+.marker-gunshot-container::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: transparent;
+	pointer-events: none;
+	z-index: 5;
+}
+
+.marker-gunshot-container::before {
+	border: 2px solid rgba(255, 23, 68, 0.8);
+	animation: ripple-1 2s linear infinite;
+}
+
+.marker-gunshot-container::after {
+	border: 2px solid rgba(255, 23, 68, 0.6);
+	animation: ripple-2 2s linear infinite 0.5s;
+}
+
+.marker-gunshot::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #ffffff;
+}
+
+
+@keyframes ripple-1 {
+	0% {
+		width: 20px;
+		height: 20px;
+		opacity: 1;
+		border-width: 3px;
+	}
+	30% {
+		width: 50px;
+		height: 50px;
+		opacity: 0.8;
+		border-width: 2px;
+	}
+	70% {
+		width: 80px;
+		height: 80px;
+		opacity: 0.4;
+		border-width: 1px;
+	}
+	100% {
+		width: 120px;
+		height: 120px;
+		opacity: 0;
+		border-width: 0px;
+	}
+}
+
+@keyframes ripple-2 {
+	0% {
+		width: 20px;
+		height: 20px;
+		opacity: 1;
+		border-width: 2px;
+	}
+	30% {
+		width: 45px;
+		height: 45px;
+		opacity: 0.7;
+		border-width: 1.5px;
+	}
+	70% {
+		width: 75px;
+		height: 75px;
+		opacity: 0.3;
+		border-width: 1px;
+	}
+	100% {
+		width: 110px;
+		height: 110px;
+		opacity: 0;
+		border-width: 0px;
+	}
 }
 
 .marker-mic {
-	width: 12px;
-	height: 12px;
-	border-radius: 9999px;
-	background-color: #2563eb; /* blue-600 */
+	width: 18px;
+	height: 18px;
+	background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
 	border: 2px solid #ffffff;
-	box-shadow: 0 0 0 2px #2563eb;
+	border-radius: 4px;
+	box-shadow: 0 0 0 2px #00b4d8, 0 3px 15px rgba(0, 180, 216, 0.4);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
+.marker-mic::before {
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 10px;
+	background: #ffffff;
+	border-radius: 3px 3px 0 0;
+	top: 2px;
+	animation: mic-listening 3s ease-in-out infinite;
+}
+
+.marker-mic::after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	background: #ffffff;
+	border-radius: 1px;
+	bottom: 2px;
+	box-shadow: 0 -2px 0 #ffffff;
+}
 
 .marker-place {
-	width: 12px;
-	height: 12px;
-	border-radius: 9999px;
-	background-color: green; /* blue-600 */
+	width: 16px;
+	height: 16px;
+	background: linear-gradient(135deg, #00e676 0%, #00c853 100%);
 	border: 2px solid #ffffff;
-	box-shadow: 0 0 0 2px green;
+	border-radius: 2px;
+	box-shadow: 0 0 0 2px #00e676, 0 2px 12px rgba(0, 230, 118, 0.4);
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.marker-place::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 10px;
+	background: #ffffff;
+	bottom: 1px;
+	border-radius: 1px;
+}
+
+.marker-place::after {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 6px;
+	background: linear-gradient(135deg, #00e676 0%, #00c853 100%);
+	bottom: 1px;
+	border-radius: 0.5px;
+	z-index: 1;
+}
+
+.clickable {
+	cursor: pointer;
+	transition: transform 0.1s ease-out, box-shadow 0.2s ease-out, filter 0.2s ease-out;
+}
+
+.clickable:hover {
+	transform: scale(1.3);
+	filter: brightness(1.2);
+}
+
+.marker-gunshot.clickable:hover {
+	box-shadow: 0 0 0 4px #ff1744, 0 6px 30px rgba(255, 23, 68, 0.6);
+}
+
+.marker-mic.clickable:hover {
+	box-shadow: 0 0 0 3px #00b4d8, 0 4px 20px rgba(0, 180, 216, 0.6);
+	transform: scale(1.2);
+}
+
+.marker-mic.clickable:hover::before {
+	animation: mic-pulse 0.4s ease-in-out infinite;
+}
+
+.marker-place.clickable:hover {
+	box-shadow: 0 0 0 3px #00e676, 0 3px 18px rgba(0, 230, 118, 0.6);
+	transform: scale(1.2);
+}
+
+.marker-place.clickable:hover::before {
+	animation: building-glow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes mic-pulse {
+	0%, 100% { 
+		transform: scaleY(1);
+		opacity: 1;
+	}
+	50% { 
+		transform: scaleY(1.2);
+		opacity: 0.8;
+	}
+}
+
+@keyframes building-glow {
+	0% { 
+		background: #ffffff;
+	}
+	100% { 
+		background: rgba(255, 255, 255, 0.7);
+		box-shadow: 0 0 4px rgba(0, 230, 118, 0.5);
+	}
+}
+
+@keyframes mic-listening {
+	0%, 100% { 
+		opacity: 1;
+		transform: scaleY(1);
+	}
+	50% { 
+		opacity: 0.7;
+		transform: scaleY(0.9);
+	}
 }
 
 .places-list {

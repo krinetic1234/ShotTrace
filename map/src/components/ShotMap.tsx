@@ -1,7 +1,9 @@
-import { useMemo } from "react";
-import Map, { Marker, NavigationControl, ScaleControl } from "react-map-gl/maplibre";
+import { useMemo, useState } from "react";
+import Map, { Marker, NavigationControl, ScaleControl, Source, Layer } from "react-map-gl/maplibre";
 import type { Gunshot, Mic } from "../types";
 import { useBuildings } from "../hooks/useBuildings";
+import Sidebar, { type SelectedItem } from "./Sidebar";
+import MenuBar from "./MenuBar";
 import "./ShotMap.css";
 
 interface ShotMapProps {
@@ -11,11 +13,100 @@ interface ShotMapProps {
 
 const DEFAULT_ZOOM = 15;
 
+// Calculate distance between two points in meters using Haversine formula
+function calculateDistance(lat1: number, lng1: number, lat2: number, lng2: number): number {
+  const R = 6371000; // Earth's radius in meters
+  const φ1 = lat1 * Math.PI/180;
+  const φ2 = lat2 * Math.PI/180;
+  const Δφ = (lat2-lat1) * Math.PI/180;
+  const Δλ = (lng2-lng1) * Math.PI/180;
+
+  const a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
+          Math.cos(φ1) * Math.cos(φ2) *
+          Math.sin(Δλ/2) * Math.sin(Δλ/2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+  return R * c;
+}
+
+// Generate circle geometry for a given center and radius using proper projection
+function createCircleGeoJSON(centerLng: number, centerLat: number, radiusMeters: number) {
+  const points = 64;
+  const coordinates: number[][] = [];
+  
+  // Earth's radius in meters
+  const R = 6371000;
+  
+  // Convert center to radians
+  const centerLatRad = centerLat * Math.PI / 180;
+  const centerLngRad = centerLng * Math.PI / 180;
+  
+  for (let i = 0; i <= points; i++) {
+    const bearing = (i * 360 / points) * Math.PI / 180;
+    
+    // Calculate point at distance and bearing from center using spherical geometry
+    const lat2 = Math.asin(
+      Math.sin(centerLatRad) * Math.cos(radiusMeters / R) +
+      Math.cos(centerLatRad) * Math.sin(radiusMeters / R) * Math.cos(bearing)
+    );
+    
+    const lng2 = centerLngRad + Math.atan2(
+      Math.sin(bearing) * Math.sin(radiusMeters / R) * Math.cos(centerLatRad),
+      Math.cos(radiusMeters / R) - Math.sin(centerLatRad) * Math.sin(lat2)
+    );
+    
+    // Convert back to degrees
+    const lat = lat2 * 180 / Math.PI;
+    const lng = lng2 * 180 / Math.PI;
+    
+    coordinates.push([lng, lat]);
+  }
+  
+  return {
+    type: 'FeatureCollection' as const,
+    features: [{
+      type: 'Feature' as const,
+      geometry: {
+        type: 'Polygon' as const,
+        coordinates: [coordinates]
+      },
+      properties: {}
+    }]
+  };
+}
+
 export default function ShotMap({ mics, gunshot }: ShotMapProps) {
-  const { places, loading, error } = useBuildings(
+  const [selectedItem, setSelectedItem] = useState<SelectedItem>(null);
+  const [buildingCount, setBuildingCount] = useState(20);
+  const [showSoundRadius, setShowSoundRadius] = useState(true);
+  
+  const { places } = useBuildings(
     gunshot ? { lat: gunshot.lat, lng: gunshot.lng } : null,
-    60
+    buildingCount
   );
+
+  // Create triangulation circles when gunshot exists
+  const triangulationCircles = useMemo(() => {
+    if (!gunshot) return [];
+    
+    // Speed of sound in air at 20°C (68°F) in meters per second
+    const SPEED_OF_SOUND = 343; // m/s
+    
+    return mics.map((mic, index) => {
+      const distance = calculateDistance(mic.lat, mic.lng, gunshot.lat, gunshot.lng);
+      const travelTime = distance / SPEED_OF_SOUND; // time in seconds
+      const circleGeoJSON = createCircleGeoJSON(mic.lng, mic.lat, distance);
+      
+      return {
+        id: `triangulation-circle-${mic.micId}`,
+        data: circleGeoJSON,
+        micId: mic.micId,
+        distance: distance,
+        travelTime: travelTime,
+        color: `hsl(${210 + index * 30}, 70%, 50%)` // Different shades of blue
+      };
+    });
+  }, [mics, gunshot]);
 
   const initialViewState = useMemo(() => {
     if (gunshot) {
@@ -29,23 +120,76 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
 
   return (
     <div className="shotmap-root">
-      <Map initialViewState={initialViewState} mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json" reuseMaps>
+      <MenuBar 
+        buildingCount={buildingCount}
+        onBuildingCountChange={setBuildingCount}
+        showSoundRadius={showSoundRadius}
+        onToggleSoundRadius={setShowSoundRadius}
+      />
+      <Map 
+        initialViewState={initialViewState} 
+        mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json" 
+        reuseMaps
+        style={{ width: '100%', height: '100%' }}
+      >
         <NavigationControl position="top-left" />
         <ScaleControl position="bottom-left" />
+
+        {/* Triangulation circles - only show when toggle is enabled */}
+        {showSoundRadius && triangulationCircles.map((circle) => (
+          <Source key={circle.id} id={circle.id} type="geojson" data={circle.data}>
+            <Layer
+              id={`${circle.id}-fill`}
+              type="fill"
+              paint={{
+                'fill-color': circle.color,
+                'fill-opacity': 0.1
+              }}
+            />
+            <Layer
+              id={`${circle.id}-stroke`}
+              type="line"
+              paint={{
+                'line-color': circle.color,
+                'line-width': 2,
+                'line-opacity': 0.6
+              }}
+            />
+          </Source>
+        ))}
 
         {/* Gunshot marker - only show if gunshot exists */}
         {gunshot && (
           <Marker longitude={gunshot.lng} latitude={gunshot.lat} anchor="bottom">
-            <div className="marker-gunshot" title={`Gunshot ${new Date(gunshot.t).toLocaleString()}`} />
+            <div className="marker-gunshot-container">
+              <div 
+                className="marker-gunshot clickable" 
+                title={`Gunshot ${new Date(gunshot.t).toLocaleString()}`}
+                onClick={() => setSelectedItem({ type: 'gunshot', data: gunshot })}
+              />
+            </div>
           </Marker>
         )}
 
         {/* Microphones */}
-        {mics.map((mic) => (
-          <Marker key={mic.micId} longitude={mic.lng} latitude={mic.lat} anchor="bottom">
-            <div className="marker-mic" title={`Mic ${mic.micId}`} />
-          </Marker>
-        ))}
+        {mics.map((mic) => {
+          // Calculate distance and travel time if gunshot exists
+          const micWithGunshot = gunshot ? {
+            ...mic,
+            distanceToGunshot: calculateDistance(mic.lat, mic.lng, gunshot.lat, gunshot.lng),
+            soundTravelTime: calculateDistance(mic.lat, mic.lng, gunshot.lat, gunshot.lng) / 343 // Speed of sound
+          } : mic;
+
+          return (
+            <Marker key={mic.micId} longitude={mic.lng} latitude={mic.lat} anchor="bottom">
+              <div 
+                className="marker-mic clickable" 
+                title={`Mic ${mic.micId}`}
+                onClick={() => setSelectedItem({ type: 'mic', data: micWithGunshot })}
+              />
+            </Marker>
+          );
+        })}
 
         {/* Nearest buildings */}
         {places.map((p) => (
@@ -55,22 +199,18 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
             latitude={p.geometry.location.lat}
             anchor="bottom"
           >
-            <div className="marker-place" title={`${p.name || 'Building'} - ${p.formatted_address}`} />
+            <div 
+              className="marker-place clickable" 
+              title={`${p.name || 'Building'} - ${p.formatted_address}`}
+              onClick={() => setSelectedItem({ type: 'building', data: p })}
+            />
           </Marker>
         ))}
       </Map>
-
-      {/* Debug info */}
-        <div className="places-list">
-          {loading && <div>Loading buildings...</div>}
-          {error && <div className="error">Error: {error}</div>}
-          {places.map((p) => (
-            <div key={p.place_id}>
-              <strong>{p.name || 'Building'}</strong> - {p.formatted_address}
-              {p.types && p.types.length > 1 && ` • Type: ${p.types[1]}`}
-            </div>
-          ))}
-        </div>
+      <Sidebar 
+        selectedItem={selectedItem} 
+        onClose={() => setSelectedItem(null)} 
+      />
     </div>
   );
 }
