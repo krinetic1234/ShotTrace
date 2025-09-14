@@ -45,6 +45,12 @@ def get_microphone_positions():
     return BOSTON_COORDINATES
 
 @dataclass
+class MicrophoneRawReading:
+    microphone_id: str
+    samples: List
+    sample_rate: int
+
+@dataclass
 class MicrophoneReading:
     microphone_id: str
     time_delay: float
@@ -165,6 +171,85 @@ class GunshotLocalizer:
         
         print(f"Triangulated position (local): x={x_est:.3f}m, y={y_est:.3f}m")
         return float(x_est), float(y_est)
+
+    def gcc_phat(self, sig, refsig, fs=1, max_tau=None, interp=16):
+        """
+        Compute the time delay estimate between sig and refsig using GCC-PHAT.
+
+        Args:
+            sig (ndarray): Signal 1.
+            refsig (ndarray): Signal 2 (reference).
+            fs (int, optional): Sampling frequency (Hz). Default=1.
+            max_tau (float, optional): Maximum delay (seconds) to search for.
+            interp (int, optional): Interpolation factor for finer resolution.
+
+        Returns:
+            float: Estimated delay (in seconds).
+            ndarray: Cross-correlation function.
+        """
+
+        n = sig.shape[0] + refsig.shape[0]
+
+        # FFT of both signals
+        SIG = np.fft.rfft(sig, n=n)
+        REFSIG = np.fft.rfft(refsig, n=n)
+
+        # Cross-spectral density
+        R = SIG * np.conj(REFSIG)
+
+        # Apply PHAT weighting
+        R /= np.abs(R) + np.finfo(float).eps
+
+        # Inverse FFT to get cross-correlation
+        cc = np.fft.irfft(R, n=interp*n)
+
+        max_shift = int(interp * n / 2)
+        if max_tau:
+            max_shift = np.minimum(int(interp*fs*max_tau), max_shift)
+
+        cc = np.concatenate((cc[-max_shift:], cc[:max_shift+1]))
+
+        # Find shift index
+        shift = np.argmax(np.abs(cc)) - max_shift
+
+        tau = shift / float(interp * fs)
+
+        return tau, cc
+
+    def calculate_delays(self, readings: List[MicrophoneRawReading]) -> List[MicrophoneReading]:
+        """
+        Calculate time delays from microphone readings.
+        
+        Args:
+            readings: List of microphone readings with raw samples
+            
+        Returns:
+            List of microphone readings with calculated time delays
+        """
+        if len(readings) != 3:
+            raise ValueError("Exactly 3 microphone readings are required for triangulation")
+
+        valid_mic_ids = {'1', '2', '3'}
+        reading_mic_ids = {r.microphone_id for r in readings}
+        if reading_mic_ids != valid_mic_ids:
+            raise ValueError(f"Must have readings from exactly microphones {valid_mic_ids}.")
+        
+        delays = []
+    
+        delay_1_2, _ = self.gcc_phat(readings[0].samples, readings[1].samples, readings[0].sample_rate)
+        delay_1_3, _ = self.gcc_phat(readings[0].samples, readings[2].samples, readings[0].sample_rate)
+
+        delays = [
+            MicrophoneReading("1", 0),
+            MicrophoneReading("2", delay_1_2),
+            MicrophoneReading("3", delay_1_3)
+        ]
+
+        min_delay = min(0, delay_1_2, delay_1_3)
+        for delay in delays:
+            delay.time_delay -= min_delay
+
+        return delays
 
     def calculate_gunshot_location(self, readings: List[MicrophoneReading]) -> GunshotResult:
         """
