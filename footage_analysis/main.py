@@ -14,8 +14,14 @@ load_dotenv(here.parent / ".env")
 if __package__ is None or __package__ == "":
     sys.path.append(str(here))
     from pipeline.run import process_video  # type: ignore
+    from models.llm import synthesize_text  # type: ignore
+    from utils import write_json, prompts  # type: ignore
+    from utils.context import build_job_context_from_paths  # type: ignore
 else:
     from .pipeline.run import process_video
+    from .models.llm import synthesize_text
+    from .utils import write_json, prompts
+    from .utils.context import build_job_context_from_paths
 
 
 def main() -> None:
@@ -68,6 +74,27 @@ def main() -> None:
                     fut.result()
                 except Exception as e:
                     print(f"error processing {vp}: {e}")
+
+    # job-level synthesis across videos (condensed combined report)
+    try:
+        summaries_root = artifacts_dir / "summaries"
+        context_items = []
+        for vid_dir in sorted(summaries_root.iterdir()):
+            if not vid_dir.is_dir():
+                continue
+            vs_path = vid_dir / "video_summary.json"
+            if vs_path.exists():
+                context_items.append({
+                    "video": vid_dir.name,
+                    "summary_path": str(vs_path),
+                })
+        if context_items and bool(cfg.get("enable_llm", True)):
+            # load a compact job context from video summary files
+            job_ctx = build_job_context_from_paths([c["summary_path"] for c in context_items])
+            report = synthesize_text(f"Context JSON: {job_ctx}\n\n{prompts.JOB_SUMMARY_REPORT}", cfg)
+            write_json({"job_report": report, "videos": [c["video"] for c in context_items]}, artifacts_dir / "job_report.json")
+    except Exception as e:
+        print(f"job-level synthesis failed: {e}")
 
 
 if __name__ == "__main__":
