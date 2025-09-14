@@ -31,6 +31,15 @@
 	box-shadow: 0 0 0 2px green;
 }
 
+.clickable {
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+}
+
+.clickable:hover {
+	transform: scale(1.2);
+}
+
 .places-list {
 	margin-top: 1rem;
 	padding: 1rem;
