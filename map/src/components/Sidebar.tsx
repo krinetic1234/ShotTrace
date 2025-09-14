@@ -107,25 +107,25 @@ export default function Sidebar({ selectedItem, onClose, onRequestCameraFootage 
               </div>
             )}
             {selectedItem.data.phoneNumber && (
-              <>
               <div className="data-row">
                 <span className="label">Phone:</span>
-                <div className="phone-container">
-                  <span className="value">{selectedItem.data.phoneNumber}</span>
-                </div>
+                <span className="value">{selectedItem.data.phoneNumber}</span>
               </div>
-                  <button 
-                    className="request-footage-btn"
-                    onClick={() => onRequestCameraFootage?.(selectedItem.data)}
-                    title="Request camera footage from this building"
-                  >
-                    📹 Request Footage
-                  </button>
-                  </>
             )}
             <div className="coordinates">
               <small>Coordinates: {selectedItem.data.geometry.location.lat.toFixed(6)}, {selectedItem.data.geometry.location.lng.toFixed(6)}</small>
             </div>
+            {selectedItem.data.phoneNumber && (
+              <div className="request-row-last">
+                <button 
+                  className="request-footage-btn-full"
+                  onClick={() => onRequestCameraFootage?.(selectedItem.data)}
+                  title="Request camera footage from this building"
+                >
+                  📹 Request Camera Footage
+                </button>
+              </div>
+            )}
           </div>
         );
 
