@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { Place } from '../types/places';
-import buildingsData from '../../buildings_200m.json';
+import buildingsData from '../../buildings.json'
 
 // OSM types matching the JSON structure
 type OSMNode = {
