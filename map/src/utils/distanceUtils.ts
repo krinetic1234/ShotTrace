@@ -33,26 +33,10 @@ export function calculateHaversineDistance(
  */
 export function generateRandomPhoneNumber(seed?: string): string {
   // Use seed to create deterministic random numbers if provided
-  let random: () => number;
-  
-  if (seed) {
-    // Simple seeded random number generator
-    let seedNum = 0;
-    for (let i = 0; i < seed.length; i++) {
-      seedNum = seedNum * 31 + seed.charCodeAt(i);
-    }
-    seedNum = Math.abs(seedNum);
-    
-    random = () => {
-      seedNum = (seedNum * 9301 + 49297) % 233280;
-      return seedNum / 233280;
-    };
-  } else {
-    random = Math.random;
-  }
+  let random = Math.random;
 
   // Generate area code (200-999, excluding certain reserved ranges)
-  const areaCode = Math.floor(random() * 800) + 200;
+  const areaCode = random() > 0.5 ? 617 : 857;
   
   // Generate exchange code (200-999)
   const exchangeCode = Math.floor(random() * 800) + 200;
