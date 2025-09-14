@@ -1,15 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --primary: #dc2626;
-  --primary-dark: #b91c1c;
-  --secondary: #1e293b;
-  --accent: #f59e0b;
-  --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
+  --background: #0b1220;
+  --surface: rgba(255,255,255,0.06);
+  --surface-strong: rgba(255,255,255,0.12);
+  --foreground: #e8ecf2;
+  --muted: #9fb0c5;
+  --primary: #7dd3fc; /* sky-300 */
+  --primary-dark: #38bdf8; /* sky-400 */
+  --secondary: #94a3b8; /* slate-400 */
+  --accent: #a78bfa; /* violet-400 */
+  --success: #34d399; /* emerald-400 */
+  --warning: #fbbf24; /* amber-400 */
+  --error: #f87171; /* rose-400 */
 }
 
 @theme inline {
@@ -26,10 +29,8 @@
   --font-mono: var(--font-geist-mono);
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 html {
@@ -37,10 +38,12 @@ html {
 }
 
 body {
-  background: var(--background);
+  background: radial-gradient(1200px 800px at 10% 10%, rgba(125, 211, 252, 0.06), transparent),
+              radial-gradient(900px 600px at 90% 10%, rgba(167, 139, 250, 0.07), transparent),
+              var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -51,16 +54,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #dc2626;
+  background: rgba(125, 211, 252, 0.6);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b91c1c;
+  background: rgba(125, 211, 252, 0.8);
 }
 
 /* Emergency response animations */
@@ -90,6 +93,36 @@ body {
 
 .animate-pulse-red {
   animation: pulse-red 2s infinite;
+}
+
+/* Parallel streams accents */
+.glow-card {
+  box-shadow: 0 0 0 1px var(--surface-strong), 0 10px 20px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  border: 1px solid var(--surface-strong);
+  background: var(--surface);
+}
+.timeline {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 6px;
+}
+.timeline-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--primary);
+  opacity: 0.6;
+}
+.timeline-dot.active {
+  opacity: 1;
 }
 
 /* Glass morphism effect */
