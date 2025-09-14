@@ -63,122 +63,55 @@ ShotTrace/
     └── postcss.config.mjs             # PostCSS configuration for Tailwind
 ```
 
-## 🚀 Getting Started
+## 🎥 Footage Analysis Pipeline (Python)
 
-### Prerequisites
+The pipeline in `footage_analysis/` turns a directory of incident videos into structured summaries.
 
-- Node.js 18+ 
-- npm or yarn
-- Python 3.8+ (for ML components)
-- Access to surveillance camera networks
+Data layout:
+- Inputs: `data/videos/<job_name>/processed/*.mp4`
+- Outputs: `data/results/<job_name>/`
+  - `chunks/<video_stem>/...` (10s segments)
+  - `summaries/<video_stem>/video_summary.json`, `clip_*.json`
 
-### Installation
+Configure (`footage_analysis/config.yaml`):
+```yaml
+videos_base_dir: data/videos
+results_base_dir: data/results
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd ShotTrace
-   ```
+chunk_seconds: 10
+frame_stride: 5
+vlm_every_n_frames: 30
+max_frames_per_chunk: 5000
 
-2. **Install Next.js dependencies**
-   ```bash
-   cd shotrace
-   npm install
-   ```
+yolo_weights: "yolo12n.pt"
+target_classes: ["person", "car", "truck", "gun"]
+conf_threshold: 0.25
+track_iou_threshold: 0.4
+track_max_age_frames: 45
 
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
+enable_vlm: false
+anthropic_model: "claude-sonnet-4-20250514"
+vlm_interval_seconds: 10
+vlm_images_per_call: 4
+```
 
-4. **Start the development server**
-   ```bash
-   npm run dev
-   ```
+Run:
+```bash
+cd footage_analysis
+uv run python main.py --job_name kirk --jobs 8
+```
 
-5. **Access the application**
-   Open [http://localhost:3000](http://localhost:3000) in your browser
+What happens:
+1) CLI resolves input/output from YAML and `--job_name`, loads `.env` (API keys)
+2) Videos are processed in parallel (`--jobs`)
+3) For each video:
+   - Chunk into 10s segments (ffmpeg, robust mapping)
+   - For each chunk:
+     - Decode frames (OpenCV), sample by `frame_stride`
+     - Run YOLO detections for `target_classes`
+     - Track IDs with `SimpleTracker` (IoU-based)
+     - If `enable_vlm`: every `vlm_interval_seconds`, batch up to `vlm_images_per_call` frames and call Anthropic VLM with strict JSON prompts (`utils/prompts.py`); attach result as `vlm_json`
+     - Generate a brief clip synopsis via text LLM
+   - After chunks: write `video_summary.json` with combined timeline and narrative
 
-## 🔧 Technology Stack
-
-### Frontend (shotrace/)
-- **Next.js 15** - React framework with App Router
-- **TypeScript** - Type-safe JavaScript
-- **Tailwind CSS 4** - Utility-first CSS framework
-- **React 19** - Latest React with concurrent features
-
-### Backend Processing
-- **Python** - Signal processing and ML models
-- **TensorFlow/PyTorch** - Deep learning for video analysis
-- **NumPy/SciPy** - Mathematical computations for triangulation
-- **OpenCV** - Computer vision for video processing
-
-### Infrastructure
-- **Real-time Processing** - Low-latency audio/video analysis
-- **Cloud Storage** - Secure footage and data storage
-- **API Integration** - Police dispatch and emergency services
-
-## 🎯 Key Features
-
-### Real-Time Gunshot Detection
-- **Multi-microphone triangulation** for precise location identification
-- **Sub-second detection** and coordinate calculation
-- **Automatic incident logging** with timestamp and location data
-
-### Intelligent Footage Collection
-- **AI-powered source identification** of nearby cameras
-- **Automated contact management** for property owners
-- **Priority-based collection** based on proximity and quality
-
-### Advanced Video Analysis
-- **Parallel processing** of multiple video streams
-- **Suspect identification** with physical descriptions
-- **Movement prediction** and direction analysis
-- **Forensic opportunity mapping** for evidence collection
-
-### Emergency Response Integration
-- **Real-time alerts** to dispatch centers
-- **Coordinate sharing** with responding units
-- **Evidence preservation** and chain of custody
-
-## 🔒 Security & Privacy
-
-- **Encrypted data transmission** for all sensitive information
-- **Secure footage storage** with access controls
-- **Privacy-compliant** data handling and retention
-- **Audit logging** for all system activities
-
-## 📊 Performance Metrics
-
-- **Detection Latency**: < 2 seconds from gunshot to coordinates
-- **Footage Collection**: < 5 minutes to acquire relevant footage
-- **Analysis Speed**: < 10 minutes for complete video analysis
-- **Accuracy**: > 95% for gunshot detection and localization
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Emergency Use
-
-**This system is designed for emergency response situations. In case of an actual emergency, contact local law enforcement immediately.**
-
-## 📞 Support
-
-For technical support or questions about the system:
-- Create an issue in the repository
-- Contact the development team
-- Review the documentation in each module folder
-
----
-
-**ShotTrace** - Turning raw signals into actionable guidance for emergency responders.
+Prompts are centralized in `utils/prompts.py`.

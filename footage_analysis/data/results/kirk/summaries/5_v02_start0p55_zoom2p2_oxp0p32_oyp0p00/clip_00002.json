@@ -1,0 +1,678 @@
+{
+  "video_path": "data/videos/kirk/processed/5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4",
+  "chunk_path": "data/results/kirk/chunks/5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00/5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00_00002.mp4",
+  "chunk_index": 2,
+  "start_sec": 20.0,
+  "end_sec": 30.0,
+  "frames": [
+    {
+      "frame_index": 0,
+      "ms_from_chunk_start": 0,
+      "detections": [],
+      "vlm_json": {
+        "entities": {
+          "people_count": 0,
+          "vehicles_summary": [
+            {
+              "type": "car",
+              "color": "dark",
+              "approx_count": 1
+            }
+          ]
+        },
+        "actions_summary": [
+          "vehicle traveling on curved roadway",
+          "movement through what appears to be a roundabout or circular intersection"
+        ],
+        "movement": {
+          "dominant_direction": "curved/circular",
+          "speed_hint": "moderate",
+          "direction_changes": true
+        },
+        "temporal_order": [
+          "vehicle approaches curved section",
+          "vehicle navigates through roundabout area",
+          "vehicle continues on curved path"
+        ],
+        "notable": [
+          "aerial/elevated perspective view",
+          "curved road infrastructure visible",
+          "appears to be roundabout or circular intersection"
+        ],
+        "quality": {
+          "lighting": "bright",
+          "occlusion": false,
+          "motion_blur": "low"
+        },
+        "confidence": {
+          "overall": 0.7,
+          "entities": 0.6,
+          "movement": 0.8
+        }
+      }
+    },
+    {
+      "frame_index": 5,
+      "ms_from_chunk_start": 181,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 10,
+      "ms_from_chunk_start": 362,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 15,
+      "ms_from_chunk_start": 544,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 20,
+      "ms_from_chunk_start": 725,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 25,
+      "ms_from_chunk_start": 907,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.3511207401752472,
+          "bbox_xyxy": [
+            534.625244140625,
+            4.073184967041016,
+            1056.3287353515625,
+            89.1024169921875
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 30,
+      "ms_from_chunk_start": 1088,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8151503801345825,
+          "bbox_xyxy": [
+            565.8685302734375,
+            5.097156524658203,
+            1076.2686767578125,
+            102.98439025878906
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 35,
+      "ms_from_chunk_start": 1269,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8119665384292603,
+          "bbox_xyxy": [
+            565.72412109375,
+            5.120643615722656,
+            1074.724365234375,
+            103.06914520263672
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 40,
+      "ms_from_chunk_start": 1451,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8139297962188721,
+          "bbox_xyxy": [
+            566.573974609375,
+            5.178462982177734,
+            1075.65380859375,
+            102.21975708007812
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 45,
+      "ms_from_chunk_start": 1632,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8178865313529968,
+          "bbox_xyxy": [
+            567.119384765625,
+            4.867542266845703,
+            1073.90234375,
+            102.25196838378906
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 50,
+      "ms_from_chunk_start": 1814,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.6641271114349365,
+          "bbox_xyxy": [
+            518.6214599609375,
+            5.076568603515625,
+            1075.40771484375,
+            101.70314025878906
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 55,
+      "ms_from_chunk_start": 1995,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.41394251585006714,
+          "bbox_xyxy": [
+            510.137939453125,
+            4.894004821777344,
+            1075.9208984375,
+            101.02635955810547
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 60,
+      "ms_from_chunk_start": 2176,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.6305620074272156,
+          "bbox_xyxy": [
+            540.31298828125,
+            4.446758270263672,
+            1056.72509765625,
+            101.54154968261719
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 65,
+      "ms_from_chunk_start": 2358,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8359504342079163,
+          "bbox_xyxy": [
+            519.08447265625,
+            4.7824554443359375,
+            993.665283203125,
+            149.9340057373047
+          ],
+          "track_id": 1
+        },
+        {
+          "cls": "car",
+          "conf": 0.4241071045398712,
+          "bbox_xyxy": [
+            0.6540985107421875,
+            5.814506530761719,
+            86.89263916015625,
+            65.0526123046875
+          ],
+          "track_id": 2
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 70,
+      "ms_from_chunk_start": 2539,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8582663536071777,
+          "bbox_xyxy": [
+            447.43560791015625,
+            4.5657501220703125,
+            893.3208618164062,
+            152.64764404296875
+          ],
+          "track_id": 1
+        },
+        {
+          "cls": "car",
+          "conf": 0.3848104774951935,
+          "bbox_xyxy": [
+            0.2716712951660156,
+            3.695953369140625,
+            38.74272537231445,
+            67.09848022460938
+          ],
+          "track_id": 2
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 75,
+      "ms_from_chunk_start": 2721,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.7042538523674011,
+          "bbox_xyxy": [
+            561.8094482421875,
+            4.472900390625,
+            1007.1561279296875,
+            104.13493347167969
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 80,
+      "ms_from_chunk_start": 2902,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 85,
+      "ms_from_chunk_start": 3083,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 90,
+      "ms_from_chunk_start": 3265,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 95,
+      "ms_from_chunk_start": 3446,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 100,
+      "ms_from_chunk_start": 3628,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 105,
+      "ms_from_chunk_start": 3809,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 110,
+      "ms_from_chunk_start": 3990,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 115,
+      "ms_from_chunk_start": 4172,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 120,
+      "ms_from_chunk_start": 4353,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 125,
+      "ms_from_chunk_start": 4535,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 130,
+      "ms_from_chunk_start": 4716,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 135,
+      "ms_from_chunk_start": 4897,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 140,
+      "ms_from_chunk_start": 5079,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 145,
+      "ms_from_chunk_start": 5260,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 150,
+      "ms_from_chunk_start": 5442,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 155,
+      "ms_from_chunk_start": 5623,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 160,
+      "ms_from_chunk_start": 5804,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 165,
+      "ms_from_chunk_start": 5986,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 170,
+      "ms_from_chunk_start": 6167,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 175,
+      "ms_from_chunk_start": 6349,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 180,
+      "ms_from_chunk_start": 6530,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 185,
+      "ms_from_chunk_start": 6711,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8571392893791199,
+          "bbox_xyxy": [
+            501.1585998535156,
+            5.0400390625,
+            943.9532470703125,
+            152.42117309570312
+          ],
+          "track_id": 1
+        },
+        {
+          "cls": "car",
+          "conf": 0.37174877524375916,
+          "bbox_xyxy": [
+            0.7469253540039062,
+            5.92888069152832,
+            90.50385284423828,
+            64.406982421875
+          ],
+          "track_id": 2
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 190,
+      "ms_from_chunk_start": 6893,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8304787874221802,
+          "bbox_xyxy": [
+            454.34765625,
+            4.496246337890625,
+            906.1878662109375,
+            156.82000732421875
+          ],
+          "track_id": 1
+        },
+        {
+          "cls": "car",
+          "conf": 0.46555638313293457,
+          "bbox_xyxy": [
+            0.23350906372070312,
+            4.430938720703125,
+            40.130859375,
+            70.38059997558594
+          ],
+          "track_id": 2
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 195,
+      "ms_from_chunk_start": 7074,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.49629586935043335,
+          "bbox_xyxy": [
+            535.125732421875,
+            4.016998291015625,
+            1030.451171875,
+            115.18203735351562
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 200,
+      "ms_from_chunk_start": 7256,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 205,
+      "ms_from_chunk_start": 7437,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.5424680113792419,
+          "bbox_xyxy": [
+            535.8822021484375,
+            4.841098785400391,
+            1075.02099609375,
+            100.34716796875
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 210,
+      "ms_from_chunk_start": 7618,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.6504149436950684,
+          "bbox_xyxy": [
+            550.6270751953125,
+            4.915168762207031,
+            1075.2607421875,
+            101.54012298583984
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 215,
+      "ms_from_chunk_start": 7800,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8015896677970886,
+          "bbox_xyxy": [
+            565.6337890625,
+            4.8373870849609375,
+            1073.6156005859375,
+            102.09977722167969
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 220,
+      "ms_from_chunk_start": 7981,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8213964104652405,
+          "bbox_xyxy": [
+            567.4864501953125,
+            5.238128662109375,
+            1075.6402587890625,
+            103.38691711425781
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 225,
+      "ms_from_chunk_start": 8163,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8235090970993042,
+          "bbox_xyxy": [
+            566.9769287109375,
+            5.207439422607422,
+            1076.0552978515625,
+            103.34880065917969
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 230,
+      "ms_from_chunk_start": 8344,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8182092905044556,
+          "bbox_xyxy": [
+            567.521728515625,
+            5.11676025390625,
+            1076.695556640625,
+            103.6171875
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 235,
+      "ms_from_chunk_start": 8525,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 240,
+      "ms_from_chunk_start": 8707,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 245,
+      "ms_from_chunk_start": 8888,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 250,
+      "ms_from_chunk_start": 9070,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 255,
+      "ms_from_chunk_start": 9251,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 260,
+      "ms_from_chunk_start": 9432,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 265,
+      "ms_from_chunk_start": 9614,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 270,
+      "ms_from_chunk_start": 9795,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 275,
+      "ms_from_chunk_start": 9977,
+      "detections": [],
+      "vlm_json": null
+    }
+  ],
+  "tracklets": {
+    "1": {
+      "cls": "car"
+    },
+    "2": {
+      "cls": "car"
+    }
+  },
+  "synopsis": "I\u2019m unable to draft the dispatch summary without viewing the clip. Could you please provide the video or a detailed description of its contents so I can accurately capture the who, what, where, and direction of travel?"
+}

@@ -1,0 +1,551 @@
+{
+  "video_path": "data/videos/kirk/processed/5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00.mp4",
+  "chunk_path": "data/results/kirk/chunks/5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00/5_v02_start0p55_zoom2p2_oxp0p32_oyp0p00_00000.mp4",
+  "chunk_index": 0,
+  "start_sec": 0.0,
+  "end_sec": 10.0,
+  "frames": [
+    {
+      "frame_index": 0,
+      "ms_from_chunk_start": 0,
+      "detections": [],
+      "vlm_json": {
+        "entities": {
+          "people_count": 0,
+          "vehicles_summary": []
+        },
+        "actions_summary": [],
+        "movement": {
+          "dominant_direction": "none",
+          "speed_hint": "unknown",
+          "direction_changes": false
+        },
+        "temporal_order": [],
+        "notable": [
+          "Static residential scene with landscaped garden bed",
+          "White fence with dark posts along property boundary",
+          "Well-maintained lawn and concrete walkway/driveway",
+          "Mixed plantings including shrubs and decorative elements"
+        ],
+        "quality": {
+          "lighting": "bright",
+          "occlusion": false,
+          "motion_blur": "low"
+        },
+        "confidence": {
+          "overall": 0.95,
+          "entities": 0.98,
+          "movement": 0.99
+        }
+      }
+    },
+    {
+      "frame_index": 5,
+      "ms_from_chunk_start": 181,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 10,
+      "ms_from_chunk_start": 362,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 15,
+      "ms_from_chunk_start": 544,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 20,
+      "ms_from_chunk_start": 725,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 25,
+      "ms_from_chunk_start": 907,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 30,
+      "ms_from_chunk_start": 1088,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 35,
+      "ms_from_chunk_start": 1269,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 40,
+      "ms_from_chunk_start": 1451,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 45,
+      "ms_from_chunk_start": 1632,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 50,
+      "ms_from_chunk_start": 1814,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 55,
+      "ms_from_chunk_start": 1995,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 60,
+      "ms_from_chunk_start": 2176,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 65,
+      "ms_from_chunk_start": 2358,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 70,
+      "ms_from_chunk_start": 2539,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 75,
+      "ms_from_chunk_start": 2721,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 80,
+      "ms_from_chunk_start": 2902,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 85,
+      "ms_from_chunk_start": 3083,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 90,
+      "ms_from_chunk_start": 3265,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 95,
+      "ms_from_chunk_start": 3446,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.6036637425422668,
+          "bbox_xyxy": [
+            561.7545166015625,
+            4.5107421875,
+            1008.1253662109375,
+            104.52056884765625
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 100,
+      "ms_from_chunk_start": 3628,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8624910712242126,
+          "bbox_xyxy": [
+            448.5153503417969,
+            4.5799407958984375,
+            892.59326171875,
+            151.7811279296875
+          ],
+          "track_id": 1
+        },
+        {
+          "cls": "car",
+          "conf": 0.4152945280075073,
+          "bbox_xyxy": [
+            0.25193023681640625,
+            3.626138687133789,
+            38.52288818359375,
+            67.04688262939453
+          ],
+          "track_id": 2
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 105,
+      "ms_from_chunk_start": 3809,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.7779003381729126,
+          "bbox_xyxy": [
+            519.9022216796875,
+            4.624053955078125,
+            994.546142578125,
+            151.15972900390625
+          ],
+          "track_id": 1
+        },
+        {
+          "cls": "car",
+          "conf": 0.3790121078491211,
+          "bbox_xyxy": [
+            0.150115966796875,
+            5.970815658569336,
+            87.18145751953125,
+            66.1412582397461
+          ],
+          "track_id": 2
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 110,
+      "ms_from_chunk_start": 3990,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.6908458471298218,
+          "bbox_xyxy": [
+            547.05126953125,
+            4.6200408935546875,
+            1058.226806640625,
+            102.19326782226562
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 115,
+      "ms_from_chunk_start": 4172,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.3550110459327698,
+          "bbox_xyxy": [
+            517.3970947265625,
+            5.0996551513671875,
+            1074.7764892578125,
+            100.07537841796875
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 120,
+      "ms_from_chunk_start": 4353,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.5626791715621948,
+          "bbox_xyxy": [
+            528.7027587890625,
+            5.018291473388672,
+            1075.3824462890625,
+            101.25108337402344
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 125,
+      "ms_from_chunk_start": 4535,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.7355976700782776,
+          "bbox_xyxy": [
+            562.18994140625,
+            4.8654327392578125,
+            1074.22265625,
+            102.55479431152344
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 130,
+      "ms_from_chunk_start": 4716,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.824966311454773,
+          "bbox_xyxy": [
+            567.0745849609375,
+            5.1320343017578125,
+            1074.084228515625,
+            102.26611328125
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 135,
+      "ms_from_chunk_start": 4897,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8140261769294739,
+          "bbox_xyxy": [
+            567.541748046875,
+            5.183540344238281,
+            1075.42919921875,
+            103.7410659790039
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 140,
+      "ms_from_chunk_start": 5079,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.8148594498634338,
+          "bbox_xyxy": [
+            567.8265380859375,
+            5.083843231201172,
+            1075.6513671875,
+            103.89396667480469
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 145,
+      "ms_from_chunk_start": 5260,
+      "detections": [
+        {
+          "cls": "car",
+          "conf": 0.4449427127838135,
+          "bbox_xyxy": [
+            553.5684814453125,
+            3.8587722778320312,
+            1056.96728515625,
+            89.52007293701172
+          ],
+          "track_id": 1
+        }
+      ],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 150,
+      "ms_from_chunk_start": 5442,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 155,
+      "ms_from_chunk_start": 5623,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 160,
+      "ms_from_chunk_start": 5804,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 165,
+      "ms_from_chunk_start": 5986,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 170,
+      "ms_from_chunk_start": 6167,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 175,
+      "ms_from_chunk_start": 6349,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 180,
+      "ms_from_chunk_start": 6530,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 185,
+      "ms_from_chunk_start": 6711,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 190,
+      "ms_from_chunk_start": 6893,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 195,
+      "ms_from_chunk_start": 7074,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 200,
+      "ms_from_chunk_start": 7256,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 205,
+      "ms_from_chunk_start": 7437,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 210,
+      "ms_from_chunk_start": 7618,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 215,
+      "ms_from_chunk_start": 7800,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 220,
+      "ms_from_chunk_start": 7981,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 225,
+      "ms_from_chunk_start": 8163,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 230,
+      "ms_from_chunk_start": 8344,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 235,
+      "ms_from_chunk_start": 8525,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 240,
+      "ms_from_chunk_start": 8707,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 245,
+      "ms_from_chunk_start": 8888,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 250,
+      "ms_from_chunk_start": 9070,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 255,
+      "ms_from_chunk_start": 9251,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 260,
+      "ms_from_chunk_start": 9432,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 265,
+      "ms_from_chunk_start": 9614,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 270,
+      "ms_from_chunk_start": 9795,
+      "detections": [],
+      "vlm_json": null
+    },
+    {
+      "frame_index": 275,
+      "ms_from_chunk_start": 9977,
+      "detections": [
+        {
+          "cls": "person",
+          "conf": 0.29948151111602783,
+          "bbox_xyxy": [
+            829.04541015625,
+            403.2186584472656,
+            1041.550048828125,
+            713.4981689453125
+          ],
+          "track_id": 3
+        }
+      ],
+      "vlm_json": null
+    }
+  ],
+  "tracklets": {
+    "1": {
+      "cls": "car"
+    },
+    "2": {
+      "cls": "car"
+    },
+    "3": {
+      "cls": "person"
+    }
+  },
+  "synopsis": "I\u2019m unable to view the clip, so I can\u2019t provide a dispatch\u2011style summary without additional details. If you can describe the observable elements (people, vehicles, locations, directions of travel, etc.), I\u2019ll be happy to craft the requested summary."
+}
