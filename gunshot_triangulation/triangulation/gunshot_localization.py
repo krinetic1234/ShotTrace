@@ -214,7 +214,7 @@ class GunshotLocalizer:
 
         tau = shift / float(interp * fs)
 
-        return tau, cc
+        return -tau, cc
 
     def calculate_delays(self, readings: List[MicrophoneRawReading]) -> List[MicrophoneReading]:
         """
@@ -245,9 +245,13 @@ class GunshotLocalizer:
             MicrophoneReading("3", delay_1_3)
         ]
 
+        print("Delays before:", delays)
+
         min_delay = min(0, delay_1_2, delay_1_3)
         for delay in delays:
             delay.time_delay -= min_delay
+
+        print("Delays after:", delays)
 
         return delays
 
