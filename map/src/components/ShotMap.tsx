@@ -176,13 +176,15 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
 
   return (
     <div className="shotmap-root">
-      <MenuBar 
-        buildingCount={buildingCount}
-        onBuildingCountChange={setBuildingCount}
-        showSoundRadius={showSoundRadius}
-        onToggleSoundRadius={setShowSoundRadius}
-        onRequestAllFootage={handleRequestAllFootage}
-      />
+      {gunshot && (
+        <MenuBar 
+          buildingCount={buildingCount}
+          onBuildingCountChange={setBuildingCount}
+          showSoundRadius={showSoundRadius}
+          onToggleSoundRadius={setShowSoundRadius}
+          onRequestAllFootage={handleRequestAllFootage}
+        />
+      )}
       <Map 
         initialViewState={initialViewState} 
         mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json" 
