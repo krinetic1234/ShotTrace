@@ -2,33 +2,18 @@ import { useState, useEffect } from 'react';
 import type { Place } from '../types/places';
 import buildingsData from '../../buildings.json'
 
-// OSM types matching the JSON structure
-type OSMNode = {
-  type: "node";
+// OSM types matching the JSON structure - more flexible to handle real data
+type OSMElement = {
+  type: string;
   id: number;
-  lat: number;
-  lon: number;
-  tags?: Record<string, string>;
-};
-
-type OSMWayOrRelCenter = { lat: number; lon: number };
-
-type OSMWay = {
-  type: "way";
-  id: number;
-  center?: OSMWayOrRelCenter;
-  tags?: Record<string, string>;
-};
-
-type OSMRelation = {
-  type: "relation";
-  id: number;
-  center?: OSMWayOrRelCenter;
-  tags?: Record<string, string>;
+  lat?: number;
+  lon?: number;
+  center?: { lat: number; lon: number };
+  tags?: Record<string, string | undefined>;
 };
 
 type OSMResponse = {
-  elements: Array<OSMNode | OSMWay | OSMRelation>;
+  elements: OSMElement[];
 };
 
 // Helper function to format OSM address from tags
@@ -90,26 +75,25 @@ export function useBuildings(
         let latLng: { lat: number; lng: number } | null = null;
         let idStr = "";
 
-        if (element.type === "node") {
-          latLng = { lat: (element as OSMNode).lat, lng: (element as OSMNode).lon };
+        if (element.type === "node" && element.lat && element.lon) {
+          latLng = { lat: element.lat, lng: element.lon };
           idStr = `osm:node:${element.id}`;
-        } else if (element.type === "way") {
-          const center = (element as OSMWay).center;
-          if (center) latLng = { lat: center.lat, lng: center.lon };
-          idStr = `osm:way:${element.id}`;
-        } else if (element.type === "relation") {
-          const center = (element as OSMRelation).center;
-          if (center) latLng = { lat: center.lat, lng: center.lon };
-          idStr = `osm:relation:${element.id}`;
+        } else if (element.center) {
+          latLng = { lat: element.center.lat, lng: element.center.lon };
+          idStr = `osm:${element.type}:${element.id}`;
         }
 
         if (!latLng || seen.has(idStr)) continue;
         seen.add(idStr);
 
-        const formatted_address = formatOSMAddress(tags);
+        // Filter out undefined values from tags for address formatting
+        const cleanTags = Object.fromEntries(
+          Object.entries(tags).filter(([_, value]) => value !== undefined) as [string, string][]
+        );
+        const formatted_address = formatOSMAddress(cleanTags);
 
         const place: Place = {
-          name: tags["name"] || formatted_address,
+          name: cleanTags["name"] || formatted_address,
           formatted_address,
           geometry: { location: latLng },
           place_id: idStr,
