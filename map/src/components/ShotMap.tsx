@@ -29,26 +29,49 @@ function calculateDistance(lat1: number, lng1: number, lat2: number, lng2: numbe
   return R * c;
 }
 
-// Generate circle geometry for a given center and radius
+// Generate circle geometry for a given center and radius using proper projection
 function createCircleGeoJSON(centerLng: number, centerLat: number, radiusMeters: number) {
   const points = 64;
-  const coordinates = [];
+  const coordinates: number[][] = [];
+  
+  // Earth's radius in meters
+  const R = 6371000;
+  
+  // Convert center to radians
+  const centerLatRad = centerLat * Math.PI / 180;
+  const centerLngRad = centerLng * Math.PI / 180;
   
   for (let i = 0; i <= points; i++) {
-    const angle = (i * 360 / points) * Math.PI / 180;
-    // Convert radius from meters to degrees (approximate)
-    const radiusDegrees = radiusMeters / 111320; // 1 degree ≈ 111320 meters
-    const lng = centerLng + radiusDegrees * Math.cos(angle);
-    const lat = centerLat + radiusDegrees * Math.sin(angle);
+    const bearing = (i * 360 / points) * Math.PI / 180;
+    
+    // Calculate point at distance and bearing from center using spherical geometry
+    const lat2 = Math.asin(
+      Math.sin(centerLatRad) * Math.cos(radiusMeters / R) +
+      Math.cos(centerLatRad) * Math.sin(radiusMeters / R) * Math.cos(bearing)
+    );
+    
+    const lng2 = centerLngRad + Math.atan2(
+      Math.sin(bearing) * Math.sin(radiusMeters / R) * Math.cos(centerLatRad),
+      Math.cos(radiusMeters / R) - Math.sin(centerLatRad) * Math.sin(lat2)
+    );
+    
+    // Convert back to degrees
+    const lat = lat2 * 180 / Math.PI;
+    const lng = lng2 * 180 / Math.PI;
+    
     coordinates.push([lng, lat]);
   }
   
   return {
-    type: 'Feature' as const,
-    geometry: {
-      type: 'Polygon' as const,
-      coordinates: [coordinates]
-    }
+    type: 'FeatureCollection' as const,
+    features: [{
+      type: 'Feature' as const,
+      geometry: {
+        type: 'Polygon' as const,
+        coordinates: [coordinates]
+      },
+      properties: {}
+    }]
   };
 }
 
@@ -71,10 +94,7 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
       
       return {
         id: `triangulation-circle-${mic.micId}`,
-        data: {
-          type: 'FeatureCollection',
-          features: [circleGeoJSON]
-        },
+        data: circleGeoJSON,
         micId: mic.micId,
         distance: distance,
         color: `hsl(${210 + index * 30}, 70%, 50%)` // Different shades of blue
@@ -106,6 +126,29 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
       >
         <NavigationControl position="top-left" />
         <ScaleControl position="bottom-left" />
+
+        {/* Triangulation circles */}
+        {triangulationCircles.map((circle) => (
+          <Source key={circle.id} id={circle.id} type="geojson" data={circle.data}>
+            <Layer
+              id={`${circle.id}-fill`}
+              type="fill"
+              paint={{
+                'fill-color': circle.color,
+                'fill-opacity': 0.1
+              }}
+            />
+            <Layer
+              id={`${circle.id}-stroke`}
+              type="line"
+              paint={{
+                'line-color': circle.color,
+                'line-width': 2,
+                'line-opacity': 0.6
+              }}
+            />
+          </Source>
+        ))}
 
         {/* Gunshot marker - only show if gunshot exists */}
         {gunshot && (
