@@ -12,6 +12,7 @@
   "type": "module",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.62.0",
+    "@cerebras/cerebras_cloud_sdk": "^1.50.0",
     "@fastify/formbody": "^8.0.2",
     "@fastify/websocket": "^11.2.0",
     "dotenv": "^17.2.2",

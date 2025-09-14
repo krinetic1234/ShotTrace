@@ -1,9 +1,13 @@
+// server.mjs
+// deps: npm i fastify @fastify/formbody dotenv twilio ws @cerebras/cerebras_cloud_sdk
+// run: node server.mjs  (ensure package.json has "type": "module")
+
 import Fastify from 'fastify';
-import fastifyWs from '@fastify/websocket';
 import fastifyFormBody from '@fastify/formbody';
 import { config as loadEnv } from 'dotenv';
-import { Anthropic } from '@anthropic-ai/sdk';
 import twilio from 'twilio';
+import { WebSocketServer } from 'ws';
+import { Cerebras } from '@cerebras/cerebras_cloud_sdk';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -15,108 +19,153 @@ loadEnv({ path: path.resolve(__dirname, '../.env') });
 const accountSid = process.env.TWILIO_SID;
 const authToken = process.env.TWILIO_SECRET;
 const fromNumber = process.env.FROM_E164;
-const toNumber = process.env.TO_E164;
 const ngrokHttps = (process.env.TWILIO_NGROK || '').replace(/\/+$/, '');
 const port = Number(process.env.TWILIO_PORT || 8080);
-const anthropicApiKey = process.env.ANTHROPIC_API_KEY;
+const cerebrasApiKey = process.env.CEREBRAS_API_KEY;
 
 // guards
 if (!ngrokHttps) throw new Error('missing TWILIO_NGROK');
-if (!anthropicApiKey) throw new Error('missing ANTHROPIC_API_KEY');
+if (!cerebrasApiKey) throw new Error('missing CEREBRAS_API_KEY');
 if (!accountSid || !authToken) console.warn('twilio creds missing → outbound call disabled');
-if (!fromNumber || !toNumber) console.warn('from/to numbers missing → outbound call disabled');
+if (!fromNumber) console.warn('from number missing → outbound call disabled');
 
 // derive ws url
 const wsBase = ngrokHttps.replace(/^https:/, 'wss:');
 const wsUrl = `${wsBase}/ws`;
 
-// prompts and greetings in caps
-const systemPrompt =
-  'YOU ARE A HELPFUL VOICE ASSISTANT. SPEAK CLEARLY. SPELL OUT NUMBERS, FOR EXAMPLE TWENTY NOT 20. NO EMOJIS OR BULLETS.';
-const welcomeGreeting =
-  'HI! I AM A VOICE ASSISTANT POWERED BY TWILIO AND ANTHROPIC. HOW CAN I HELP?';
-
-// init
+// init servers and clients
 const fastify = Fastify();
-fastify.register(fastifyWs);
 fastify.register(fastifyFormBody);
-const anthropic = new Anthropic({ apiKey: anthropicApiKey });
+const cerebras = new Cerebras({ apiKey: cerebrasApiKey });
 
-// helper to mask secrets in logs
-const mask = (s, keep = 4) => s ? s.slice(0, keep) + '…' : '';
+// small helpers
+const isE164 = (s) => typeof s === 'string' && /^\+[1-9]\d{1,14}$/.test(s);
 
-// log startup summary
-console.log('booting server');
-console.log('env summary', {
-  port,
-  publicUrl: ngrokHttps,
-  wsUrl,
-  fromNumber,
-  toNumber,
-  accountSid: mask(accountSid),
-  anthropicApiKey: anthropicApiKey ? 'set' : 'missing'
-});
+// escape xml attribute values to avoid 12100 parse errors
+const escapeAttr = (s = '') =>
+  String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
 
-// function to call anthropic
-async function getAiResponse(messages) {
-  const start = Date.now();
+// per-call context storage (twilio CallSid → incident params)
+const callMeta = new Map(); // { buildingAddress, distanceToGunshot, timestamp }
+
+// build system prompt (sentence case)
+function buildSystemPrompt(meta) {
+  const { buildingAddress, distanceToGunshot, timestamp } = meta;
+  return (
+    `You are an investigator placing a courteous, professional outreach call regarding a recent incident. ` +
+    `The target location is "${buildingAddress}". The reported distance to the gunshot is "${distanceToGunshot}". The relevant timestamp is "${timestamp}". ` +
+    `Your goal is to request security camera footage covering a reasonable window around the timestamp. ` +
+    `Style: Polite, concise, and factual. Do not use emojis or bullet points. ` +
+    `Guidelines: ` +
+    `1) Open by briefly explaining the incident context and why their location may have relevant footage. ` +
+    `2) Ask if they can provide security footage covering a short window around the given time (for example, ten to fifteen minutes before and after). ` +
+    `3) If willing, ask helpful details: Camera coverage areas (street entrances, parking, lobby), video retention, the timezone used on the system, and the preferred delivery method (a secure link or an email address). ` +
+    `4) If they cannot help, thank them and ask if they know a building manager or security contact who might assist. ` +
+    `5) Only when appropriate, mention that there may be witness testimonials indicating activity nearby, without disclosing sensitive details. ` +
+    `6) Keep replies short (one to three sentences). ` +
+    `7) Never claim legal authority; be clear this is a request for assistance. ` +
+    `8) If asked how to share, suggest: "You can provide a secure link or email the clip; we can also accept a shared drive link." ` +
+    `Output: Natural, polite dialogue in complete sentences.`
+  );
+}
+
+// build welcome message (sentence case)
+function buildWelcomeGreeting(meta) {
+  const { buildingAddress, distanceToGunshot, timestamp } = meta;
+  return (
+    `There was a recent incident, and your building "${buildingAddress}" was reported within ${distanceToGunshot} of the location. ` +
+    `Could you please share any security footage around ${timestamp}? Thank you.`
+  );
+}
+
+// cerebras call (fixed defaults: model "gpt-oss-120b", 512 tokens, temp 0.2)
+async function getAiResponse(messages, meta) {
+  const fullMessages = [{ role: 'system', content: buildSystemPrompt(meta) }, ...messages];
   try {
-    const resp = await anthropic.messages.create({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 512,
-      system: systemPrompt,
-      messages
+    const resp = await cerebras.chat.completions.create({
+      model: 'gpt-oss-120b',
+      messages: fullMessages,
+      max_completion_tokens: 512,
+      temperature: 0.2
     });
-    const elapsed = Date.now() - start;
-    const block = resp?.content?.find?.(b => b.type === 'text');
-    const text = block?.text || 'SORRY, I DID NOT CATCH THAT.';
-    console.log('ai response ok', { tokens: resp?.usage?.output_tokens, ms: elapsed });
-    return text;
+    return resp?.choices?.[0]?.message?.content || 'Sorry, I did not catch that.';
   } catch (err) {
-    const elapsed = Date.now() - start;
-    console.error('ai error', { ms: elapsed, message: err?.message || err });
-    return 'I HIT AN ERROR. PLEASE TRY AGAIN.';
+    console.error('cerebras error', err?.message || err);
+    return 'I hit an error. Please try again.';
   }
 }
 
-// twiml endpoint
+// twiml endpoint (requires b, d, t)
 fastify.all('/twiml', async (req, reply) => {
-  console.log('http /twiml', { method: req.method, ip: req.ip });
-  reply.type('text/xml').send(
-    `<?xml version="1.0" encoding="UTF-8"?>
+  const b = req.query?.b;
+  const d = req.query?.d;
+  const t = req.query?.t;
+  if (!b || !d || !t) {
+    reply.code(400).type('text/plain').send('missing required query params b,d,t');
+    return;
+  }
+
+  const buildingAddress = String(b);
+  const distanceToGunshot = String(d);
+  const timestamp = String(t);
+
+  const callSid = req.body?.CallSid || req.query?.CallSid;
+  if (callSid) callMeta.set(callSid, { buildingAddress, distanceToGunshot, timestamp });
+
+  const welcome = buildWelcomeGreeting({ buildingAddress, distanceToGunshot, timestamp });
+
+  const xml =
+`<?xml version="1.0" encoding="UTF-8"?>
 <Response>
   <Connect>
-    <ConversationRelay url="${wsUrl}" welcomeGreeting="${welcomeGreeting}" />
+    <ConversationRelay url="${escapeAttr(wsUrl)}" welcomeGreeting="${escapeAttr(welcome)}" />
   </Connect>
-</Response>`
-  );
+</Response>`;
+
+  reply.type('text/xml').send(xml);
 });
 
 // status callback
 fastify.post('/status', async (req, reply) => {
-  console.log('http /status', {
-    callSid: req.body?.CallSid,
-    callStatus: req.body?.CallStatus,
-    timestamp: req.body?.Timestamp
-  });
+  console.log('status', req.body?.CallSid, req.body?.CallStatus, req.body?.Timestamp);
   reply.code(200).send('ok');
 });
 
-// call endpoint (outbound)
-if (accountSid && authToken && fromNumber && toNumber) {
+// outbound call (requires "to", buildingAddress, distanceToGunshot, timestamp)
+if (accountSid && authToken && fromNumber) {
   const client = twilio(accountSid, authToken);
   fastify.post('/call', async (req, reply) => {
-    console.log('http /call → attempting outbound call');
+    const to = (req.body?.to || '').toString().trim();
+    const buildingAddress = (req.body?.buildingAddress || '').toString().trim();
+    const distanceToGunshot = (req.body?.distanceToGunshot || '').toString().trim();
+    const timestamp = (req.body?.timestamp || '').toString().trim();
+
+    if (!to || !isE164(to)) {
+      return reply.code(400).send({ error: 'invalid_to_number', hint: 'Provide "to" in E.164, like "+14085551212".' });
+    }
+    if (!buildingAddress || !distanceToGunshot || !timestamp) {
+      return reply.code(400).send({ error: 'missing_params', hint: 'Provide "buildingAddress", "distanceToGunshot", and "timestamp".' });
+    }
+
+    const twimlUrl =
+      `${ngrokHttps}/twiml?` +
+      `b=${encodeURIComponent(buildingAddress)}` +
+      `&d=${encodeURIComponent(distanceToGunshot)}` +
+      `&t=${encodeURIComponent(timestamp)}`;
+
     try {
       const call = await client.calls.create({
-        to: toNumber,
+        to,
         from: fromNumber,
-        url: `${ngrokHttps}/twiml`,
+        url: twimlUrl,
         statusCallback: `${ngrokHttps}/status`,
         statusCallbackEvent: ['initiated', 'ringing', 'answered', 'completed'],
         statusCallbackMethod: 'POST'
       });
-      console.log('twilio call created', { callSid: call.sid });
       reply.send({ callSid: call.sid });
     } catch (err) {
       console.error('twilio call error', err?.message || err);
@@ -127,49 +176,62 @@ if (accountSid && authToken && fromNumber && toNumber) {
   console.log('outbound call disabled due to missing config');
 }
 
-// websocket handler
-const sessions = new Map(); // maps callSid to conversations
+// minimal convo store
+const sessions = new Map(); // callSid -> [{ role, content }]
 
-fastify.get('/ws', { websocket: true }, (ws) => {
-  console.log('ws connection opened');
+// raw ws server (noServer mode)
+const wss = new WebSocketServer({ noServer: true });
+
+wss.on('connection', (ws, req) => {
+  console.log('ws open', req.socket.remoteAddress);
+
   ws.on('message', async (data) => {
     let msg;
-    try {
-      msg = JSON.parse(data.toString());
-    } catch {
-      console.warn('ws message not json, ignoring');
-      return;
-    }
+    try { msg = JSON.parse(data.toString()); } catch { return; }
+
     switch (msg.type) {
-      case 'setup':
+      case 'setup': {
         ws.callSid = msg.callSid;
+        if (!callMeta.has(ws.callSid)) {
+          // if twiml didn’t set meta, close to avoid undefined behavior
+          ws.close();
+          return;
+        }
         sessions.set(ws.callSid, []);
-        console.log('ws setup', { callSid: ws.callSid });
         break;
-      case 'prompt':
-        console.log('ws prompt', { callSid: ws.callSid, prompt: msg.voicePrompt });
+      }
+      case 'prompt': {
         const convo = sessions.get(ws.callSid) || [];
+        const meta = callMeta.get(ws.callSid);
         convo.push({ role: 'user', content: msg.voicePrompt });
-        const aiText = await getAiResponse(convo);
+        const aiText = await getAiResponse(convo, meta);
         convo.push({ role: 'assistant', content: aiText });
         sessions.set(ws.callSid, convo);
         ws.send(JSON.stringify({ type: 'text', token: aiText, last: true }));
-        console.log('ws sent response', { callSid: ws.callSid, chars: aiText.length });
         break;
+      }
       case 'interrupt':
-        console.log('ws interrupt', { callSid: ws.callSid });
         break;
       default:
-        console.warn('ws unknown type', msg?.type);
+        break;
     }
   });
+
   ws.on('close', () => {
-    console.log('ws closed', { callSid: ws.callSid });
-    if (ws.callSid) sessions.delete(ws.callSid);
+    if (ws.callSid) {
+      sessions.delete(ws.callSid);
+      callMeta.delete(ws.callSid);
+    }
   });
-  ws.on('error', (err) => {
-    console.error('ws error', err?.message || err);
-  });
+});
+
+// upgrade http → ws on /ws
+fastify.server.on('upgrade', (req, socket, head) => {
+  if (req.url === '/ws') {
+    wss.handleUpgrade(req, socket, head, (ws) => wss.emit('connection', ws, req));
+  } else {
+    socket.destroy();
+  }
 });
 
 // start server
