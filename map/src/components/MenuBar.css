@@ -59,6 +59,67 @@
   padding: 8px;
 }
 
+/* Toggle Switch Styles */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-slider {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.toggle-slider::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-checkbox:checked + .toggle-slider {
+  background: #00b4d8;
+  border-color: #00b4d8;
+}
+
+.toggle-checkbox:checked + .toggle-slider::before {
+  transform: translateX(20px);
+  background: #ffffff;
+}
+
+.toggle-container:hover .toggle-slider {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.toggle-checkbox:checked + .toggle-slider:hover {
+  background: #0096c7;
+}
+
+.toggle-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .menu-bar {
@@ -83,9 +144,9 @@
   .menu-bar {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 12px;
     width: calc(100vw - 40px);
-    max-width: 280px;
+    max-width: 300px;
   }
   
   .menu-item {
@@ -95,5 +156,23 @@
   
   .menu-select {
     min-width: 80px;
+  }
+  
+  .toggle-label {
+    font-size: 13px;
+  }
+  
+  .toggle-slider {
+    width: 40px;
+    height: 22px;
+  }
+  
+  .toggle-slider::before {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .toggle-checkbox:checked + .toggle-slider::before {
+    transform: translateX(18px);
   }
 }

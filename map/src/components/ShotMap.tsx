@@ -78,6 +78,7 @@ function createCircleGeoJSON(centerLng: number, centerLat: number, radiusMeters:
 export default function ShotMap({ mics, gunshot }: ShotMapProps) {
   const [selectedItem, setSelectedItem] = useState<SelectedItem>(null);
   const [buildingCount, setBuildingCount] = useState(20);
+  const [showSoundRadius, setShowSoundRadius] = useState(true);
   
   const { places } = useBuildings(
     gunshot ? { lat: gunshot.lat, lng: gunshot.lng } : null,
@@ -88,8 +89,12 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
   const triangulationCircles = useMemo(() => {
     if (!gunshot) return [];
     
+    // Speed of sound in air at 20°C (68°F) in meters per second
+    const SPEED_OF_SOUND = 343; // m/s
+    
     return mics.map((mic, index) => {
       const distance = calculateDistance(mic.lat, mic.lng, gunshot.lat, gunshot.lng);
+      const travelTime = distance / SPEED_OF_SOUND; // time in seconds
       const circleGeoJSON = createCircleGeoJSON(mic.lng, mic.lat, distance);
       
       return {
@@ -97,6 +102,7 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
         data: circleGeoJSON,
         micId: mic.micId,
         distance: distance,
+        travelTime: travelTime,
         color: `hsl(${210 + index * 30}, 70%, 50%)` // Different shades of blue
       };
     });
@@ -117,6 +123,8 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
       <MenuBar 
         buildingCount={buildingCount}
         onBuildingCountChange={setBuildingCount}
+        showSoundRadius={showSoundRadius}
+        onToggleSoundRadius={setShowSoundRadius}
       />
       <Map 
         initialViewState={initialViewState} 
@@ -127,8 +135,8 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
         <NavigationControl position="top-left" />
         <ScaleControl position="bottom-left" />
 
-        {/* Triangulation circles */}
-        {triangulationCircles.map((circle) => (
+        {/* Triangulation circles - only show when toggle is enabled */}
+        {showSoundRadius && triangulationCircles.map((circle) => (
           <Source key={circle.id} id={circle.id} type="geojson" data={circle.data}>
             <Layer
               id={`${circle.id}-fill`}
@@ -164,15 +172,24 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
         )}
 
         {/* Microphones */}
-        {mics.map((mic) => (
-          <Marker key={mic.micId} longitude={mic.lng} latitude={mic.lat} anchor="bottom">
-            <div 
-              className="marker-mic clickable" 
-              title={`Mic ${mic.micId}`}
-              onClick={() => setSelectedItem({ type: 'mic', data: mic })}
-            />
-          </Marker>
-        ))}
+        {mics.map((mic) => {
+          // Calculate distance and travel time if gunshot exists
+          const micWithGunshot = gunshot ? {
+            ...mic,
+            distanceToGunshot: calculateDistance(mic.lat, mic.lng, gunshot.lat, gunshot.lng),
+            soundTravelTime: calculateDistance(mic.lat, mic.lng, gunshot.lat, gunshot.lng) / 343 // Speed of sound
+          } : mic;
+
+          return (
+            <Marker key={mic.micId} longitude={mic.lng} latitude={mic.lat} anchor="bottom">
+              <div 
+                className="marker-mic clickable" 
+                title={`Mic ${mic.micId}`}
+                onClick={() => setSelectedItem({ type: 'mic', data: micWithGunshot })}
+              />
+            </Marker>
+          );
+        })}
 
         {/* Nearest buildings */}
         {places.map((p) => (

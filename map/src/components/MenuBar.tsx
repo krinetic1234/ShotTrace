@@ -3,6 +3,8 @@ import './MenuBar.css';
 interface MenuBarProps {
   buildingCount: number;
   onBuildingCountChange: (count: number) => void;
+  showSoundRadius: boolean;
+  onToggleSoundRadius: (show: boolean) => void;
 }
 
 const buildingOptions = [
@@ -13,7 +15,7 @@ const buildingOptions = [
   { value: 100, label: '100 Buildings' },
 ];
 
-export default function MenuBar({ buildingCount, onBuildingCountChange }: MenuBarProps) {
+export default function MenuBar({ buildingCount, onBuildingCountChange, showSoundRadius, onToggleSoundRadius }: MenuBarProps) {
   return (
     <div className="menu-bar">
       <div className="menu-item">
@@ -32,6 +34,19 @@ export default function MenuBar({ buildingCount, onBuildingCountChange }: MenuBa
             </option>
           ))}
         </select>
+      </div>
+      
+      <div className="menu-item">
+        <label className="toggle-container">
+          <input
+            type="checkbox"
+            checked={showSoundRadius}
+            onChange={(e) => onToggleSoundRadius(e.target.checked)}
+            className="toggle-checkbox"
+          />
+          <span className="toggle-slider"></span>
+          <span className="toggle-label">Show Sound Radius</span>
+        </label>
       </div>
     </div>
   );

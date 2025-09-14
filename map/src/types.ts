@@ -2,6 +2,8 @@ export interface Mic {
     micId: string;
     lat: number;
     lng: number;
+    distanceToGunshot?: number; // in meters
+    soundTravelTime?: number; // in seconds
 }
 
 export interface Gunshot {

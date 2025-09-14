@@ -145,6 +145,37 @@
   z-index: 1;
 }
 
+.sound-info {
+  margin-top: 20px;
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(0, 180, 216, 0.1) 0%, rgba(0, 100, 255, 0.1) 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 180, 216, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.sound-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.02) 50%, transparent 70%);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.sound-info small {
+  color: rgba(0, 180, 216, 0.9);
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+}
+
 /* Dark overlay */
 .sidebar-overlay {
   position: fixed;
