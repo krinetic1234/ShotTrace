@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import type { Place } from '../types/places';
-import buildingsData from '../../buildings.json'
+import buildingsData from '../../buildings.json';
+import { calculateHaversineDistance, generateRandomPhoneNumber } from '../utils/distanceUtils';
 
 // OSM types matching the JSON structure - more flexible to handle real data
 type OSMElement = {
@@ -36,12 +37,6 @@ function formatOSMAddress(tags: Record<string, string> = {}): string {
   return parts.join(", ");
 }
 
-// Helper function to calculate distance (simplified for sorting)
-function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
-  const dx = lat2 - lat1;
-  const dy = lon2 - lon1;
-  return dx * dx + dy * dy; // Squared distance for sorting purposes
-}
 
 export function useBuildings(
   location: { lat: number; lng: number } | null,
@@ -92,28 +87,31 @@ export function useBuildings(
         );
         const formatted_address = formatOSMAddress(cleanTags);
 
+        // Calculate real distance to gunshot
+        const distanceToGunshot = calculateHaversineDistance(
+          location.lat, location.lng,
+          latLng.lat, latLng.lng
+        );
+
+        // Generate a phone number using the place ID as seed for consistency
+        const phoneNumber = generateRandomPhoneNumber(idStr);
+
         const place: Place = {
           name: cleanTags["name"] || formatted_address,
           formatted_address,
           geometry: { location: latLng },
           place_id: idStr,
           types: ["building", tags["building"] ? `building:${tags["building"]}` : "building:unknown"],
+          distanceToGunshot,
+          phoneNumber,
         };
 
         places.push(place);
       }
 
-      // Sort by distance from the gunshot location
+      // Sort by distance from the gunshot location (using the already calculated distances)
       places.sort((a, b) => {
-        const distA = calculateDistance(
-          location.lat, location.lng,
-          a.geometry.location.lat, a.geometry.location.lng
-        );
-        const distB = calculateDistance(
-          location.lat, location.lng,
-          b.geometry.location.lat, b.geometry.location.lng
-        );
-        return distA - distB;
+        return (a.distanceToGunshot || 0) - (b.distanceToGunshot || 0);
       });
       setPlaces(places.slice(0, maxResults));
     } catch (err) {

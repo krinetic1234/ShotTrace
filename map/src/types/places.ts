@@ -6,4 +6,6 @@ export interface Place {
   };
   place_id: string;
   types?: string[];
+  distanceToGunshot?: number; // in meters
+  phoneNumber?: string;
 }

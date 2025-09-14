@@ -1,5 +1,6 @@
 import type { Gunshot, Mic } from '../types';
 import type { Place } from '../types/places';
+import { formatDistance } from '../utils/distanceUtils';
 import './Sidebar.css';
 
 export type SelectedItem = 
@@ -98,6 +99,18 @@ export default function Sidebar({ selectedItem, onClose }: SidebarProps) {
               <span className="label">Address:</span>
               <span className="value">{selectedItem.data.formatted_address}</span>
             </div>
+            {selectedItem.data.distanceToGunshot !== undefined && (
+              <div className="data-row">
+                <span className="label">Distance to Gunshot:</span>
+                <span className="value">{formatDistance(selectedItem.data.distanceToGunshot)}</span>
+              </div>
+            )}
+            {selectedItem.data.phoneNumber && (
+              <div className="data-row">
+                <span className="label">Phone:</span>
+                <span className="value">{selectedItem.data.phoneNumber}</span>
+              </div>
+            )}
             <div className="coordinates">
               <small>Coordinates: {selectedItem.data.geometry.location.lat.toFixed(6)}, {selectedItem.data.geometry.location.lng.toFixed(6)}</small>
             </div>
