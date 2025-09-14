@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import Map, { Marker, NavigationControl, ScaleControl, Source, Layer } from "react-map-gl/maplibre";
 import type { Gunshot, Mic } from "../types";
+import type { Place } from "../types/places";
 import { useBuildings } from "../hooks/useBuildings";
 import Sidebar, { type SelectedItem } from "./Sidebar";
 import MenuBar from "./MenuBar";
@@ -85,6 +86,30 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
     buildingCount
   );
 
+  // Handler for requesting camera footage from a single building
+  const handleRequestCameraFootage = (building: Place) => {
+    const message = `Camera footage requested from:\n\nAddress: ${building.formatted_address}\nPhone: ${building.phoneNumber}\nDistance: ${building.distanceToGunshot ? (building.distanceToGunshot / 1000).toFixed(2) + ' km' : 'Unknown'}`;
+    alert(message);
+  };
+
+  // Handler for requesting camera footage from all nearby buildings
+  const handleRequestAllFootage = () => {
+    if (places.length === 0) {
+      alert('No nearby buildings found to request footage from.');
+      return;
+    }
+
+    // Show first 10 in the alert message for readability, but process all buildings
+    const buildingListPreview = places.slice(0, 10).map((place, index) => 
+      `${index + 1}. ${place.formatted_address} (${place.phoneNumber}) - ${place.distanceToGunshot ? (place.distanceToGunshot / 1000).toFixed(2) + ' km' : 'Unknown distance'}`
+    ).join('\n');
+
+    const team_phones = ["6508627094", "9255499121", "9253754071", "4084316300"] // sophia, shubham, john, krish 
+
+    const message = `Camera footage requested from ${places.length} displayed buildings:\n\n${buildingListPreview}${places.length > 10 ? `\n\n...and ${places.length - 10} more buildings` : ''}\n\n`;
+    alert(message);
+  };
+
   // Create triangulation circles when gunshot exists
   const triangulationCircles = useMemo(() => {
     if (!gunshot) return [];
@@ -125,6 +150,7 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
         onBuildingCountChange={setBuildingCount}
         showSoundRadius={showSoundRadius}
         onToggleSoundRadius={setShowSoundRadius}
+        onRequestAllFootage={handleRequestAllFootage}
       />
       <Map 
         initialViewState={initialViewState} 
@@ -209,7 +235,8 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
       </Map>
       <Sidebar 
         selectedItem={selectedItem} 
-        onClose={() => setSelectedItem(null)} 
+        onClose={() => setSelectedItem(null)}
+        onRequestCameraFootage={handleRequestCameraFootage}
       />
     </div>
   );

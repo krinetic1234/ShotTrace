@@ -12,9 +12,10 @@ export type SelectedItem =
 interface SidebarProps {
   selectedItem: SelectedItem;
   onClose: () => void;
+  onRequestCameraFootage?: (building: Place) => void;
 }
 
-export default function Sidebar({ selectedItem, onClose }: SidebarProps) {
+export default function Sidebar({ selectedItem, onClose, onRequestCameraFootage }: SidebarProps) {
   if (!selectedItem) return null;
 
   const formatTimestamp = (timestamp: number) => {
@@ -106,10 +107,21 @@ export default function Sidebar({ selectedItem, onClose }: SidebarProps) {
               </div>
             )}
             {selectedItem.data.phoneNumber && (
+              <>
               <div className="data-row">
                 <span className="label">Phone:</span>
-                <span className="value">{selectedItem.data.phoneNumber}</span>
+                <div className="phone-container">
+                  <span className="value">{selectedItem.data.phoneNumber}</span>
+                </div>
               </div>
+                  <button 
+                    className="request-footage-btn"
+                    onClick={() => onRequestCameraFootage?.(selectedItem.data)}
+                    title="Request camera footage from this building"
+                  >
+                    📹 Request Footage
+                  </button>
+                  </>
             )}
             <div className="coordinates">
               <small>Coordinates: {selectedItem.data.geometry.location.lat.toFixed(6)}, {selectedItem.data.geometry.location.lng.toFixed(6)}</small>

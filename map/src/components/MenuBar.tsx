@@ -5,6 +5,7 @@ interface MenuBarProps {
   onBuildingCountChange: (count: number) => void;
   showSoundRadius: boolean;
   onToggleSoundRadius: (show: boolean) => void;
+  onRequestAllFootage?: () => void;
 }
 
 const buildingOptions = [
@@ -15,7 +16,7 @@ const buildingOptions = [
   { value: 100, label: '100 Buildings' },
 ];
 
-export default function MenuBar({ buildingCount, onBuildingCountChange, showSoundRadius, onToggleSoundRadius }: MenuBarProps) {
+export default function MenuBar({ buildingCount, onBuildingCountChange, showSoundRadius, onToggleSoundRadius, onRequestAllFootage }: MenuBarProps) {
   return (
     <div className="menu-bar">
       <div className="menu-item">
@@ -47,6 +48,16 @@ export default function MenuBar({ buildingCount, onBuildingCountChange, showSoun
           <span className="toggle-slider"></span>
           <span className="toggle-label">Show Sound Radius</span>
         </label>
+      </div>
+      
+      <div className="menu-item">
+        <button 
+          className="request-all-btn"
+          onClick={onRequestAllFootage}
+          title="Request camera footage from all nearby buildings"
+        >
+          📹 Request All Footage
+        </button>
       </div>
     </div>
   );

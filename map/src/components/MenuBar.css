@@ -176,3 +176,39 @@
     transform: translateX(18px);
   }
 }
+
+/* Request All Footage Button */
+.request-all-btn {
+  background: linear-gradient(135deg, #e63946 0%, #d62828 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(230, 57, 70, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.request-all-btn:hover {
+  background: linear-gradient(135deg, #d62828 0%, #ba181b 100%);
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.4);
+  transform: translateY(-1px);
+}
+
+.request-all-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(230, 57, 70, 0.3);
+}
+
+@media (max-width: 768px) {
+  .request-all-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

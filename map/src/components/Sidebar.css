@@ -256,3 +256,49 @@
     font-size: 12px;
   }
 }
+
+/* Phone container and request footage button styles */
+.phone-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.request-footage-btn {
+  background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 180, 216, 0.3);
+}
+
+.request-footage-btn:hover {
+  background: linear-gradient(135deg, #0077b6 0%, #005577 100%);
+  box-shadow: 0 4px 8px rgba(0, 180, 216, 0.4);
+  transform: translateY(-1px);
+}
+
+.request-footage-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 180, 216, 0.3);
+}
+
+@media (max-width: 768px) {
+  .phone-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .request-footage-btn {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
