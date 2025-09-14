@@ -311,7 +311,6 @@ dmypy.json
 *.model
 
 # Audio/Video files (for development)
-*.wav
 *.mp3
 *.mp4
 *.avi

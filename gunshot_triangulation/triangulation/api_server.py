@@ -9,9 +9,11 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_socketio import SocketIO, emit
 from gunshot_localization import (
-    GunshotLocalizer, MicrophoneReading, get_microphone_positions, GunshotResult,
+    GunshotLocalizer, MicrophoneReading, MicrophoneRawReading, get_microphone_positions, GunshotResult,
 )
+import librosa
 import uuid
+import os
 from datetime import datetime
 
 app = Flask(__name__)
@@ -137,44 +139,54 @@ def get_mics():
 @app.route('/api/gunshot-location', methods=['POST'])
 def calculate_gunshot():
     """
-    Calculate gunshot location from microphone readings using TDOA triangulation.
+    Calculate gunshot location from microphone audio file uploads using TDOA triangulation.
     
-    Expected payload:
+    Expected form data:
     {
-        "readings": [
-            {"microphone_id": "1", "time_delay": 0.0},
-            {"microphone_id": "2", "time_delay": 0.15},
-            {"microphone_id": "3", "time_delay": 0.08}
-        ]
+        "mic1": filename,
+        "mic2": filename,
+        "mic3": filename
     }
     """
     global last_gunshot
     
     try:
-        data = request.get_json()
-        if not data or 'readings' not in data:
+        # Check if files are present
+        if 'mic1' not in request.json or 'mic2' not in request.json or 'mic3' not in request.json:
             return jsonify({
                 'success': False,
-                'error': 'Missing readings in request body'
+                'error': 'Missing audio files. Required: mic1, mic2, mic3'
             }), 400
         
-        # Parse microphone readings
+        # Read audio files
+        mic_files = {
+            '1': request.json['mic1'],
+            '2': request.json['mic2'], 
+            '3': request.json['mic3']
+        }
+        
+        # Parse microphone readings from uploaded files
         readings = []
-        for reading_data in data['readings']:
-            if 'microphone_id' not in reading_data or 'time_delay' not in reading_data:
+        for mic_id, file in mic_files.items():
+            if not os.path.exists(file):
                 return jsonify({
                     'success': False,
-                    'error': 'Each reading must have microphone_id and time_delay'
+                    'error': f'No valid file selected for microphone {mic_id}'
                 }), 400
             
-            readings.append(MicrophoneReading(
-                microphone_id=str(reading_data['microphone_id']),
-                time_delay=float(reading_data['time_delay'])
+            # Read file content as bytes
+            samples, sr = librosa.load(file)
+            
+            readings.append(MicrophoneRawReading(
+                microphone_id=mic_id,
+                samples=samples,
+                sample_rate=sr
             ))
         
         # Calculate gunshot location using TDOA triangulation  
         # Triangulates on local scale (0,0), (1.5,0), (0.75,0.75) then scales up to Boston coordinates
-        result = localizer.calculate_gunshot_location(readings)
+        delays = localizer.calculate_delays(readings)
+        result = localizer.calculate_gunshot_location(delays)
         
         # Store as last gunshot with new UUID
         gunshot_data = {
@@ -183,14 +195,14 @@ def calculate_gunshot():
             'lng': result.lng,
             't': result.timestamp * 1000,  # Convert to milliseconds for frontend consistency
             'confidence': result.confidence,
-            'readings_used': [{'mic': r.microphone_id, 'delay': r.time_delay} for r in readings]
+            'readings_used': [{'mic': r.microphone_id, 'delay': r.time_delay} for r in delays]
         }
         last_gunshot = gunshot_data
         
         # Also broadcast to WebSocket clients for real-time updates
         socketio.emit('gunshot_detected', gunshot_data)
-        print(f"REST API: Gunshot triangulated and broadcast to WebSocket clients")
-        
+        print(f"REST API: Gunshot triangulated from uploaded files and broadcast to WebSocket clients")
+
         return jsonify({
             'success': True,
             'gunshot': gunshot_data
