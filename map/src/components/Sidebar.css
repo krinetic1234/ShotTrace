@@ -5,6 +5,7 @@
   width: 400px;
   height: 100vh;
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   box-shadow: -8px 0 32px rgba(0, 0, 0, 0.6);
   z-index: 1001;
@@ -48,8 +49,15 @@
   padding: 24px;
 }
 
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
 .sidebar-content h3 {
-  margin: 0 0 32px 0;
+  margin: 0;
   color: #ffffff;
   font-size: 24px;
   font-weight: 700;
@@ -145,6 +153,7 @@
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   z-index: 1000;
   opacity: 0;

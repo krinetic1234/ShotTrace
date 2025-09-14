@@ -25,7 +25,12 @@ export default function Sidebar({ selectedItem, onClose }: SidebarProps) {
       case 'gunshot':
         return (
           <div className="sidebar-content">
-            <h3>🔫 Gunshot Detection</h3>
+            <div className="content-header">
+              <h3>🔫 Gunshot Detection</h3>
+              <button className="close-button" onClick={onClose}>
+                ✕
+              </button>
+            </div>
             <div className="data-row">
               <span className="label">ID:</span>
               <span className="value">{selectedItem.data.id}</span>
@@ -51,7 +56,12 @@ export default function Sidebar({ selectedItem, onClose }: SidebarProps) {
       case 'mic':
         return (
           <div className="sidebar-content">
-            <h3>🎤 Microphone</h3>
+            <div className="content-header">
+              <h3>🎤 Microphone</h3>
+              <button className="close-button" onClick={onClose}>
+                ✕
+              </button>
+            </div>
             <div className="data-row">
               <span className="label">ID:</span>
               <span className="value">{selectedItem.data.micId}</span>
@@ -73,7 +83,12 @@ export default function Sidebar({ selectedItem, onClose }: SidebarProps) {
       case 'building':
         return (
           <div className="sidebar-content">
-            <h3>🏢 Building</h3>
+            <div className="content-header">
+              <h3>🏢 Building</h3>
+              <button className="close-button" onClick={onClose}>
+                ✕
+              </button>
+            </div>
             <div className="data-row">
               <span className="label">Name:</span>
               <span className="value">{selectedItem.data.name || 'Unnamed Building'}</span>
@@ -113,11 +128,6 @@ export default function Sidebar({ selectedItem, onClose }: SidebarProps) {
 
   return (
     <div className="sidebar">
-      <div className="sidebar-header">
-        <button className="close-button" onClick={onClose}>
-          ✕
-        </button>
-      </div>
       {renderContent()}
     </div>
   );
