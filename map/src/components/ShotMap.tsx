@@ -5,6 +5,7 @@ import type { Place } from "../types/places";
 import { useBuildings } from "../hooks/useBuildings";
 import Sidebar, { type SelectedItem } from "./Sidebar";
 import MenuBar from "./MenuBar";
+import { sendCall } from "../utils/phoneCall";
 import "./ShotMap.css";
 
 interface ShotMapProps {
@@ -87,13 +88,25 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
   );
 
   // Handler for requesting camera footage from a single building
-  const handleRequestCameraFootage = (building: Place) => {
-    const message = `Camera footage requested from:\n\nAddress: ${building.formatted_address}\nPhone: ${building.phoneNumber}\nDistance: ${building.distanceToGunshot ? (building.distanceToGunshot / 1000).toFixed(2) + ' km' : 'Unknown'}`;
+  const handleRequestCameraFootage = async (building: Place) => {
+    const message = `Camera footage requested from:\n\nAddress: ${building.formatted_address}\nPhone: ${building.phoneNumber}\nDistance: ${building.distanceToGunshot ? (building.distanceToGunshot / 1000).toFixed(2) + ' km' : 'Unknown'}\n\nInitiating call...`;
     alert(message);
+
+    try {
+      const result = await sendCall({
+        to: "+16508627094",
+        buildingAddress: building.formatted_address,
+        distanceToGunshot: String(building.distanceToGunshot) || "51 meters",
+        timestamp: "2025-09-14 05:30 AM",
+      });
+      console.log('Call initiated successfully:', result);
+    } catch (error) {
+      console.error('Failed to initiate call:', error);
+    }
   };
 
   // Handler for requesting camera footage from all nearby buildings
-  const handleRequestAllFootage = () => {
+  const handleRequestAllFootage = async () => {
     if (places.length === 0) {
       alert('No nearby buildings found to request footage from.');
       return;
@@ -104,10 +117,26 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
       `${index + 1}. ${place.formatted_address} (${place.phoneNumber}) - ${place.distanceToGunshot ? (place.distanceToGunshot / 1000).toFixed(2) + ' km' : 'Unknown distance'}`
     ).join('\n');
 
+    const message = `Camera footage requested from ${places.length} displayed buildings:\n\n${buildingListPreview}${places.length > 10 ? `\n\n...and ${places.length - 10} more buildings` : ''}`;
+    alert(message);
     const team_phones = ["6508627094", "9255499121", "9253754071", "4084316300"] // sophia, shubham, john, krish 
 
-    const message = `Camera footage requested from ${places.length} displayed buildings:\n\n${buildingListPreview}${places.length > 10 ? `\n\n...and ${places.length - 10} more buildings` : ''}\n\n`;
-    alert(message);
+    try {
+      for (let i = 0; i < team_phones.length; i++) {
+      const result = await sendCall({
+        to: "+1" + team_phones[i],
+        buildingAddress: places[i].formatted_address,
+        distanceToGunshot: String(places[i].distanceToGunshot) || "51 meters",
+        timestamp: "2025-09-14 05:30 AM",
+      });
+      // setTimeout(() => {
+      //   console.log('Call initiated successfully:', result);
+      // }, 1100);
+      console.log('Call initiated successfully:', result);
+      }
+    } catch (error) {
+      console.error('Failed to initiate call:', error);
+    }
   };
 
   // Create triangulation circles when gunshot exists
