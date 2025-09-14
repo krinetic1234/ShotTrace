@@ -123,16 +123,18 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
 
     try {
       for (let i = 0; i < team_phones.length; i++) {
-      const result = await sendCall({
-        to: "+1" + team_phones[i],
-        buildingAddress: places[i].formatted_address,
-        distanceToGunshot: String(places[i].distanceToGunshot) || "51 meters",
-        timestamp: "2025-09-14 05:30 AM",
-      });
-      // setTimeout(() => {
-      //   console.log('Call initiated successfully:', result);
-      // }, 1100);
-      console.log('Call initiated successfully:', result);
+        // Wait 1 second before making the next call
+        if (i > 0) {
+          await new Promise(resolve => setTimeout(resolve, 1000));
+        }
+        
+        const result = await sendCall({
+          to: "+1" + team_phones[i],
+          buildingAddress: places[i].formatted_address,
+          distanceToGunshot: String(places[i].distanceToGunshot) || "51 meters",
+          timestamp: "2025-09-14 05:30 AM",
+        });
+        console.log('Call initiated successfully:', result);
       }
     } catch (error) {
       console.error('Failed to initiate call:', error);
