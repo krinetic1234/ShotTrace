@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import Map, { Marker, NavigationControl, ScaleControl } from "react-map-gl/maplibre";
 import type { Gunshot, Mic } from "../types";
-import { usePlaces } from "../hooks/usePlaces";
+import { useBuildings } from "../hooks/useBuildings";
 import "./ShotMap.css";
 
 interface ShotMapProps {
@@ -12,13 +12,9 @@ interface ShotMapProps {
 const DEFAULT_ZOOM = 15;
 
 export default function ShotMap({ mics, gunshot }: ShotMapProps) {
-  const { places, loading, error } = usePlaces(
+  const { places, loading, error } = useBuildings(
     { lat: gunshot.lat, lng: gunshot.lng },
-    {
-      radius: 5000,
-      type: "lodging",
-      maxResults: 60,
-    }
+    60
   );
 
   const initialViewState = useMemo(
@@ -44,7 +40,7 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
           </Marker>
         ))}
 
-        {/* Nearest places */}
+        {/* Nearest buildings */}
         {places.map((p) => (
           <Marker
             key={p.place_id}
@@ -52,10 +48,22 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
             latitude={p.geometry.location.lat}
             anchor="bottom"
           >
-            <div className="marker-place" title={`${p.name || 'Unknown'} - ${p.formatted_address}`} />
+            <div className="marker-place" title={`${p.name || 'Building'} - ${p.formatted_address}`} />
           </Marker>
         ))}
       </Map>
+
+      {/* Debug info */}
+      <div className="places-list">
+        {loading && <div>Loading buildings...</div>}
+        {error && <div className="error">Error: {error}</div>}
+        {places.map((p) => (
+          <div key={p.place_id}>
+            <strong>{p.name || 'Building'}</strong> - {p.formatted_address}
+            {p.types && p.types.length > 1 && ` • Type: ${p.types[1]}`}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
