@@ -59,18 +59,6 @@ export default function ShotMap({ mics, gunshot }: ShotMapProps) {
           </Marker>
         ))}
       </Map>
-
-      {/* Debug info */}
-        <div className="places-list">
-          {loading && <div>Loading buildings...</div>}
-          {error && <div className="error">Error: {error}</div>}
-          {places.map((p) => (
-            <div key={p.place_id}>
-              <strong>{p.name || 'Building'}</strong> - {p.formatted_address}
-              {p.types && p.types.length > 1 && ` • Type: ${p.types[1]}`}
-            </div>
-          ))}
-        </div>
     </div>
   );
 }
