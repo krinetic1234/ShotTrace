@@ -62,6 +62,13 @@ ShotTrace/
     ├── tsconfig.json                  # TypeScript configuration
     └── postcss.config.mjs             # PostCSS configuration for Tailwind
 ```
+## 🔊 Sound Triangulation
+
+Process:
+1. We snapshot buffers of our microphone array when an impulse is detected.
+2. These snapshots are sent to our GCC-PHAT time delay estimator endpoint to detect the pairwise delays amongst microphones in the array.
+3. These time delays are then sent to our triangulation engine to pinpoint the location of the gunshot.
+4. For demo purposes we linearly transform the estimates we obtain on our physical representation to the frontend.
 
 ## 🎥 Footage Analysis Pipeline (Python)
 
